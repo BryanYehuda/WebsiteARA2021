@@ -1,7 +1,7 @@
 nav ul a,
 nav .brand-logo 
 {
-  color: #444;
+  color: #2bdcfb;
 }
 
 p 
@@ -16,7 +16,7 @@ p
 
 .sidenav-trigger 
 {
-  color: #26a69a;
+  color: #2bdcfb;
 }
 
 .how-to-order li
@@ -25,27 +25,26 @@ p
   font-size: 20px;
 }
 
+.card-text-home
+{
+  color: #2bdcfb;
+}
+
+.card-text-event
+{
+  color: #2bdcfb;
+  font-size: 30px;
+}
+
 .how-to-order h4
 {
   text-align: center;
 }
 
-.footer-copyright a:link,
-.footer-copyright a:visited
+.footer-copyright a .logo-footer
 {
-  color: #fff;
-  text-decoration: none;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 1px;
-  -webkit-transition: border-bottom 0.2s, color 0.2s;
-  transition: border-bottom 0.2s, color 0.2s;
-}
-
-.footer-copyright a:hover,
-.footer-copyright a:active
-{
-  color: #000;
-  border-bottom: 1px solid transparent;
+  padding-left: -40px;
+  border-style: hidden;
 }
 
 @media only screen and (max-width : 1184px) 
