@@ -3,6 +3,5 @@
 
     $('.sidenav').sidenav();
 
-  });
+  }); 
 })(jQuery);
-      

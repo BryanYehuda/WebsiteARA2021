@@ -2,7 +2,7 @@
     "name": "ARA 2020 HMIT ITS",
     "short_name": "ARA2020",
     "description": "ARA 2020 - For A Better Future!",
-    "start_url": "/index.html",
+    "start_url": "/pages/index.html",
     "display": "standalone",
     "background_color": "#2bdcfb",
     "theme_color": "#2bdcfb",
