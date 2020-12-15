@@ -7,7 +7,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ARA 2020 HMIT ITS</title>
+  <title>ARA 2021 HMIT ITS</title>
   <meta name="description" content="ARA 2021 - For A Better Future!" />
   <meta name="theme-color" content="#2bdcfb" />
   <link rel="apple-touch-icon" href="../images/logo.png">
@@ -48,7 +48,7 @@
 
     <!--Register Olimpiade Form Start-->
     <div class="row">
-      <div class="col s8 offset-s2">
+      <div class="col s10 offset-s1">
         <div class="card black">
           <div class="card-content white-text">
             <span class="card-title center-align">Register Form Olimpiade ARA 2021</span>
@@ -62,18 +62,17 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="input-field col s6">
+                  <div class="input-field col s12 l6">
                     <input id="nama_anggota_pertama" type="text" class="validate">
                     <label for="nama_anggota_pertama">Nama Anggota Pertama</label>
                   </div>
-                  <div class="input-field col s6">
+                  <div class="input-field col s12 l6">
                     <input id="nama_anggota_kedua" type="text" class="validate">
                     <label for="nama_anggota_kedua">Nama Anggota Kedua</label>
                   </div>
                 </div>
-                <!-- Edit Colour to black wkwk -->
                 <div class="row">
-                  <div class="input-field col s4">
+                  <div class="input-field col s12 l4">
                     <select>
                       <option value="" disabled selected>Pilih Jenis Kelamin</option>
                       <option value="1">Laki-laki</option>
@@ -81,7 +80,7 @@
                     </select>
                     <label>Jenis Kelamin Ketua</label>
                   </div>
-                  <div class="input-field col s4">
+                  <div class="input-field col s12 l4">
                     <select>
                       <option value="" disabled selected>Pilih Jenis Kelamin</option>
                       <option value="1">Laki-laki</option>
@@ -89,7 +88,7 @@
                     </select>
                     <label>Jenis Kelamin Anggota pertama</label>
                   </div>
-                  <div class="input-field col s4">
+                  <div class="input-field col s12 l4">
                     <select>
                       <option value="" disabled selected>Pilih Jenis Kelamin</option>
                       <option value="1">Laki-laki</option>
@@ -98,27 +97,26 @@
                     <label>Jenis Kelamin Anggota Kedua</label>
                   </div>
                 </div>
-                <!-- End Edit Colour to Black -->
                 <div class="row">
-                  <div class="input-field col s4">
+                  <div class="input-field col s12 l4">
                     <input id="email_ketua" type="text" class="validate">
                     <label for="email_ketua">Email Ketua</label>
                   </div>
-                  <div class="input-field col s4">
+                  <div class="input-field col s12 l4">
                     <input id="email_anggota_satu" type="text" class="validate">
                     <label for="email_anggota_satu">Email Anggota Pertama</label>
                   </div>
-                  <div class="input-field col s4">
+                  <div class="input-field col s12 l4">
                     <input id="email_anggota_kedua" type="text" class="validate">
                     <label for="email_anggota_kedua">Email Anggota Kedua</label>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="input-field col s6">
+                  <div class="input-field col s12 l6">
                     <input id="no_telp" type="number" class="validate">
                     <label for="no_telp">Nomor Telepon</label>
                   </div>
-                  <div class="input-field col s6">
+                  <div class="input-field col s12 l6">
                     <input id="id_line" type="text" class="validate">
                     <label for="id_line">ID Line</label>
                   </div>
@@ -130,56 +128,75 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col s4">
+                  <form action="#">
                     <div class="file-field input-field">
                       <div class="btn blue">
                         <span>Upload KTM Ketua Tim</span>
                         <input type="file">
                       </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                      </div>
                     </div>
-                  </div>
-                  <div class="col s4">
+                  </form>
+                  <form action="#">
                     <div class="file-field input-field">
                       <div class="btn blue">
                         <span>Upload KTM Anggota 1</span>
                         <input type="file">
                       </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                      </div>
                     </div>
-                  </div>
-                  <div class="col s4">
+                  </form>
+                  <form action="#">
                     <div class="file-field input-field">
                       <div class="btn blue">
                         <span>Upload KTM Anggota 2</span>
                         <input type="file">
                       </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                      </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
+                <br>
                 <div class="row">
-                  <div class="col s4">
+                  <form action="#">
                     <div class="file-field input-field">
                       <div class="btn blue">
                         <span>Upload Foto Ketua Tim</span>
                         <input type="file">
                       </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                      </div>
                     </div>
-                  </div>
-                  <div class="col s4">
+                  </form>
+                  <form action="#">
                     <div class="file-field input-field">
                       <div class="btn blue">
                         <span>Upload Foto Anggota 1</span>
                         <input type="file">
                       </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                      </div>
                     </div>
-                  </div>
-                  <div class="col s4">
+                  </form>
+                  <form action="#">
                     <div class="file-field input-field">
                       <div class="btn blue">
                         <span>Upload Foto Anggota 2</span>
                         <input type="file">
                       </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                      </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
                 <div class="row">
                   <div class="center-align">

@@ -5541,7 +5541,7 @@ button.btn-floating {
 }
 
 .dropdown-content {
-  background-color: #fff;
+  background-color: #000;
   margin: 0;
   display: none;
   min-width: 100px;
@@ -5584,7 +5584,7 @@ button.btn-floating {
 
 .dropdown-content li > a, .dropdown-content li > span {
   font-size: 16px;
-  color: #26a69a;
+  color: #2bdcfb;
   display: block;
   line-height: 22px;
   padding: 14px 16px;
@@ -7228,8 +7228,8 @@ select:disabled {
 .select-dropdown li.disabled,
 .select-dropdown li.disabled > span,
 .select-dropdown li.optgroup {
-  color: rgba(0, 0, 0, 0.3);
-  background-color: transparent;
+  color: #fff;
+  background-color: #000;
 }
 
 body.keyboard-focused .select-dropdown.dropdown-content li:focus {
