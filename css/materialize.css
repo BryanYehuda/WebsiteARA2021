@@ -6311,9 +6311,9 @@ input[type=search].valid:not(.browser-default),
 input[type=search].valid:not(.browser-default):focus,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
-  border-bottom: 1px solid #4CAF50;
-  -webkit-box-shadow: 0 1px 0 0 #4CAF50;
-          box-shadow: 0 1px 0 0 #4CAF50;
+  border-bottom: 1px solid #2bdcfb;
+  -webkit-box-shadow: 0 1px 0 0 #2bdcfb;
+          box-shadow: 0 1px 0 0 #2bdcfb;
 }
 
 input.invalid:not([type]), input.invalid:not([type]):focus,
