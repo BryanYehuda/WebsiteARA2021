@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <!-- Meta Start -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ARA 2021 HMIT ITS</title>
+  <meta name="description" content="ARA 2021 - For A Better Future!" />
+  <meta name="theme-color" content="#2bdcfb" />
+  <link rel="apple-touch-icon" href="../images/logo.png">
+  <link rel="shortcut icon" href="../images/logo.png">
+  <!-- Meta End -->
+
+  <!-- Link Start -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="manifest" href="../manifest.json">
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <!-- Link End -->
+</head>
+
+<body>
+  <!--Navbar Start-->
+  <nav class="black" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img" src="../images/logo.png" width="60"
+          height="auto"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="waves-effect" href="index.html">Home</a></li>
+        <li><a class="waves-effect" href="pendaftaran.html">Pendaftaran</a></li>
+      </ul>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a class="waves-effect" href="index.html">Home</a></li>
+        <li><a class="waves-effect" href="pendaftaran.html">Pendaftaran</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <!--Navbar Ends-->
+
+  <!--Register Olimpiade Ends-->
+  <div class="register-olimpiade">
+
+    <!--Register Olimpiade Form Start-->
+    <div class="row">
+      <div class="col s10 offset-s1">
+        <div class="card black">
+          <div class="card-content white-text">
+            <span class="card-title center-align">Register Form CTF ARA 2021</span>
+            <br>
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="nama_ketua" type="text" class="validate">
+                    <label for="nama_ketua">Nama Ketua Tim</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12 l6">
+                    <input id="nama_anggota_pertama" type="text" class="validate">
+                    <label for="nama_anggota_pertama">Nama Anggota Pertama</label>
+                  </div>
+                  <div class="input-field col s12 l6">
+                    <input id="nama_anggota_kedua" type="text" class="validate">
+                    <label for="nama_anggota_kedua">Nama Anggota Kedua</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12 l4">
+                    <input id="studentid_ketua" type="text" class="validate">
+                    <label for="studentid_ketua">Student ID Ketua</label>
+                  </div>
+                  <div class="input-field col s12 l4">
+                    <input id="studentid_satu" type="text" class="validate">
+                    <label for="studentid_satu">Student ID Anggota Pertama</label>
+                  </div>
+                  <div class="input-field col s12 l4">
+                    <input id="studentid_kedua" type="text" class="validate">
+                    <label for="studentid_kedua">Student ID Anggota Kedua</label>
+                  </div>
+                </div>
+                <!-- Edit Colour to black wkwk -->
+                <div class="row">
+                  <div class="input-field col s12 l4">
+                    <select>
+                      <option value="" disabled selected>Pilih Jenis Kelamin</option>
+                      <option value="1">Laki-laki</option>
+                      <option value="2">Perempuan</option>
+                    </select>
+                    <label>Jenis Kelamin Ketua</label>
+                  </div>
+                  <div class="input-field col s12 l4">
+                    <select>
+                      <option value="" disabled selected>Pilih Jenis Kelamin</option>
+                      <option value="1">Laki-laki</option>
+                      <option value="2">Perempuan</option>
+                    </select>
+                    <label>Jenis Kelamin Anggota pertama</label>
+                  </div>
+                  <div class="input-field col s12 l4">
+                    <select>
+                      <option value="" disabled selected>Pilih Jenis Kelamin</option>
+                      <option value="1">Laki-laki</option>
+                      <option value="2">Perempuan</option>
+                    </select>
+                    <label>Jenis Kelamin Anggota Kedua</label>
+                  </div>
+                </div>
+                <!-- End Edit Colour to Black -->
+                <div class="row">
+                  <div class="input-field col s12 l4">
+                    <input id="fakultas_ketua" type="text" class="validate">
+                    <label for="fakultas_ketua">Fakultas Ketua</label>
+                  </div>
+                  <div class="input-field col s12 l4">
+                    <input id="fakultas_satu" type="text" class="validate">
+                    <label for="fakultas_satu">Fakultas Anggota Pertama</label>
+                  </div>
+                  <div class="input-field col s12 l4">
+                    <input id="fakultas_kedua" type="text" class="validate">
+                    <label for="fakultas_kedua">Fakultas Anggota Kedua</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12 l4">
+                    <input id="jurusan_ketua" type="text" class="validate">
+                    <label for="jurusan_ketua">Jurusan Ketua</label>
+                  </div>
+                  <div class="input-field col s12 l4">
+                    <input id="jurusan_satu" type="text" class="validate">
+                    <label for="jurusan_satu">Jurusan Anggota Pertama</label>
+                  </div>
+                  <div class="input-field col s12 l4">
+                    <input id="jurusan_kedua" type="text" class="validate">
+                    <label for="jurusan_kedua">Jurusan Anggota Kedua</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12 l4">
+                    <input id="email_ketua" type="text" class="validate">
+                    <label for="email_ketua">Email Ketua</label>
+                  </div>
+                  <div class="input-field col s12 l4">
+                    <input id="email_anggota_satu" type="text" class="validate">
+                    <label for="email_anggota_satu">Email Anggota Pertama</label>
+                  </div>
+                  <div class="input-field col s12 l4">
+                    <input id="email_anggota_kedua" type="text" class="validate">
+                    <label for="email_anggota_kedua">Email Anggota Kedua</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12 l6">
+                    <input id="no_telp" type="number" class="validate">
+                    <label for="no_telp">Nomor Telepon</label>
+                  </div>
+                  <div class="input-field col s12 l6">
+                    <input id="id_line" type="text" class="validate">
+                    <label for="id_line">ID Line</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="asal_sekolah" type="text" class="validate">
+                    <label for="asal_sekolah">Institusi</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <form action="#">
+                    <div class="file-field input-field">
+                      <div class="btn blue">
+                        <span>Upload KTM Ketua Tim</span>
+                        <input type="file">
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                      </div>
+                    </div>
+                  </form>
+                  <form action="#">
+                    <div class="file-field input-field">
+                      <div class="btn blue">
+                        <span>Upload KTM Anggota 1</span>
+                        <input type="file">
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                      </div>
+                    </div>
+                  </form>
+                  <form action="#">
+                    <div class="file-field input-field">
+                      <div class="btn blue">
+                        <span>Upload KTM Anggota 2</span>
+                        <input type="file">
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <form action="#">
+                  <div class="file-field input-field">
+                    <div class="btn blue">
+                      <span>Upload Foto Ketua Tim</span>
+                      <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text">
+                     </div>
+                  </div>
+                 </form>
+                 <form action="#">
+                  <div class="file-field input-field">
+                    <div class="btn blue">
+                       <span>Upload Foto Anggota 1</span>
+                       <input type="file">
+                     </div>
+                     <div class="file-path-wrapper">
+                       <input class="file-path validate" type="text">
+                    </div>
+                  </div>
+                </form>
+                <form action="#">
+                  <div class="file-field input-field">
+                    <div class="btn blue">
+                      <span>Upload Foto Anggota 2</span>
+                      <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text">
+                    </div>
+                  </div>
+                </form>
+                <div class="row">
+                  <div class="center-align">
+                    <button class="btn blue waves-effect waves-light center-align" type="submit" name="action">Submit
+                      <i class="material-icons right">send</i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Register Olimpiade Form Ends-->
+
+  </div>
+  <!--Register Olimpiade Ends-->
+
+  <!--Footer Starts-->
+  <footer class="page-footer">
+    <div class="footer-copyright black">
+      <div class="container center-align card-text-home">
+        ©ARA HMIT 2021
+      </div>
+    </div>
+  </footer>
+  <!--Footer Ends-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems);
+    });
+  </script>
+  <!-- Script Start -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
+  <script src="../js/script.js"></script>
+  <!-- Script End -->
+
+</body>
+
+</html>
