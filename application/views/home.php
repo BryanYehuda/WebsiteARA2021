@@ -7,14 +7,14 @@
       <div class="card black">
         <div class="card-content white-text">
           <span class="card-title center-align">ARA 2021</span>
-          <p class="center-align">"ARA (A Renewal Agent) adalah sebuah kegiatan tahunan yang diselenggarakan oleh
+          <p class="center-align">ARA (A Renewal Agent) adalah sebuah kegiatan tahunan yang diselenggarakan oleh
             Himpunan Mahasiswa Teknologi Informasi ITS yang mewadahi para generasi muda, khususnya para mahasiswa dan
             siswa SMA/Sederajat untuk menyalurkan minat bakat di bidang Internet of Things dan Cyber Security. Sesuai
             dengan namanya, A Renewal Agent, ARA mengusung tema “For the Golden Generation of Indonesia” dimana ARA akan
             menjadi ajang untuk pencarian agen-agen pembaruan generasi milenial sebagai pilar di bidang Teknologi dan
             Informasi untuk Indonesia 2045. Dengan tagar #SemangatMembARA2021 dan #ARenewalAgentforIndonesia2045
             diharapkan ARA dapat melahirkan agen-agen pembaruan yang memiliki semangat membara sehingga kedepannnya
-            dapat mendukung perkembangan dan kemajuan Indonesia khususnya di bidang Teknologi dan Informasi."</p><br>
+            dapat mendukung perkembangan dan kemajuan Indonesia khususnya di bidang Teknologi dan Informasi.</p><br>
         </div>
         <!-- <div class="card-image">
           <div class="row">
