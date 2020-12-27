@@ -1,29 +1,8 @@
-      <!--Footer Starts-->
-      <footer class="page-footer">
-          <div class="footer-copyright black">
-            <div class="container center-align card-text-home">
-              ©ARA HMIT 2021
-            </div>
-          </div>
-      </footer>
-      <!--Footer Ends-->
 
-      <!-- Script Start -->
-      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="<?php echo base_url(); ?>assets/js/materialize.js"></script>
-      <script src="<?php echo base_url(); ?>assets/js/init.js"></script>
-      <script src="<?php echo base_url(); ?>assets/js/script.js"></script>
-      <!-- Script End -->
-
-    </body>
+</body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </html>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('select');
-      var instances = M.FormSelect.init(elems);
-    });
-  </script>
 <script>  
    $(document).ready(function(){  
       $('#tim').change(function(){  

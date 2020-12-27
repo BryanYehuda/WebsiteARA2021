@@ -221,6 +221,7 @@ class Welcome extends CI_Controller {
 			'id1' => $id1,
 			'gender1' => $this->input->post('gender1'),
 			'email1' => $this->input->post('email1'),
+			'alamat' => $this->input->post('alamat1'),
 			'no_wa' => $this->input->post('wa1'),
 			'line' => $this->input->post('line1'),
 			'nama2' => $this->input->post('nama2'),
@@ -259,11 +260,11 @@ class Welcome extends CI_Controller {
 		$this->load->model("m_data");  
 		if($this->m_data->is_tim_available($_POST["tim"]))  
 		{  
-			echo '<label style="color: red;">Nama Tim sudah digunakan</label>';  
+			echo '<label class="text-danger"><span class="glyphicon glyphicon-remove"></span> Nama Tim sudah digunakan</label>';  
 		}  
 		else  
 		{  
-			echo '<label style="color: white;">Nama Tim bisa digunakan</label>';  
+			echo '<label class="text-success"><span class="glyphicon glyphicon-ok"></span> Nama Tim tersedia</label>';  
 		}  
 
 	}
@@ -274,7 +275,7 @@ class Welcome extends CI_Controller {
 		$this->load->model("m_data");  
 		if($this->m_data->is_email_available($_POST["email"]))  
 		{  
-			echo '<label style="color: red;"> Email Sudah terdaftar</label>';  
+			echo '<label class="text-danger"><span class="glyphicon glyphicon-remove"></span> Email Sudah terdaftar</label>';  
 		}  
 
 	}
@@ -285,7 +286,7 @@ class Welcome extends CI_Controller {
 		$this->load->model("m_data");  
 		if($this->m_data->is_wa_available($_POST["wa"]))  
 		{  
-			echo '<label style="color: red;"></span> Nomor Sudah terdaftar</label>';  
+			echo '<label class="text-danger"><span class="glyphicon glyphicon-remove"></span> Nomer Sudah terdaftar</label>';  
 		}  
 
 	}
