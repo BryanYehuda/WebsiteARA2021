@@ -270,6 +270,11 @@ input[type=file] {
 	background: none;
 }
 
+.custom-file-label {
+	position: relative;
+	cursor: pointer;
+}
+
 /* tweaks */
 .white {
 	width: 40%;
