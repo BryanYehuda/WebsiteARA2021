@@ -13,9 +13,9 @@
     </div>
 <!--navbar-->    
   <nav id="nav-bar">  
-    <ul class="nav-big">
-      <li><a class="nav-link" href=#home>Home</a></li>    
-      <li><a class="nav-link" href=#offers>Pendaftaran</a></li>
+  <ul class="nav-big">
+      <li><a class="nav-link" href="<?php echo base_url(); ?>">Home</a></li>    
+      <li><a class="nav-link" onclick="openForm()" href=#offers>Daftar</a></li>
       <li><a class="nav-link" href=#contact>Kontak</a></li>
     </ul>
       
@@ -39,7 +39,7 @@
 <section id="ctf" class="ctf-form">
 
     <div class="info-area">
-        <div class="img-area">
+        <div class="img-area" style="background-image: url(../assets/img/olimform.png);">
         </div>
         <div class="text-area">
             <div class="title">
@@ -53,7 +53,7 @@
                 <div class="jadwal">
                     <p>Diisi Jadwal, Syarat, Dll. Bisa tulisan, kalo pengen bagus ya graphic</p>
                 </div>
-                <div class="btn-daftar">
+                <div class="btn-daftar" onclick="openForm()">
                     <a>DAFTAR</a>
                 </div>  
             </div>
@@ -63,6 +63,7 @@
     <div class="form-area">
         <div class="form-inside">
             <form action="<?php echo base_url().'daftar/olimpiade' ?>" method="post" enctype="multipart/form-data">
+                <div class="white"></div>
                 <h3>Pendaftaran Olimpiade ARA 2021</h3>
                 <div class="row">
                     <div class="col">
@@ -152,11 +153,16 @@
                             <input type="file" id="bayar" name="bayar" class="form-control" onchange="return fileValidation('bayar')" required/>
                             <span id="bayar-size"></span>
                         </div>
-                        <div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContactSubmit" value="Submit" style="width: 100%;"/>
+                        <div id="buttons" class="form-group text-center">
+                            <input type="submit" name="btnSubmit" class="btn btn-primary" value="Submit" style="width: 40%;"/>
+                        </div>
+                        <div id="buttons" class="form-group text-center">
+                            <input type="button" name="btnCancel" class="btn btn-danger" value="Cancel" style="width: 40%;" onclick="openForm()"/>
                         </div>
 
-                        <div class="form-x">
+                        <div class="white2"></div>
+
+                        <div class="form-x" onclick="openForm()">
                         </div>
                     </div>
                 </div>
