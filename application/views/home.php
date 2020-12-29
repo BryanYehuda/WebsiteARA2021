@@ -81,7 +81,7 @@
             <p>Dalam kegiatan ini, peserta lomba diharapkan dapat menuangkan idenya pada topik Internet of Things dalam bentuk karya tulis ilmiah.</p>
             
             <div class="btn-daftar">
-            <a href="<?php echo base_url().'pendaftaran/ctf'; ?>">DAFTAR</a>
+            <a href="<?php echo base_url().'pendaftaran/iot'; ?>">DAFTAR</a>
             </div>
         </div>
     </div>
@@ -93,7 +93,7 @@
             <p>Webinar tentang IoT dan Cybersecurity, sesuai dengan tema ARA 2021.</p>
             
             <div class="btn-daftar">
-            <a href="<?php echo base_url().'pendaftaran/ctf'; ?>">DAFTAR</a>
+            <a href="<?php echo base_url().'pendaftaran/webinar'; ?>">DAFTAR</a>
             </div>
         </div>
     </div>
@@ -104,7 +104,7 @@
             <h1>Olimpiade IT</h1>
             <p>Olimpiade Module Based dengan tema IoT dan Cybersecurity dengan dua babak (penyisihan dan final) untuk SMA sederajat seluruh Indonesia</p>
             <div class="btn-daftar">
-            <a href="<?php echo base_url().'pendaftaran/ctf'; ?>">DAFTAR</a>
+            <a href="<?php echo base_url().'pendaftaran/olimpiade'; ?>">DAFTAR</a>
             </div>
         </div>
     </div>
