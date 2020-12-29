@@ -132,25 +132,32 @@
                         
                         <div class="form-group">
                             <span>Kartu Pelajar / Kartu Tanda Mahasiswa : </span>
-                            <input type="file" id="ktm1" name="ktm1" class="form-control" onchange="return fileValidation('ktm1')" required/>
+                            <input type="file" id="ktm1" name="ktm1" class="form-control custom-file-input" onchange="return fileValidation('ktm1')" required hidden/>
+                            <label class="custom-file-label form-control" for="ktm1">KTM 1</label>
                             <span id="ktm1-size"></span>
-                            <input type="file" id="ktm2" name="ktm2" class="form-control" onchange="return fileValidation('ktm2')" required/>
+                            <input type="file" id="ktm2" name="ktm2" class="form-control custom-file-input" onchange="return fileValidation('ktm2')" required hidden/>
+                            <label class="custom-file-label form-control" for="ktm2">KTM 2</label>
                             <span id="ktm2-size"></span>
-                            <input type="file" id="ktm3" name="ktm3" class="form-control" onchange="return fileValidation('ktm3')" />
+                            <input type="file" id="ktm3" name="ktm3" class="form-control custom-file-input" onchange="return fileValidation('ktm3')" hidden/>
+                            <label class="custom-file-label form-control" for="ktm3">KTM 3</label>
                             <span id="ktm3-size"></span>
                         </div>
                         <div class="form-group">
                             <span>Pas foto (3 x 4 rapi) masing - masing anggota tim: </span>
-                            <input type="file" id="foto1" name="foto1" class="form-control" onchange="return fileValidation('foto1')" required/>
+                            <input type="file" id="foto1" name="foto1" class="form-control custom-file-input" onchange="return fileValidation('foto1')" required hidden/>
+                            <label class="custom-file-label form-control" for="foto1">Pas Foto</label>
                             <span id="foto1-size"></span>
-                            <input type="file" id="foto2" name="foto2" class="form-control" onchange="return fileValidation('foto2')" required/>
+                            <input type="file" id="foto2" name="foto2" class="form-control custom-file-input" onchange="return fileValidation('foto2')" required hidden/>
+                            <label class="custom-file-label form-control" for="foto2">Pas Foto</label>
                             <span id="foto2-size"></span>
-                            <input type="file" id="foto3" name="foto3" class="form-control" onchange="return fileValidation('foto3')" />
+                            <input type="file" id="foto3" name="foto3" class="form-control custom-file-input" onchange="return fileValidation('foto3')" hidden/>
+                            <label class="custom-file-label form-control" for="foto3">Pas Foto</label>
                             <span id="foto3-size"></span>
                         </div>
                         <div class="form-group">
                             <span>Bukti Pembayaran: </span>
-                            <input type="file" id="bayar" name="bayar" class="form-control" onchange="return fileValidation('bayar')" required/>
+                            <input type="file" id="bayar" name="bayar" class="form-control custom-file-input" onchange="return fileValidation('bayar')" required hidden/>
+                            <label class="custom-file-label form-control" for="bayar">Bukti Pembayaran</label>
                             <span id="bayar-size"></span>
                         </div>
                         <div id="buttons" class="form-group text-center">

@@ -82,7 +82,8 @@
                         </div>  
                         <div class="form-group">
                             <span>Bukti Share Webinar: </span>
-                            <input type="file" id="bayar" name="bayar" class="form-control" onchange="return fileValidation('bayar')" required/>
+                            <input type="file" id="bayar" name="bayar" class="form-control custom-file-input" onchange="return fileValidation('bayar')" required/>
+                            <label class="custom-file-label form-control" for="bayar">Bukti Share</label>
                             <span id="bayar-size"></span>
                         </div>
                         <div id="buttons" class="form-group text-center">

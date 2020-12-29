@@ -127,28 +127,35 @@
                         <!-- kelengkapan -->
                         <div class="form-group">
                             <span>Kartu Pelajar / Kartu Tanda Mahasiswa : </span>
-                            <input type="file" id="ktm1" name="ktm1" class="form-control" onchange="return fileValidation('ktm1')" required/>
+                            <input type="file" id="ktm1" name="ktm1" class="form-control custom-file-input" onchange="return fileValidation('ktm1')" required hidden/>
+                            <label class="custom-file-label form-control" for="ktm1">KTM 1</label>
                             <span id="ktm1-size"></span>
-                            <input type="file" id="ktm2" name="ktm2" class="form-control" onchange="return fileValidation('ktm2')" required/>
+                            <input type="file" id="ktm2" name="ktm2" class="form-control custom-file-input" onchange="return fileValidation('ktm2')" required hidden/>
+                            <label class="custom-file-label form-control" for="ktm2">KTM 2</label>
                             <span id="ktm2-size"></span>
-                            <input type="file" id="ktm3" name="ktm3" class="form-control" onchange="return fileValidation('ktm3')" />
+                            <input type="file" id="ktm3" name="ktm3" class="form-control custom-file-input" onchange="return fileValidation('ktm3')" hidden/>
+                            <label class="custom-file-label form-control" for="ktm3">KTM 3</label>
                             <span id="ktm3-size"></span>
                         </div>
 
                         <div class="form-group">
                             <span>Surat Keterangan Siswa/wi atau Mahasiswa/wi: </span>
-                            <input type="file" id="surat1" name="surat1" class="form-control" onchange="return fileValidation('surat1')" required/>
+                            <input type="file" id="surat1" name="surat1" class="form-control custom-file-input" onchange="return fileValidation('surat1')" required hidden/>
+                            <label class="custom-file-label form-control" for="surat1">SKMA 1</label>
                             <span id="surat1-size"></span>
-                            <input type="file" id="surat2" name="surat2" class="form-control" onchange="return fileValidation('surat2')" required/>
+                            <input type="file" id="surat2" name="surat2" class="form-control custom-file-input" onchange="return fileValidation('surat2')" required hidden/>
+                            <label class="custom-file-label form-control" for="surat2">SKMA 2</label>
                             <span id="surat2-size"></span>
-                            <input type="file" id="surat3" name="surat3" class="form-control" onchange="return fileValidation('surat3')" />
+                            <input type="file" id="surat3" name="surat3" class="form-control custom-file-input" onchange="return fileValidation('surat3')" hidden/>
+                            <label class="custom-file-label form-control" for="surat3">SKMA 3</label>
                             <span id="surat3-size"></span>
                         </div>
 
                         <!-- bukti pembayaran -->
                         <div class="form-group">
                             <span>Bukti Pembayaran: </span>
-                            <input type="file" id="bayar" name="bayar" class="form-control" onchange="return fileValidation('bayar')" required/>
+                            <input type="file" id="bayar" name="bayar" class="form-control custom-file-input" onchange="return fileValidation('bayar')" required hidden/>
+                            <label class="custom-file-label form-control" for="bayar">Bukti Pembayaran</label>
                             <span id="bayar-size"></span>
                         </div>
 
