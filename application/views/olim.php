@@ -9,6 +9,7 @@
             id="header-img"
             src="<?php echo base_url().'assets/img/navicon.png' ?>"
             alt="ARA"
+            onclick="window.location='<?php echo base_url(); ?>';"
             />
     </div>
 <!--navbar-->    
@@ -50,8 +51,13 @@
                 <div class="exp">
                     <p>Olimpiade Cyber Security dan Internet of Things adalah salah satu cabang kegiatan ARA yang ditujukan untuk seluruh siswa SMA/Sederajat di seluruh Indonesia. Berbekal dengan 1-3 anggota akan dihadapkan dengan dua babak seleksi yaitu babak penyisihan dan babak final, olimpiade akan diadakan dalam dua hari.</p>
                 </div>
+                <div class="title">
+                    <h1>Pelaksanaan</h1>
+                    <div class="title-border"></div>
+                </div>
                 <div class="jadwal">
-                    <p>Diisi Jadwal, Syarat, Dll. Bisa tulisan, kalo pengen bagus ya graphic</p>
+                    <p>Jadwal : - </p>
+                    <p>Syarat : - </p>
                 </div>
                 <div class="btn-daftar" onclick="openForm()">
                     <a>DAFTAR</a>

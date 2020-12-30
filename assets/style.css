@@ -530,7 +530,13 @@ a:hover {
 	}
 
 	.logo {
-		display: none;
+		position: absolute;
+		width: 20px;
+		margin-left: 6%;
+	}
+
+	.logo>img {
+		width: 100%;	
 	}
 
 	.banner-area {

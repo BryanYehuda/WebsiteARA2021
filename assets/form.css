@@ -105,18 +105,18 @@ a:hover {
 /* mainpage */
 
 .info-area {
-	height: 800px;
+	height: 900px;
 	width: 100%;
 }
 
-.info-area>.img-area {
-	height: 100%;
+.img-area {
+	height: 90%;
 	background-position: center center;
 	background-size: cover;
 }
 
 .text-area {
-	height: 55%;
+	height: 60%;
 }
 
 .title {
@@ -137,7 +137,7 @@ a:hover {
 }
 
 .title-border {
-	margin-top: 1%;
+	margin-top: 0.5%;
 	width: 40px;
 	height: 2px;
 	background: #fec14e;
@@ -149,39 +149,43 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	place-items: center;
-	padding: 4vw;
+	padding: 1vw 4vw 1vw 4vw;
 }
 
 .exp {
 	width: 100%;
+	padding: 0 10% 0 10%;
+	margin-bottom: 2%;
 }
 
 .exp>p {
 	font-size: 1.4em;
 	letter-spacing: 0.02em;
-	text-align: center;
+	text-align: justify;
 }
 
 .jadwal {
+	height: 20%;
 	width: 100%;
-	margin-top: 10vh;
+	padding: 0 10% 0 10%;
+	margin-top: 2%;
 }
 
 .jadwal>p {
 	font-size: 1.4em;
 	letter-spacing: 0.02em;
-	text-align: center;
+	text-align: justify;
 }
 
 .btn-daftar {
 	width: 150px;
-	background: -webkit-linear-gradient(left, #2d38df, #3e7dab);
+	background: -webkit-linear-gradient(left, #345b9c, #3e7dab);
 	color: white;
 	padding: 10px 0;
 	text-align: center;
 	display: inline-block;
 	border-radius: 25px;
-	margin-top: 60px;
+	margin-top: 80px;
 	cursor: pointer;
 }
 
@@ -338,7 +342,7 @@ input[type=file] {
 	flex-direction: column;
 	height: 900px;
 	padding-top: 400px;
-	margin-top: 400px;
+	margin-top: 600px;
 }
 
 .contact-container {
@@ -478,7 +482,13 @@ input[type=file] {
 	}
 
 	.logo {
-		display: none;
+		position: absolute;
+		width: 20px;
+		margin-left: 6%;
+	}
+
+	.logo>img {
+		width: 100%;	
 	}
 
 	/* main */
@@ -488,15 +498,16 @@ input[type=file] {
 	}
 
 	.info-area>.img-area {
-		height: 30%;
+		height: 40%;
 	}
 
 	.info-area>.text-area {
-		height: 70%;
+		height: 60%;
 	}
 
 	.text-area>.title {
-		height: 7%;
+		height: 10%;
+		margin-top: -5%;
 	}
 
 	.title>h1 {
@@ -523,10 +534,14 @@ input[type=file] {
 		width: 100%;
 		margin: 0;
 		padding: 30px;
-    }
+	}
+	
+	.jadwal>p {
+		font-size: 1em;
+	}
     
     .btn-daftar {
-        margin-top: 15px;
+        margin-top: 70px;
     }
 
     /* form */
@@ -586,7 +601,7 @@ input[type=file] {
 
     /* contact */
 	.contact-area {
-		margin-top: -80%;
+		margin-top: -50%;
 	}
 
 	.contact-text {
@@ -612,7 +627,7 @@ input[type=file] {
 	}
 
 	.contact-sosial {
-		margin-top: 90px;
+		margin-top: 0px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;

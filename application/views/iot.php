@@ -9,6 +9,7 @@
             id="header-img"
             src="<?php echo base_url().'assets/img/navicon.png' ?>"
             alt="ARA"
+            onclick="window.location='<?php echo base_url(); ?>';"
             />
     </div>
 <!--navbar-->    
@@ -49,8 +50,13 @@
                 <div class="exp">
                     <p>Kompetisi Ide Inovatif adalah sebuah cabang kegiatan ARA dimana dalam kegiatan ini menggunakan mekanisme pelaksanaan seperti Karya Tulis Ilmiah. Dalam kegiatan ini, peserta lomba diharapkan dapat menuangkan idenya pada topik Internet of Things dalam bentuk karya tulis ilmiah. Kompetisi ide inovatif ini ditujukan untuk mahasiswa aktif PTN/PTS se-Indonesia.</p>
                 </div>
+                <div class="title">
+                    <h1>Pelaksanaan</h1>
+                    <div class="title-border"></div>
+                </div>
                 <div class="jadwal">
-                    <p>Diisi Jadwal, Syarat, Dll. Bisa tulisan, kalo pengen bagus ya graphic</p>
+                    <p>Jadwal : - </p>
+                    <p>Syarat : - </p>
                 </div>
                 <div class="btn-daftar" onclick="openForm()">
                     <a>DAFTAR</a>

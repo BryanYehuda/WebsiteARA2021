@@ -9,6 +9,7 @@
             id="header-img"
             src="<?php echo base_url().'assets/img/navicon.png' ?>"
             alt="ARA"
+            onclick="window.location='<?php echo base_url(); ?>';"
             />
     </div>
 <!--navbar-->    
@@ -50,8 +51,13 @@
                 <div class="exp">
                     <p>Capture The Flag atau yang biasa disebut dengan CTF adalah sebuah percabangan lomba hacking mahasiswa tingkat nasional dari kegiatan ARA 2021. Peserta diminta untuk menemukan sebuah file yang telah disembunyikan sedemikian rupa yang selanjutnya akan disebut dengan “Flag”. Tujuan dari kompetisi ini adalah untuk mengumpulkan flag sebanyak mungkin dari soal yang telah diberikan.</p>
                 </div>
+                <div class="title">
+                    <h1>Pelaksanaan</h1>
+                    <div class="title-border"></div>
+                </div>
                 <div class="jadwal">
-                    <p>Diisi Jadwal, Syarat, Dll. Bisa tulisan, kalo pengen bagus ya graphic</p>
+                    <p>Jadwal : - </p>
+                    <p>Syarat : - </p>
                 </div>
                 <button class="btn-daftar" onclick="openForm()">
                     <a>DAFTAR</a>

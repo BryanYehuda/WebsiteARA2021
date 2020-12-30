@@ -7,6 +7,7 @@
             id="header-img"
             src="<?php echo base_url().'assets/img/navicon.png' ?>"
             alt="ARA"
+            onclick="window.location='<?php echo base_url(); ?>';"
             />
     </div>
 <!--navbar-->    

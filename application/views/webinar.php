@@ -9,6 +9,7 @@
             id="header-img"
             src="<?php echo base_url().'assets/img/navicon.png' ?>"
             alt="ARA"
+            onclick="window.location='<?php echo base_url(); ?>';"
             />
     </div>
 <!--navbar-->    
@@ -49,8 +50,13 @@
                 <div class="exp">
                     <p>Webinar ARA adalah kegiatan seminar online yang diadakan pada platform Zoom sekaligus sebagai acara pembuka pada rangkaian kegiatan ARA 2021. Webinar yang diselenggarakan oleh HMIT ITS ini akan menjadi webinar yang mengusung topik Internet of Things dan Cyber Security dimana kedua topik tersebut merupakan dua bidang yang difokuskan pada ARA 2021.</p>
                 </div>
+                <div class="title">
+                    <h1>Pelaksanaan</h1>
+                    <div class="title-border"></div>
+                </div>
                 <div class="jadwal">
-                    <p>Diisi Jadwal, Syarat, Dll. Bisa tulisan, kalo pengen bagus ya graphic</p>
+                    <p>Jadwal : - </p>
+                    <p>Syarat : - </p>
                 </div>
                 <button class="btn-daftar" onclick="openForm()">
                     <a>DAFTAR</a>
