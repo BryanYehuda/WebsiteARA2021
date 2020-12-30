@@ -2,6 +2,6 @@
 
 ![](https://github.com/BryanYehuda/WebsiteARA2020/blob/Sulthon/ara.gif)
 
-## Update : - fix layout
+## Update : Fix Putih
 
 ## 100% selesai
