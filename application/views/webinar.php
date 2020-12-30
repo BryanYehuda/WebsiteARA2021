@@ -69,7 +69,6 @@
         <div class="form-inside">        
             <form action="<?php echo base_url().'daftar/webinar' ?>" method="post" enctype="multipart/form-data">
                 <h3>Pendaftaran Webinar ARA 2021</h3>
-                <div class="white"></div>
                 <div class="row">
                     <div class="col">
                         <div class="form-group" >
@@ -98,8 +97,6 @@
                         <div id="buttons" class="form-group text-center">
                             <input type="button" name="btnCancel" class="btn btn-danger" value="Cancel" style="width: 40%;" onclick="openForm()"/>
                         </div>
-
-                        <div class="white2"></div>
 
                         <div class="form-x" onclick="openForm()">
                         </div>

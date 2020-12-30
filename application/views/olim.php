@@ -69,7 +69,6 @@
     <div class="form-area">
         <div class="form-inside">
             <form action="<?php echo base_url().'daftar/olimpiade' ?>" method="post" enctype="multipart/form-data">
-                <div class="white"></div>
                 <h3>Pendaftaran Olimpiade ARA 2021</h3>
                 <div class="row">
                     <div class="col">
@@ -172,8 +171,6 @@
                         <div id="buttons" class="form-group text-center">
                             <input type="button" name="btnCancel" class="btn btn-danger" value="Cancel" style="width: 40%;" onclick="openForm()"/>
                         </div>
-
-                        <div class="white2"></div>
 
                         <div class="form-x" onclick="openForm()">
                         </div>
