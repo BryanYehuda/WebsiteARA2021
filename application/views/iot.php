@@ -60,6 +60,7 @@
                 </div>
                 <div class="btn-daftar" onclick="openForm()">
                     <a>DAFTAR</a>
+                </div>
             </div>
         </div>
     </div>
@@ -103,6 +104,7 @@
                             <input type="text" name="line1" class="form-control" placeholder="ID Line" value="" required/>
 
                         </div>
+
                         <div class="form-group" >
                             <span>Anggota 2: </span>
                             <input type="text" name="nama2" class="form-control" placeholder="Member 2 Name" value="" required/>
