@@ -3,13 +3,74 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </html>
+
+<!-- mungkin bisa ditaruh di js lain :) -->
+
+<!-- ktm -->
 <script>
-// Add the following code if you want the name of the file appear on select
-$(".custom-file-input").on("change", function() {
+$(".ktm").on("change", function() {
   var fileName = $(this).val().split("\\").pop();
-  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+  $(this).siblings(".ktm-label").addClass("selected").html(fileName);
 });
 </script>
+<script>
+$(".ktm2").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".ktm-label2").addClass("selected").html(fileName);
+});
+</script>
+<script>
+$(".ktm3").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".ktm-label3").addClass("selected").html(fileName);
+});
+</script>
+
+<!-- skma -->
+<script>
+$(".skma").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".skma-label").addClass("selected").html(fileName);
+});
+</script>
+<script>
+$(".skma2").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".skma-label2").addClass("selected").html(fileName);
+});
+</script>
+<script>
+
+$(".skma3").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".skma-label3").addClass("selected").html(fileName);
+});
+</script>
+
+<!-- foto -->
+<script>
+$(".foto").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".foto-label").addClass("selected").html(fileName);
+});
+</script>
+<script>
+
+$(".foto2").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".foto-label2").addClass("selected").html(fileName);
+});
+</script>
+<script>
+
+$(".foto3").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".foto-label3").addClass("selected").html(fileName);
+});
+</script>
+
+<!-- mungkin bisa ditaruh di js lain :) -->
+
 <script>  
    $(document).ready(function(){  
       $('#tim').change(function(){  
