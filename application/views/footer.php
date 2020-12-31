@@ -7,18 +7,21 @@
 <!-- mungkin bisa ditaruh di js lain :) -->
 
 <!-- ktm -->
+
 <script>
 $(".ktm").on("change", function() {
   var fileName = $(this).val().split("\\").pop();
   $(this).siblings(".ktm-label").addClass("selected").html(fileName);
 });
 </script>
+
 <script>
 $(".ktm2").on("change", function() {
   var fileName = $(this).val().split("\\").pop();
   $(this).siblings(".ktm-label2").addClass("selected").html(fileName);
 });
 </script>
+
 <script>
 $(".ktm3").on("change", function() {
   var fileName = $(this).val().split("\\").pop();
@@ -27,20 +30,22 @@ $(".ktm3").on("change", function() {
 </script>
 
 <!-- skma -->
+
 <script>
 $(".skma").on("change", function() {
   var fileName = $(this).val().split("\\").pop();
   $(this).siblings(".skma-label").addClass("selected").html(fileName);
 });
 </script>
+
 <script>
 $(".skma2").on("change", function() {
   var fileName = $(this).val().split("\\").pop();
   $(this).siblings(".skma-label2").addClass("selected").html(fileName);
 });
 </script>
-<script>
 
+<script>
 $(".skma3").on("change", function() {
   var fileName = $(this).val().split("\\").pop();
   $(this).siblings(".skma-label3").addClass("selected").html(fileName);
@@ -48,21 +53,22 @@ $(".skma3").on("change", function() {
 </script>
 
 <!-- foto -->
+
 <script>
 $(".foto").on("change", function() {
   var fileName = $(this).val().split("\\").pop();
   $(this).siblings(".foto-label").addClass("selected").html(fileName);
 });
 </script>
-<script>
 
+<script>
 $(".foto2").on("change", function() {
   var fileName = $(this).val().split("\\").pop();
   $(this).siblings(".foto-label2").addClass("selected").html(fileName);
 });
 </script>
-<script>
 
+<script>
 $(".foto3").on("change", function() {
   var fileName = $(this).val().split("\\").pop();
   $(this).siblings(".foto-label3").addClass("selected").html(fileName);

@@ -572,12 +572,6 @@ input[type=file] {
 		display: none;
 	}
 
-	.btnContactCancel {
-		width: 100%;
-		background: grey;
-		text-align: center;
-	}
-
     /* contact */
 	.contact-area {
 		margin-top: -50%;

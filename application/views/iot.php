@@ -60,7 +60,6 @@
                 </div>
                 <div class="btn-daftar" onclick="openForm()">
                     <a>DAFTAR</a>
-                </div>  
             </div>
         </div>
     </div>
@@ -148,6 +147,7 @@
                             <label class="custom-file-label form-control ktm-label3" for="ktm3">KTM 3</label>
                             <span id="ktm3-size"></span>
                         </div>
+
                         <div class="form-group">
                             <span>Surat Keterangan Siswa/wi atau Mahasiswa/wi: </span>
                             <input type="file" id="surat1" name="surat1" class="form-control custom-file-input skma" onchange="return fileValidation('surat1')" required hidden/>
@@ -160,16 +160,12 @@
                             <label class="custom-file-label form-control skma-label3" for="surat3">SKMA 3</label>
                             <span id="surat3-size"></span>
                         </div>
-                        <!-- <div class="form-group">
-                            <span>Bukti Pembayaran: </span>
-                            <input type="file" id="bayar" name="bayar" class="form-control" onchange="return fileValidation('bayar')" required/>
-                            <span id="bayar-size"></span>
-                        </div> -->
+
                         <div id="buttons" class="form-group text-center">
-                            <input type="submit" name="btnSubmit" class="btn btn-primary" value="Submit" style="width: 40%;"/>
+                            <input type="submit" name="btnSubmit" class="btn btn-primary" value="Submit" style="width: 40%; border-radius: 25px;"/>
                         </div>
                         <div id="buttons" class="form-group text-center">
-                            <input type="button" name="btnCancel" class="btn btn-danger" value="Cancel" style="width: 40%;" onclick="openForm()"/>
+                            <input type="button" name="btnCancel" class="btn btn-danger" value="Cancel" style="width: 40%; border-radius: 25px;" onclick="openForm()"/>
                         </div>
 
                         <div class="form-x" onclick="openForm()">
@@ -180,6 +176,7 @@
         </div>
     </div>
 </section>
+
 <!-- contact -->
 <section id="contact" class="contact-area">
   <div class="contact-container">

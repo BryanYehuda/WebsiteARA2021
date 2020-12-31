@@ -1,0 +1,138 @@
+/*global var*/
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@100;200;300;400&display=swap');
+
+html,
+body {
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: inherit;
+}
+
+:root {
+	--color-grey: #999999;
+	--color-darkblue: #5e69ac;
+	--color-darkerblue: #454d82;
+}
+
+ul,
+nav {
+	list-style: none;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* main */
+
+.sukses-area {
+    background-image: url(../assets/img/bgsuccess.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.sukses-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    border-radius: 25px;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    height: 600px;
+}
+
+.img-area {
+    height: 50%;
+    width: 70vw;
+    margin-top: 5%;
+}
+
+.img-area>img {
+    width: 200px;
+}
+
+.text-area {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text-area>h1 {
+    margin-top: -7%;
+    font-family: 'Oswald';
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.btn-daftar {
+	width: 40%;
+	background: -webkit-linear-gradient(left, #5e69ac, #6fb2e2);
+	color: white;
+	padding: 8px 0;
+	text-align: center;
+	display: inline-block;
+	border-radius: 25px;
+}
+
+.btn-daftar:hover {
+	background: -webkit-linear-gradient(left, #7783D1, #7BC3F7);
+	transition: all 0.2s;
+}
+
+.btn-daftar>a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.1em;
+	letter-spacing: 00.05em;
+	font-family: 'Alata';
+}
+
+@media (max-width: 50em) {
+    .sukses-card {
+        height: 500px;
+        width: 80vw;
+    }
+
+    .img-area>img {
+        margin-top: 5vh;
+        width: 130px;
+    }
+
+    .text-area>h1 {
+        font-size: 1.5em;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .btn-daftar {
+        padding: 4px;
+        font-size: 0.8em;
+    }
+}
+
+

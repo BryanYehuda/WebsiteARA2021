@@ -1,8 +1,10 @@
 <!-- CSS Link here -->
+
 <link href="<?php echo base_url().'assets/form.css' ?>" rel="stylesheet">
 
 
 <!-- nav -->
+
 <header id="header">
   <div class="logo">
        <img
@@ -12,7 +14,9 @@
             onclick="window.location='<?php echo base_url(); ?>';"
             />
     </div>
-<!--navbar-->    
+
+<!--navbar-->
+
   <nav id="nav-bar">  
   <ul class="nav-big">
       <li><a class="nav-link" href="<?php echo base_url(); ?>">Home</a></li>    
@@ -92,10 +96,10 @@
                             <span id="bayar-size"></span>
                         </div>
                         <div id="buttons" class="form-group text-center">
-                            <input type="submit" name="btnSubmit" class="btn btn-primary" value="Submit" style="width: 40%;"/>
+                            <input type="submit" name="btnSubmit" class="btn btn-primary" value="Submit" style="width: 40%;  border-radius: 25px;"/>
                         </div>
                         <div id="buttons" class="form-group text-center">
-                            <input type="button" name="btnCancel" class="btn btn-danger" value="Cancel" style="width: 40%;" onclick="openForm()"/>
+                            <input type="button" name="btnCancel" class="btn btn-danger" value="Cancel" style="width: 40%; border-radius: 25px;" onclick="openForm()"/>
                         </div>
 
                         <div class="form-x" onclick="openForm()">
@@ -109,6 +113,7 @@
 </section>
 
 <!-- contact -->
+
 <section id="contact" class="contact-area">
   <div class="contact-container">
     <div class="contact-text">
@@ -145,4 +150,5 @@
 </section>
 
 <!-- SCRIPT -->
+
 <script src="<?php echo base_url().'assets/form.js' ?>"></script>

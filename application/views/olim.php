@@ -12,6 +12,7 @@
             onclick="window.location='<?php echo base_url(); ?>';"
             />
     </div>
+
 <!--navbar-->    
   <nav id="nav-bar">  
   <ul class="nav-big">
@@ -34,7 +35,6 @@
         <div class="line3"></div>
     </div>
 </header>
-
 
 <!-- form -->
 <section id="ctf" class="ctf-form">
@@ -166,10 +166,10 @@
                             <span id="bayar-size"></span>
                         </div>
                         <div id="buttons" class="form-group text-center">
-                            <input type="submit" name="btnSubmit" class="btn btn-primary" value="Submit" style="width: 40%;"/>
+                            <input type="submit" name="btnSubmit" class="btn btn-primary" value="Submit" style="width: 40%; border-radius: 25px;"/>
                         </div>
                         <div id="buttons" class="form-group text-center">
-                            <input type="button" name="btnCancel" class="btn btn-danger" value="Cancel" style="width: 40%;" onclick="openForm()"/>
+                            <input type="button" name="btnCancel" class="btn btn-danger" value="Cancel" style="width: 40%; border-radius: 25px;" onclick="openForm()"/>
                         </div>
 
                         <div class="form-x" onclick="openForm()">

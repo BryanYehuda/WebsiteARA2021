@@ -10,7 +10,9 @@
             onclick="window.location='<?php echo base_url(); ?>';"
             />
     </div>
-<!--navbar-->    
+
+<!--navbar-->
+    
   <nav id="nav-bar">  
     <ul class="nav-big">
       <li><a class="nav-link" href=#home>Home</a></li>    

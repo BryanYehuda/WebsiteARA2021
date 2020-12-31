@@ -1,15 +1,20 @@
-<div class="container contact-form">
-    <div class="contact-image">
-        <img style="padding-top: 4rem;" src="<?php echo base_url().'assets/img/logo.png' ?>" alt="rocket_contact" />
-    </div>
-    
-    <!-- <h3>Website Pendaftaran ARA 2021</h3> -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12" align="center" style="margin-bottom: 4rem; padding-top: 4rem;">
-                <h1>Pendaftaran Sukses!</h1>
-                <p>Klik <a href="<?php echo base_url()?>"> disini </a> untuk kembali ke beranda.</p>
+<!-- CSS Link here -->
+<link href="<?php echo base_url().'assets/sukses.css' ?>" rel="stylesheet">
+
+<section id="sukses" class="sukses-area">
+    <div class="sukses-card">
+        <div class="img-area">
+            <img
+                id="sukses-img"
+                src="<?php echo base_url().'assets/img/medal.png' ?>"
+                alt="Sukses Medal"
+                />
+        </div>
+        <div class="text-area">
+            <h1>Selamat,<br/> anda sukses melakukan pendaftaran!</h1>
+            <div class="btn-daftar">
+                <a href="<?php echo base_url(); ?>">BACK</a>
             </div>
         </div>
     </div>
-</div>
+</section>
