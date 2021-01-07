@@ -5805,7 +5805,7 @@ button.btn-floating {
 .dropdown-content li>a,
 .dropdown-content li>span {
     font-size: 16px;
-    color: #ffffff;
+    color: #000000;
     display: block;
     line-height: 22px;
     padding: 14px 16px;
@@ -7516,8 +7516,8 @@ select:disabled {
 .select-dropdown li.disabled,
 .select-dropdown li.disabled>span,
 .select-dropdown li.optgroup {
-    color: #fff;
-    background-color: #000;
+    color: #000000;
+    background-color: #ccc;
 }
 
 body.keyboard-focused .select-dropdown.dropdown-content li:focus {
