@@ -10,8 +10,8 @@
   <title>ARA 2021 HMIT ITS</title>
   <meta name="description" content="ARA 2021 - For A Better Future!" />
   <meta name="theme-color" content="#2bdcfb" />
-  <link rel="apple-touch-icon" href="<?php echo base_url(); ?>assets/images/logo.png">
-  <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/logo.png">
+  <link rel="apple-touch-icon" href="<?php echo base_url(); ?>assets/images/logo_ara.png">
+  <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/logo_ara.png">
   <!-- Meta End -->
 
   <!-- Link Start -->

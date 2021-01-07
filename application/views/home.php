@@ -13,7 +13,7 @@
             </ul>
         </div>
 
-        <div class="content-designed background">
+        <div class="content-designed">
             <!--Content Here-->
             Konten
         </div>
