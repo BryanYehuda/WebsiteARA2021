@@ -1,7 +1,11 @@
 <!--Footer Starts-->
 <footer class="page-footer footer-designed">
-  <!-- <div class="footer-copyright black"> -->
-  <img class="responsive-img" style="position:absolute; left:0; max-width:150%" src="<?php echo base_url(); ?>assets/images/Footer.png">
+  <img class="responsive-img" style="position:absolute; left:0; width:200%" src="<?php echo base_url(); ?>assets/images/Footer.png">
+  <div class="row">
+    <div class=" col s3">
+      Copyright ARA 2021
+    </div>
+  </div>
 </footer>
 <!--Footer Ends-->
 
