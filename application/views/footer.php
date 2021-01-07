@@ -1,6 +1,6 @@
 <!--Footer Starts-->
 <footer class="page-footer footer-designed">
-  <img class="responsive-img" style="position:absolute; left:0; width:200%" src="<?php echo base_url();?> assets/images/footer.png">
+  <img class="responsive-img" style="position:absolute; left:0; width:200%" src="<?php echo base_url();?>assets/images/footer.png">
 </footer>
 <!--Footer Ends-->
 
