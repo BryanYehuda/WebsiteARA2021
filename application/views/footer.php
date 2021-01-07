@@ -1,7 +1,7 @@
 <!--Footer Starts-->
 <footer class="page-footer">
   <div class="row">
-    <img class="responsive-img" style="left:0; width:400%;" src="<?php echo base_url(); ?>assets/images/footer_taskbar.png">
+    <img class="responsive-img" style="left:0; width:100%; position:absolute;" src="<?php echo base_url(); ?>assets/images/footer_taskbar.png">
   </div>
 </footer>
 <!--Footer Ends-->
