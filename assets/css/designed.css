@@ -1,6 +1,6 @@
 body {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 .file-field .file-path-wrapper {
@@ -12,7 +12,14 @@ body {
     margin-bottom: 1%;
 }
 
+.footer-designed {
+    left: 0;
+    position: absolute;
+}
+
+
 /* On screens that are 992px wide or less */
+
 @media only screen and (max-width: 992px) {
     .container-designed {
         padding: 0 3%;
@@ -20,7 +27,9 @@ body {
     }
 }
 
+
 /* On screens that are 992px wide or less */
+
 @media only screen and (max-width: 600px) {
     .container-designed {
         padding: 0 1%;
@@ -37,15 +46,14 @@ body {
 }
 
 nav .font-color-header-designed {
-    color:black;
+    color: black;
 }
 
 .required-star-designed {
     /* color:rgb(94,105,172); */
     /* color:rgb(112,178,226); */
-    color:rgb(77,126,159);
+    color: rgb(77, 126, 159);
 }
-
 
 .upload-button-designed {
     color: black;
@@ -76,14 +84,15 @@ nav .font-color-header-designed {
 
 .upload-button-designed .upload-button-label-designed {
     font-size: 24px;
-    color:black;
-    padding:5px;
+    color: black;
+    padding: 5px;
     vertical-align: middle;
 }
 
-/* On screens that are 992px wide or less */
-@media only screen and (max-width: 992px) {
 
+/* On screens that are 992px wide or less */
+
+@media only screen and (max-width: 992px) {
     .upload-button-designed {
         color: black;
         width: 148px;
@@ -93,7 +102,6 @@ nav .font-color-header-designed {
         border-radius: 4px;
         text-align: top;
     }
-
     .upload-button-designed:hover {
         color: black;
         width: 148px;
@@ -103,7 +111,6 @@ nav .font-color-header-designed {
         border-radius: 4px;
         text-align: super;
     }
-
     .upload-button-designed .upload-button-image-designed {
         width: 22px;
         max-height: 21px;
@@ -111,16 +118,17 @@ nav .font-color-header-designed {
         padding-bottom: 5px;
         vertical-align: middle;
     }
-
     .upload-button-designed .upload-button-label-designed {
         font-size: 18px;
-        color:black;
-        padding:4px;
+        color: black;
+        padding: 4px;
         vertical-align: middle;
     }
 }
 
+
 /* On screens that are 600px wide or less */
+
 @media only screen and (max-width: 600px) {
     .upload-button-designed {
         color: black;
@@ -131,7 +139,6 @@ nav .font-color-header-designed {
         border-radius: 4px;
         text-align: center;
     }
-
     .upload-button-designed:hover {
         color: black;
         width: 117px;
@@ -141,7 +148,6 @@ nav .font-color-header-designed {
         border-radius: 4px;
         text-align: center;
     }
-
     .upload-button-designed .upload-button-image-designed {
         width: 18px;
         max-height: 17px;
@@ -149,11 +155,10 @@ nav .font-color-header-designed {
         padding-top: 5px;
         vertical-align: top;
     }
-
     .upload-button-designed .upload-button-label-designed {
         font-size: 14px;
-        color:black;
-        padding:0;
+        color: black;
+        padding: 0;
         vertical-align: super;
         line-height: 0;
     }
@@ -176,7 +181,9 @@ div .apple-window-designed {
     width: 80%;
 }
 
+
 /* On screens that are 992px wide or less */
+
 @media only screen and (max-width: 992px) {
     div .apple-window-designed {
         margin: 3% auto 0% auto;
@@ -185,7 +192,9 @@ div .apple-window-designed {
     }
 }
 
+
 /* On screens that are 992px wide or less */
+
 @media only screen and (max-width: 600px) {
     div .apple-window-designed {
         margin: 3% auto 0% auto;
@@ -228,19 +237,19 @@ div .apple-window-designed .content-designed {
 }
 
 div .apple-window-designed .content-designed .form-title-designed {
-    font-size:calc(6px + 0.75vw + 1.25vh);
+    font-size: calc(6px + 0.75vw + 1.25vh);
     /* font-weight: bold; */
 }
 
 div .apple-window-designed .content-designed .form-input-title-designed {
-    font-size:calc(6px + 0.55vw + 1.1vh);
+    font-size: calc(6px + 0.55vw + 1.1vh);
     /* font-size:calc(11px + 1vw); */
     margin: 0;
     /* font-weight: bold; */
 }
 
 div .apple-window-designed .content-designed .form-input-designed {
-    font-size:calc(6px + 0.5vw + 1vh);
+    font-size: calc(6px + 0.5vw + 1vh);
     padding: 0px 4px;
     background-color: white;
     box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
@@ -253,7 +262,7 @@ div .apple-window-designed .content-designed .form-input-designed {
 }
 
 div .apple-window-designed .content-designed .form-input-designed:focus {
-    font-size:calc(6px + 0.5vw + 1vh);
+    font-size: calc(6px + 0.5vw + 1vh);
     padding: 0px 4px;
     background-color: white;
     box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
