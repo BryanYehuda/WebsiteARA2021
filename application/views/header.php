@@ -20,6 +20,10 @@
     media="screen,projection" />
   <link href="<?php echo base_url(); ?>assets/css/designed.css" type="text/css" rel="stylesheet"
     media="screen,projection" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <!-- <link href="<?php echo base_url(); ?>assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
   <!-- <link rel="manifest" href="<?php echo base_url(); ?>assets/manifest.json"> -->
   <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/favicon.ico" type="image/x-icon">
