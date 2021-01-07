@@ -1,5 +1,5 @@
 <!--Footer Starts-->
-<footer class="page-footer">
+<footer class="page-footer footer-designed">
   <!-- <div class="footer-copyright black"> -->
   <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/Footer.png">
 </footer>

@@ -11,6 +11,11 @@ p {
     font-size: 20px;
 }
 
+.footer-designed {
+    left: 0;
+    position: absolute;
+}
+
 .sidenav-trigger {
     color: #2bdcfb;
 }
