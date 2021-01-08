@@ -11,12 +11,14 @@
 <script src="<?php echo base_url(); ?>assets/js/materialize.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/init.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <!-- Script End -->
 
 </body>
 
 </html>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<script>AOS.init();</script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('select');

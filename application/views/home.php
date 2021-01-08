@@ -2,7 +2,7 @@
 
     <div class="apple-window-designed">
 
-        <div class="data-aos="zoom-in>
+        <div data-aos="zoom-in">
 
             <div class="header-designed">
                 <ul style="margin: 0;">
