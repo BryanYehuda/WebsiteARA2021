@@ -16,14 +16,10 @@
 
   <!-- Link Start -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="<?php echo base_url(); ?>assets/css/materialize.css" type="text/css" rel="stylesheet"
-    media="screen,projection" />
-  <link href="<?php echo base_url(); ?>assets/css/designed.css" type="text/css" rel="stylesheet"
-    media="screen,projection" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link href="<?php echo base_url(); ?>assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="<?php echo base_url(); ?>assets/css/designed.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- <link href="<?php echo base_url(); ?>assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
   <!-- <link rel="manifest" href="<?php echo base_url(); ?>assets/manifest.json"> -->
   <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/favicon.ico" type="image/x-icon">
@@ -38,14 +34,13 @@
   <nav class="color-blue-designed" role="navigation">
     <div class="nav-wrapper container-designed">
       <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img"
-          src="<?php echo base_url(); ?>assets/images/logo_black_ara_2.png" width="40" height="auto"
-          style="padding-top: 7.5px;"><img class="responsive-img"
-          src="<?php echo base_url(); ?>assets/images/logo_black_ara.png" width="80" height="auto"
-          style="padding-top: 7.5px;"></a>
+        src="<?php echo base_url(); ?>assets/images/logo_black_ara_2.png" width="40" height="auto"
+        style="padding-top: 7.5px;"><img class="responsive-img"
+        src="<?php echo base_url(); ?>assets/images/logo_black_ara.png" width="80" height="auto" style="padding-top: 7.5px;">
+      </a>
       <ul class="right hide-on-med-and-down">
         <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>">HOME</a></li>
-        <li><a class="waves-effect font-color-header-designed"
-            href="<?php echo base_url(); ?>pendaftaran">PENDAFTARAN</a></li>
+        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>pendaftaran">PENDAFTARAN</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
