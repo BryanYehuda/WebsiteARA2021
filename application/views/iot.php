@@ -414,9 +414,9 @@
                             <div>
                             <!-- Poster End -->
                             <!-- Surat End -->
-                            <div class="row">
+                            <div class="row animate__animated animate__bounce animate__infinite animate__slower animate__delay-1s">
                                 <div class="col s12 l12">
-                                    <br>
+                                    <br><br><br>
                                     <b><span class="form-input-title-designed"><span class="required-star-designed">*</span>Wajib Diisi</span></b>
                                 </div>
                             </div>
