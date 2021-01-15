@@ -57,7 +57,7 @@
                                     <span class="form-input-title-designed">Nama Lengkap Anggota 2: <span class="required-star-designed">*</span></span>
                                 </div>
                                 <div class="col s12 l6">
-                                    <input class="form-input-designed" id="nama_anggota_kedua" name="nama3" class="validate" required>
+                                    <input class="form-input-designed" id="nama_anggota_kedua" name="nama3" class="validate">
                                 </div>
                             </div>
                             <!-- Nama End -->
@@ -88,7 +88,7 @@
                                     <span class="form-input-title-designed">NIM Anggota 2: <span class="required-star-designed">*</span></span>
                                 </div>
                                 <div class="col s12 l6">
-                                    <input class="form-input-designed" id="studentid_kedua" name="id3" class="validate" required>
+                                    <input class="form-input-designed" id="studentid_kedua" name="id3" class="validate">
                                 </div>
                             </div>
                             <!-- NIM End -->
@@ -188,7 +188,7 @@
                                     <span class="form-input-title-designed">Email Anggota 2: <span class="required-star-designed">*</span></span>
                                 </div>
                                 <div class="col s12 l6">
-                                    <input class="form-input-designed" id="email_kedua" name="email3" type="email" class="validate" required>
+                                    <input class="form-input-designed" id="email_kedua" name="email3" type="email" class="validate">
                                 </div>
                             </div>
                             <!-- Email End -->

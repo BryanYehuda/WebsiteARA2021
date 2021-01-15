@@ -292,11 +292,12 @@ class Welcome extends CI_Controller {
 
 	function upload($cat, $tim, $form, $id, $tipe)
 	{
+	    $nama = str_replace(".","-",$tim);
 		$path = './uploads/'.$cat.'/'.$tim.'/'.$tipe;
 		if (!is_dir($path)) {
 			mkdir($path, 0777, TRUE);
 		}
-		$config['file_name']			= $tim.'-'.$id.'-'.$tipe;
+		$config['file_name']			= $nama.'-'.$id.'-'.$tipe;
 		$config['upload_path']          = $path;
 		$config['allowed_types']        = 'gif|jpg|png|pdf';
 		// $config['max_size']             = 10000;
@@ -309,24 +310,25 @@ class Welcome extends CI_Controller {
 		{
 			$error = $this->upload->display_errors();
 
-			echo $error;
+			$img = NULL;
 		}
 		else
 		{
 
 			$img = $this->upload->data('file_name');
 
-			return $img;
 		}
+		return $img;
 	}
 
 	function upload_bayar($cat, $tim)
 	{
+	    $nama = str_replace(".","-",$tim);
 		$path = './uploads/'.$cat.'/'.$tim;
 		if (!is_dir($path)) {
 			mkdir($path, 0777, TRUE);
 		}
-		$config['file_name']			= 'bukti_bayar-'.$tim;
+		$config['file_name']			= 'bukti_bayar-'.$nama;
 		$config['upload_path']          = $path;
 		$config['allowed_types']        = 'gif|jpg|png|pdf';
 		// $config['max_size']             = 10000;
@@ -339,7 +341,7 @@ class Welcome extends CI_Controller {
 		{
 			$error = $this->upload->display_errors();
 
-			echo $error;
+			$img = NULL;
 		}
 		else
 		{
