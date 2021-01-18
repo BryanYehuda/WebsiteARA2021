@@ -284,9 +284,9 @@
                                 <div class="col s12 l6">
                                     <div class="file-field input-field">
                                         <div class="btn upload-button-designed">
-                                            <input type="file" id="ktm2" name="ktm2"
-                                                onchange="return fileValidation('ktm2')">
-                                            <label for="ktm2">
+                                            <input type="file" id="ktm3" name="ktm3"
+                                                onchange="return fileValidation('ktm3')">
+                                            <label for="ktm3">
                                                 <img class="upload-button-image-designed"
                                                     src="<?php echo base_url('assets/images/upload_black.png') ?>"
                                                     style="max-height: 90%;">
@@ -295,7 +295,7 @@
                                         </div>
                                         <div class="file-path-wrapper">
                                             <input class="file-path validate" type="text">
-                                            <span id="ktm2-size"></span>
+                                            <span id="ktm3-size"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -385,7 +385,7 @@
                             <div class="row">
                                 <div class="col s12 l12">
                                     <span class="form-input-title-designed">Poster didownload di 
-                                    <a href="https://drive.google.com/file/d/1hW0SzI6lzE0cfnFkTViFMMQ6Y_DJvs2Z/view?usp=sharing">sini</a></span>
+                                    <a href="https://drive.google.com/file/d/1hW0SzI6lzE0cfnFkTViFMMQ6Y_DJvs2Z/view?usp=sharing" target="_blank">sini</a></span>
                                 </div>
                             </div>
                             <div class="row">
@@ -412,11 +412,17 @@
                                     </div>
                                 </div>
                             <div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
                             <!-- Poster End -->
                             <!-- Surat End -->
                             <div class="row animate__animated animate__bounce animate__infinite animate__slower animate__delay-1s">
                                 <div class="col s12 l12">
-                                    <br><br><br>
+                                    <br>
                                     <b><span class="form-input-title-designed"><span class="required-star-designed">*</span>Wajib Diisi</span></b>
                                 </div>
                             </div>
