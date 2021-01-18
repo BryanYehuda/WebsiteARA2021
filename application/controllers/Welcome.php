@@ -19,7 +19,7 @@ class Welcome extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	function __construct(){
-		parent::__construct();		
+		parent::__construct();
 		$this->load->model('m_data');
 		$this->load->library('upload');
 	}
@@ -53,10 +53,10 @@ class Welcome extends CI_Controller {
 
 	function submit_webinar()
 	{
-		$nama		= $this->input->post('nama');
-		$institusi	= $this->input->post('institusi');
-		$email		= $this->input->post('email');
-		$no_wa		= $this->input->post('wa');
+		$nama		= htmlspecialchars($this->input->post('nama'));
+		$institusi	= htmlspecialchars($this->input->post('institusi'));
+		$email		= htmlspecialchars($this->input->post('email'));
+		$no_wa		= htmlspecialchars($this->input->post('wa'));
 
 		$path = './uploads/webinar/';
 		if (!is_dir($path)) {
@@ -105,34 +105,34 @@ class Welcome extends CI_Controller {
 
 	function submit_iot()
 	{
-		$tim 		= $this->input->post('nama_tim');
-		$id1 		= $this->input->post('id1');
-		$id2 		= $this->input->post('id2');
-		$id3 		= $this->input->post('id3');
+		$tim 		= htmlspecialchars($this->input->post('nama_tim'));
+		$id1 		= htmlspecialchars($this->input->post('id1'));
+		$id2 		= htmlspecialchars($this->input->post('id2'));
+		$id3 		= htmlspecialchars($this->input->post('id3'));
 
 		$data1 = array(
 			'nama_tim' => $tim,
-			'nama1' => $this->input->post('nama1'),
+			'nama1' => htmlspecialchars($this->input->post('nama1')),
 			'id1' => $id1,
-			'gender1' => $this->input->post('gender1'),
-			'email1' => $this->input->post('email1'),
-			'alamat' => $this->input->post('alamat1'),
-			'no_wa' => $this->input->post('wa1'),
-			'line' => $this->input->post('line1'),
-			'nama2' => $this->input->post('nama2'),
+			'gender1' => htmlspecialchars($this->input->post('gender1')),
+			'email1' => htmlspecialchars($this->input->post('email1')),
+			'alamat' => htmlspecialchars($this->input->post('alamat1')),
+			'no_wa' => htmlspecialchars($this->input->post('wa1')),
+			'line' => htmlspecialchars($this->input->post('line1')),
+			'nama2' => htmlspecialchars($this->input->post('nama2')),
 			'id2' => $id2,
-			'gender2' => $this->input->post('gender2'),
-			'email2' => $this->input->post('email2'),
-			'nama3' => $this->input->post('nama3'),
+			'gender2' => htmlspecialchars($this->input->post('gender2')),
+			'email2' => htmlspecialchars($this->input->post('email2')),
+			'nama3' => htmlspecialchars($this->input->post('nama3')),
 			'id3' => $id3,
-			'gender3' => $this->input->post('gender3'),
-			'email3' => $this->input->post('email3'),
-			'ktm1' => $this->upload('iot', $tim, 'ktm1', $id1, 'ktm'),
-			'ktm2' => $this->upload('iot', $tim, 'ktm2', $id2, 'ktm'),
-			'ktm3' => $this->upload('iot', $tim, 'ktm3', $id3, 'ktm'),
-			'surat1' => $this->upload('iot', $tim, 'surat1', $id1, 'surat'),
-			'surat2' => $this->upload('iot', $tim, 'surat2', $id2, 'surat'),
-			'surat3' => $this->upload('iot', $tim, 'surat3', $id3, 'surat'),
+			'gender3' => htmlspecialchars($this->input->post('gender3')),
+			'email3' => htmlspecialchars($this->input->post('email3')),
+			'ktm1' => htmlspecialchars($this->upload('iot', $tim, 'ktm1', $id1, 'ktm')),
+			'ktm2' => htmlspecialchars($this->upload('iot', $tim, 'ktm2', $id2, 'ktm')),
+			'ktm3' => htmlspecialchars($this->upload('iot', $tim, 'ktm3', $id3, 'ktm')),
+			'surat1' => htmlspecialchars($this->upload('iot', $tim, 'surat1', $id1, 'surat')),
+			'surat2' => htmlspecialchars($this->upload('iot', $tim, 'surat2', $id2, 'surat')),
+			'surat3' => htmlspecialchars($this->upload('iot', $tim, 'surat3', $id3, 'surat')),
 		);
 
 		$data2 = array(
@@ -157,28 +157,28 @@ class Welcome extends CI_Controller {
 
 	function submit_olimpiade()
 	{
-		$tim 		= $this->input->post('nama_tim');
-		$id1 		= $this->input->post('id1');
-		$id2 		= $this->input->post('id2');
-		$id3 		= $this->input->post('id3');
+		$tim 		= htmlspecialchars($this->input->post('nama_tim'));
+		$id1 		= htmlspecialchars($this->input->post('id1'));
+		$id2 		= htmlspecialchars($this->input->post('id2'));
+		$id3 		= htmlspecialchars($this->input->post('id3'));
 
 		$data1 = array(
 			'nama_tim' => $tim,
-			'nama1' => $this->input->post('nama1'),
+			'nama1' => htmlspecialchars($this->input->post('nama1')),
 			'id1' => $id1,
-			'gender1' => $this->input->post('gender1'),
-			'email1' => $this->input->post('email1'),
-			'alamat' => $this->input->post('alamat1'),
-			'no_wa' => $this->input->post('wa1'),
-			'line' => $this->input->post('line1'),
-			'nama2' => $this->input->post('nama2'),
+			'gender1' => htmlspecialchars($this->input->post('gender1')),
+			'email1' => htmlspecialchars($this->input->post('email1')),
+			'alamat' => htmlspecialchars($this->input->post('alamat1')),
+			'no_wa' => htmlspecialchars($this->input->post('wa1')),
+			'line' => htmlspecialchars($this->input->post('line1')),
+			'nama2' => htmlspecialchars($this->input->post('nama2')),
 			'id2' => $id2,
-			'gender2' => $this->input->post('gender2'),
-			'email2' => $this->input->post('email2'),
-			'nama3' => $this->input->post('nama3'),
+			'gender2' => htmlspecialchars($this->input->post('gender2')),
+			'email2' => htmlspecialchars($this->input->post('email2')),
+			'nama3' => htmlspecialchars($this->input->post('nama3')),
 			'id3' => $id3,
-			'gender3' => $this->input->post('gender3'),
-			'email3' => $this->input->post('email3'),
+			'gender3' => htmlspecialchars($this->input->post('gender3')),
+			'email3' => htmlspecialchars($this->input->post('email3')),
 			'ktm1' => $this->upload('olimpiade', $tim, 'ktm1', $id1, 'ktm'),
 			'ktm2' => $this->upload('olimpiade', $tim, 'ktm2', $id2, 'ktm'),
 			'ktm3' => $this->upload('olimpiade', $tim, 'ktm3', $id3, 'ktm'),
@@ -210,27 +210,27 @@ class Welcome extends CI_Controller {
 
 	function submit_ctf()
 	{
-		$tim 		= $this->input->post('nama_tim');
-		$id1 		= $this->input->post('id1');
-		$id2 		= $this->input->post('id2');
-		$id3 		= $this->input->post('id3');
+		$tim 		= htmlspecialchars($this->input->post('nama_tim'));
+		$id1 		= htmlspecialchars($this->input->post('id1'));
+		$id2 		= htmlspecialchars($this->input->post('id2'));
+		$id3 		= htmlspecialchars($this->input->post('id3'));
 
 		$data1 = array(
 			'nama_tim' => $tim,
-			'nama1' => $this->input->post('nama1'),
+			'nama1' => htmlspecialchars($this->input->post('nama1')),
 			'id1' => $id1,
-			'gender1' => $this->input->post('gender1'),
-			'email1' => $this->input->post('email1'),
-			'no_wa' => $this->input->post('wa1'),
-			'line' => $this->input->post('line1'),
-			'nama2' => $this->input->post('nama2'),
+			'gender1' => htmlspecialchars($this->input->post('gender1')),
+			'email1' => htmlspecialchars($this->input->post('email1')),
+			'no_wa' => htmlspecialchars($this->input->post('wa1')),
+			'line' => htmlspecialchars($this->input->post('line1')),
+			'nama2' => htmlspecialchars($this->input->post('nama2')),
 			'id2' => $id2,
-			'gender2' => $this->input->post('gender2'),
-			'email2' => $this->input->post('email2'),
-			'nama3' => $this->input->post('nama3'),
+			'gender2' => htmlspecialchars($this->input->post('gender2')),
+			'email2' => htmlspecialchars($this->input->post('email2')),
+			'nama3' => htmlspecialchars($this->input->post('nama3')),
 			'id3' => $id3,
-			'gender3' => $this->input->post('gender3'),
-			'email3' => $this->input->post('email3'),
+			'gender3' => htmlspecialchars($this->input->post('gender3')),
+			'email3' => htmlspecialchars($this->input->post('email3')),
 			'ktm1' => $this->upload('ctf', $tim, 'ktm1', $id1, 'ktm'),
 			'ktm2' => $this->upload('ctf', $tim, 'ktm2', $id2, 'ktm'),
 			'ktm3' => $this->upload('ctf', $tim, 'ktm3', $id3, 'ktm'),
