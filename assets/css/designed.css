@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.file-field .file-path-wrapper {
+    width: auto;
+}
+
+.container-designed {
+    padding: 0 5%;
+    margin-bottom: 1%;
+}
+
+.footer-designed {
+    left: 0;
+    position: absolute;
+}
+
+
+/* On screens that are 992px wide or less */
+
+@media only screen and (max-width: 992px) {
+    .container-designed {
+        padding: 0 3%;
+        margin-bottom: 1%;
+    }
+}
+
+
+/* On screens that are 992px wide or less */
+
+@media only screen and (max-width: 600px) {
+    .container-designed {
+        padding: 0 1%;
+        margin-bottom: 1%;
+    }
+}
+
+.color-blue-designed {
+    background-color: #70B2E2;
+}
+
+.page-footer .footer-copyright {
+    background-color: #70B2E2;
+}
+
+nav .font-color-header-designed {
+    color: black;
+}
+
+.required-star-designed {
+    /* color:rgb(94,105,172); */
+    /* color:rgb(112,178,226); */
+    color: rgb(77, 126, 159);
+}
+
+.upload-button-designed {
+    color: black;
+    width: 178px;
+    max-height: 47px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.upload-button-designed:hover {
+    color: black;
+    width: 178px;
+    max-height: 47px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.upload-button-designed .upload-button-image-designed {
+    width: 28px;
+    max-height: 27px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.upload-button-designed .upload-button-label-designed {
+    font-size: 24px;
+    color: black;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+
+/* On screens that are 992px wide or less */
+
+@media only screen and (max-width: 992px) {
+    .upload-button-designed {
+        color: black;
+        width: 148px;
+        max-height: 39px;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        text-align: top;
+    }
+    .upload-button-designed:hover {
+        color: black;
+        width: 148px;
+        max-height: 39px;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        text-align: super;
+    }
+    .upload-button-designed .upload-button-image-designed {
+        width: 22px;
+        max-height: 21px;
+        margin-right: 4px;
+        padding-bottom: 5px;
+        vertical-align: middle;
+    }
+    .upload-button-designed .upload-button-label-designed {
+        font-size: 18px;
+        color: black;
+        padding: 4px;
+        vertical-align: middle;
+    }
+}
+
+
+/* On screens that are 600px wide or less */
+
+@media only screen and (max-width: 600px) {
+    .upload-button-designed {
+        color: black;
+        width: 117px;
+        max-height: 31.42px;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        text-align: center;
+    }
+    .upload-button-designed:hover {
+        color: black;
+        width: 117px;
+        max-height: 31.42px;
+        background: #f8f8f8;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        text-align: center;
+    }
+    .upload-button-designed .upload-button-image-designed {
+        width: 18px;
+        max-height: 17px;
+        margin-right: 3px;
+        padding-top: 5px;
+        vertical-align: top;
+    }
+    .upload-button-designed .upload-button-label-designed {
+        font-size: 14px;
+        color: black;
+        padding: 0;
+        vertical-align: super;
+        line-height: 0;
+    }
+}
+
+.submit-button-form-designed {
+    padding: 5px 0;
+    width: 12%;
+    min-width: 90px;
+    height: auto;
+    font-size: calc(14px + 0.65vw);
+    background-color: #70B2E2;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+div .apple-window-designed {
+    margin: 3% auto 0% auto;
+    min-height: 70vh;
+    width: 80%;
+}
+
+
+/* On screens that are 992px wide or less */
+
+@media only screen and (max-width: 992px) {
+    div .apple-window-designed {
+        margin: 3% auto 0% auto;
+        min-height: 70vh;
+        width: 90%;
+    }
+}
+
+
+/* On screens that are 992px wide or less */
+
+@media only screen and (max-width: 600px) {
+    div .apple-window-designed {
+        margin: 3% auto 0% auto;
+        min-height: 70vh;
+        width: 98%;
+    }
+}
+
+div .apple-window-designed .header-designed {
+    border-radius: 15px 15px 0px 0px;
+    background-color: #70B2E2;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    padding: 5px 5px;
+    text-align: right;
+}
+
+div .apple-window-designed .header-designed .button-circle-designed {
+    margin: auto 3px auto 3px;
+    border-radius: 15px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+div .apple-window-designed .content-designed {
+    border-radius: 0px 0px 15px 15px;
+    background-color: #F6F6F6;
+    border-color: black;
+    border-width: 3px;
+    border-style: none solid solid solid;
+    padding: 5px 5px;
+    text-align: left;
+    height: 100%;
+    padding: 1% 3% 1% 3%;
+}
+
+div .apple-window-designed .content-designed .form-title-designed {
+    font-size: calc(6px + 0.75vw + 1.25vh);
+    /* font-weight: bold; */
+}
+
+div .apple-window-designed .content-designed .form-input-title-designed {
+    font-size: calc(6px + 0.55vw + 1.1vh);
+    /* font-size:calc(11px + 1vw); */
+    margin: 0;
+    /* font-weight: bold; */
+}
+
+div .apple-window-designed .content-designed .form-input-designed {
+    font-size: calc(6px + 0.5vw + 1vh);
+    padding: 0px 4px;
+    background-color: white;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    height: calc(4px + 2vw + 2vh);
+    min-height: 33px;
+    max-height: 46px;
+    width: 99%;
+    border-bottom: none;
+}
+
+div .apple-window-designed .content-designed .form-input-designed:focus {
+    font-size: calc(6px + 0.5vw + 1vh);
+    padding: 0px 4px;
+    background-color: white;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    height: calc(4px + 2vw + 2vh);
+    min-height: 33px;
+    max-height: 46px;
+    width: 99%;
+    border-bottom: none;
+}
+
+div .apple-window-designed .content-designed .row .col {
+    padding: 0 0.4rem;
+}
+
+.input-field {
+    margin-top: 0;
+}
+
+.tabs .tab a {
+    /* background-color: white; */
+    color: white;
+}
+
+.tabs .tab a:active {
+    /* background-color: white; */
+    color: white;
+}

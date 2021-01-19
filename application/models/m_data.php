@@ -43,6 +43,12 @@ class M_data extends CI_Model{
             return false;  
         }  
     }
+
+    function panitia_search($table, $col, $keyword) {
+        $this->db->like($col, $keyword);
+        $query  =   $this->db->get($table);
+        return $query->result();
+    }
 }
 
 ?>
