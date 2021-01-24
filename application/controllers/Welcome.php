@@ -37,6 +37,12 @@ class Welcome extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function uploadsukses(){
+		$this->load->view('header');
+		$this->load->view('uploadsukses');
+		$this->load->view('footer');
+	}
+
 	public function login()
 	{
 		$this->load->view('header');
