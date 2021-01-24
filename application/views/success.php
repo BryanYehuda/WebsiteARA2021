@@ -18,8 +18,7 @@
           <div class="content-designed">
               <div class="row">
                   <div class="col s12 center-align">
-                      <span class="form-title-designed"><strong>Pendaftaran Kamu Sukses Hyung!!! Sekarang kamu cuma tinggal tunggu 
-                      Panitia kami verifikasi akun kamu</strong></span>
+                    <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/berhasil.png">
                   </div>
               </div>
               <form action="<?php echo base_url();?>">

@@ -17,20 +17,20 @@
 
           <div class="content-designed">
               <div class="row">
-                  <div class="col s12">
-                      <span class="form-title-designed center-align"><strong>Bagaimana Cara Pendaftaran di ARA 2021?</strong></span>
+                  <div class="col s12 center-align"><br>
+                      <span class="form-title-designed"><strong>Bagaimana Cara Pendaftaran di ARA 2021?</strong></span>
                   </div>
               </div>
               <div class="row">
-                  <div class="col s12" style="text-align:justify">
-                    <ul class="collection">
-                        <li class="collection-item">1. Kunjungi Web Official ARA di arek.its.ac.id/ara</li>
-                        <li class="collection-item">2. Buka tab “Pendaftaran”</li>
-                        <li class="collection-item">3. Pilih cabang kegiatan yang ingin Anda ikuti</li>
-                        <li class="collection-item">4. Ikuti syarat dan ketentuan yang berlaku</li>
-                        <li class="collection-item">5. Tunggu hingga akun Anda terverifikasi.</li>
-                    </ul>
-                  </div>  
+                    <div class="col s12" style="text-align:justify">
+                        <p>Cie… sobat ITzen udah kepoin sampai tab “Pendaftaran” yaa. Berhubung udah ketahuan kepoin kita sampai sini, 
+                        yuk intip dikit nih tata cara pendaftaran ARA 2021. Sebelumnya kalian pasti sudah tahu ‘kan kalau kegiatan ARA 
+                        ini dibagi menjadi tiga cabang lomba dan juga satu kegiatan webinar. Mekanisme tata cara pendaftarannya kurang 
+                        lebih sama, pertama-tama kalian harus menge-scroll halaman ini ke bawah. Sudah ketemu kotak “Daftar Yuk di ARA 
+                        2021”? Pilih cabang lomba/kegiatan yang kalian mau, lalu klik tombol “Daftar”. Kalau ingin berkas kalian lolos, 
+                        jangan lupa untuk mengikuti setiap syarat dan ketentuan yang berlaku, ya! Setelah kalian isi berkas dengan lengkap, 
+                        tinggal tunggu deh hingga akun kalian terverifikasi. Gampang banget ‘kan, sobat?</p>
+                    </div>   
               </div>
               <div class="row">
                     <div class="col s12 l4">
@@ -63,48 +63,46 @@
 
           <div class="content-designed">
               <div class="row">
-                  <div class="col s12">
-                      <span class="form-title-designed center-align"><strong>Daftar Yuk di ARA 2021</strong></span>
+                  <div class="col s12 center-align"><br>
+                      <span class="form-title-designed"><strong>Daftar Yuk di ARA 2021</strong></span>
                   </div>
               </div>
               <div class="row">
                     <div class="col s12 l6">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="<?php echo base_url(); ?>assets/images/webinar.png">
+                                <img class="activator" src="<?php echo base_url(); ?>assets/images/WEBINARdaftar.png">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator grey-text text-darken-4">Webinar<i class="material-icons right">arrow_downwardt</i></span>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">Webinar<i class="material-icons right">close</i></span>
-                                <p>Adalah sebuah kegiatan seminar online yang diadakan pada platform Zoom dengan topik Cyber Security dan Internet of Things.</p>
-                                <ul class="collection">
-                                    <li class="collection-item">Pendaftaran Webinar akan dibuka pada 6 Februari 2021, Stay Tune Ya!!!</li>
-                                </ul>
+                                <p style="text-align:justify">Burung camar main di pagar,<br>
+                                Acara ARA dibuka dengan Webinar!<br>
+                                Y x G ikut webinar ARA?<br>
+                                Cuma modal HP/laptop terus duduk manis sambil nyeruput es teh manis di rumah, kamu bakal dapet ilmu yang 
+                                bermanfaat di bidang Cyber Security dan juga Internet of Things secara gratis, hyung! Hayuk lah gaskan! 
+                                Jangan lupa catat tanggalnya nih hyung.<br>
+                                <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/webinar.png">
                             </div>
                         </div>
                     </div>
                     <div class="col s12 l6">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="<?php echo base_url(); ?>assets/images/iot.png">
+                                <img class="activator" src="<?php echo base_url(); ?>assets/images/IOTdaftar.png">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator grey-text text-darken-4">Ide Inovatif IoT<i class="material-icons right">arrow_downward</i></span>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">Ide Inovatif IoT<i class="material-icons right">close</i></span>
-                                <p>Adalah sebuah kegiatan lomba untuk menuangkan ide yang inovatif terhadap topik Internet of Things dalam bentuk Karya Tulis Ilmiah.<p>
-                                <ul class="collection">
-                                    <li class="collection-item">Periode pendaftaran : 25 Desember 2020 - 24 Januari 2021 pukul 23:59 WIB.</li>
-                                    <li class="collection-item">Perwakilan tim mengisi formulir pendaftaran pada situs arek.its.ac.id/ara dan mengisi data diri seluruh anggota dengan lengkap.</li>
-                                    <li class="collection-item">Pada saat mengisi formulir, perwakilan tim perlu melengkapi berkas-berkas pendaftaran sebagai berikut:<br>
-                                    1. Foto/scan Kartu Tanda Mahasiswa setiap anggota.<br>
-                                    2. Surat Keterangan Mahasiswa Aktif / KRS</li>
-                                    <li class="collection-item">Tim yang telah mengisi dan melengkapi formulir pendaftaran akan diverifikasi oleh panitia dalam rentang waktu 2 x 24 (dua kali dua puluh empat) jam.</li>
-                                    <li class="collection-item">Tim yang telah diverifikasi secara resmi menjadi peserta Lomba KTI Internet of Things ARA ITS 2021.</li>
-                                </ul><br>
+                                <p style="text-align:justify">“Di dunia ini tidak ada yang gratis”<br>
+                                Eitz… eitz… tenang sobat. Kamu lupa kalau kasih sayang ibu sepanjang masa dan pendaftaran KTI IoT ARA itu tidak dipungut biaya? Kalau
+                                masih ragu, sok atuh cek sendiri dengan langsung klik “Daftar”. Kalau beneran gratis, ikutan dong pastinya! Y x G ikutan KTI IoT dari 
+                                ARA? Kamu bisa berkontribusi langsung dalam membangun inovasi-inovasi di bidang Internet of Things lho! Gasin skuy!<p>
+                                <br>
                                 <form action="<?php echo base_url();?>welcome/iot">
                                     <div class="row">
                                         <div class="center-align">
@@ -122,28 +120,19 @@
                     <div class="col s12 l6">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="<?php echo base_url(); ?>assets/images/ctf.png">
+                                <img class="activator" src="<?php echo base_url(); ?>assets/images/CTFdaftar.png">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator grey-text text-darken-4">Capture The Flag<i class="material-icons right">arrow_downward</i></span>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">Capture The Flag<i class="material-icons right">close</i></span>
-                                <p>Adalah sebuah kompetisi hacking dimana para peserta diminta untuk menemukan file yang telah disimpan. File tersebut disebut juga dengan 
-                                    sebutan “Flag”. Para peserta diminta untuk menemukan Flag sebanyak-banyaknya selama kompetisi.</p>
-                                <ul class="collection">
-                                    <li class="collection-item">Periode pendaftaran akan dimulai dari tanggal 25 Desember 2020 hingga 1 Maret 2021, pukul 23.59 WIB.</li>
-                                    <li class="collection-item">Peserta diwajibkan untuk membaca rulebook CTF yang ada di <a href="https://drive.google.com/file/d/1orPPoSr8N7qTxi-JWIu5oWlRi6arG3yJ/view?usp=sharing">Rulebook CTF</a></li>
-                                    <li class="collection-item">Peserta diwajibkan untuk mengisi setiap data yang ada pada situs resmi ARA 2021</li>
-                                    <li class="collection-item">Peserta dapat melakukan pembayaran biaya pendaftaran sesuai dengan nominal biaya pendaftaran pada tiap gelombang ke rekening berikut:<br>
-                                    No. Rek : 0254251568<br>
-                                    Bank : BNI<br>
-                                    a.n : Muhammad Hilmi Ramadhan</li>
-                                    <li class="collection-item">Tim yang telah melengkapi berkas pendaftaran akan diverifikasi oleh panitia dalam rentang waktu 2x24 (empat puluh delapan) jam. Apabila tim belum diverifikasi dalam rentang 
-                                    waktu tersebut, peserta dapat menghubungi panitia melalui Contact Person yang tersedia.</li>
-                                    <li class="collection-item">Tim yang telah terverifikasi akan mendapatkan email yang berisi username dan password untuk memasuki situs lomba. Bagi tim yang sudah mendaftar tetapi tidak mendapatkan email 
-                                    sampai tanggal 5 Maret 2021, dapat menghubungi panitia melalui Contact Person yang tersedia.</li>
-                                </ul><br>
+                                <p style="text-align:justify">Siapa “Pirst Lope” mu?<br>
+                                Kalo ditanya gitu pasti udah pada lupa ya?<br>
+                                Nah kalo ditanya apa “Pirst Lomba CTF” yang diadakan di ITS?<br>
+                                Jelas lah, Capture The Flag dari ARA 2021! Y x G mau berpartisipasi di lomba CTF pertama kalinya di ITS? Gak seru ah kalau 
+                                ketinggalan, ntar sobat ITzen bukan jadi “Pirst Lope”nya CTF ARA. Sedih kan....</p>
+                                <br>
                                 <form action="<?php echo base_url();?>welcome/ctf">
                                     <div class="row">
                                         <div class="center-align">
@@ -159,28 +148,18 @@
                     <div class="col s12 l6">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="<?php echo base_url(); ?>assets/images/olimpiade.png">
+                                <img class="activator" src="<?php echo base_url(); ?>assets/images/OLIMdaftar.png">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator grey-text text-darken-4">Olimpiade<i class="material-icons right">arrow_downward</i></span>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">Olimpiade<i class="material-icons right">close</i></span>
-                                <p>adalah sebuah kegiatan lomba yang mengasah kemampuan peserta dalam bidang pengetahuan dan studi kasus pada topik Internet 
-                                    of Things dan Cyber Security.</p>
-                                <ul class="collection">
-                                    <li class="collection-item">Periode pendaftaran : 25 Desember 2020 - 12 Maret 2021 pukul 23:59 WIB.</li>
-                                    <li class="collection-item">Perwakilan tim mengisi formulir pendaftaran pada situs resmi ARA dan mengisi data diri seluruh anggota dengan lengkap.</li>
-                                    <li class="collection-item">Pada saat mengisi formulir, perwakilan tim perlu melengkapi berkas-berkas pendaftaran sebagai berikut:<br>
-                                    1. Foto/scan 3x4 setiap anggota.<br>
-                                    2. Foto/scan kartu pelajar setiap anggota.</li>
-                                    <li class="collection-item">Tim yang telah mengisi dan melengkapi formulir pendaftaran akan diverifikasi oleh panitia dalam rentang waktu 2 x 24 (dua kali dua puluh empat) jam</li>
-                                    <li class="collection-item">Peserta dapat melakukan pembayaran biaya pendaftaran sesuai dengan nominal biaya pendaftaran pada tiap gelombang ke rekening berikut:<br>
-                                    No. Rek : 0254251568<br>
-                                    Bank : BNI<br>
-                                    a.n : Muhammad Hilmi Ramadhan</li>
-                                    <li class="collection-item">Tim yang telah diverifikasi secara resmi menjadi peserta Olimpiade Cyber Security dan IoT ARA 2021.</li>
-                                </ul><br>
+                                <p style="text-align:justify">Kalau CTF jadi “Pirst Lomba CTF” di ITS, Olimpiade Cyber Security dan Internet of Things ARA jadi “Pirst Olimpiade 
+                                Cyber Security” di Indonesia! Buah jeruk rasanya kecut, sobat ITzen pasti terkejut-kejut! Y x G nggak ikutan? Sobat ITzen 
+                                punya kesempatan jadi pemenang pertama dalam Olimpiade Cyber Security dan Internet of Things di Indonesia, lho. Kalau sobat 
+                                ITzen ambil kesempatan ini, ada peluang 50% untuk menang! Skuy ikutan!</p>
+                                <br>
                                 <form action="<?php echo base_url();?>welcome/olimpiade">
                                     <div class="row">
                                         <div class="center-align">

@@ -7,6 +7,12 @@ body {
     width: auto;
 }
 
+.container-designed-navbar {
+    padding: 0 5%;
+    margin-bottom: 1%;
+    border: 3px solid #000;
+}
+
 .container-designed {
     padding: 0 5%;
     margin-bottom: 1%;
@@ -25,6 +31,10 @@ body {
         padding: 0 3%;
         margin-bottom: 1%;
     }
+    .container-designed-navbar {
+        padding: 0 3%;
+        margin-bottom: 1%;
+    }
 }
 
 
@@ -32,6 +42,10 @@ body {
 
 @media only screen and (max-width: 600px) {
     .container-designed {
+        padding: 0 1%;
+        margin-bottom: 1%;
+    }
+    .container-designed-navbar {
         padding: 0 1%;
         margin-bottom: 1%;
     }
@@ -169,7 +183,7 @@ nav .font-color-header-designed {
     width: 12%;
     min-width: 90px;
     height: auto;
-    font-size: calc(14px + 0.65vw);
+    font-size: calc(8px + 0.65vw);
     background-color: #70B2E2;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
@@ -261,6 +275,17 @@ div .apple-window-designed .content-designed .form-input-designed {
     border-bottom: none;
 }
 
+div .apple-window-designed .content-designed .form-input-designed-textarea {
+    font-size: calc(6px + 0.5vw + 1vh);
+    padding: 0px 4px;
+    background-color: white;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    height: calc(4px + 2vw + 2vh);
+    width: 99%;
+    border-bottom: none;
+}
+
 div .apple-window-designed .content-designed .form-input-designed:focus {
     font-size: calc(6px + 0.5vw + 1vh);
     padding: 0px 4px;
@@ -270,6 +295,17 @@ div .apple-window-designed .content-designed .form-input-designed:focus {
     height: calc(4px + 2vw + 2vh);
     min-height: 33px;
     max-height: 46px;
+    width: 99%;
+    border-bottom: none;
+}
+
+div .apple-window-designed .content-designed .form-input-designed-textarea:focus {
+    font-size: calc(6px + 0.5vw + 1vh);
+    padding: 0px 4px;
+    background-color: white;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    height: calc(4px + 2vw + 2vh);
     width: 99%;
     border-bottom: none;
 }

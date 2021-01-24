@@ -122,3 +122,21 @@
     }
   } 
 </script>
+<script>
+  $(function () {
+  $("#form").keypress(function (e) {
+    var keyCode = e.keyCode || e.which;
+
+            //Regex for Valid Characters i.e. Alphabets and Numbers.
+            var regex = /^[A-Za-z0-9 @._* \n\r]+$/;
+            
+            //Validate TextBox value against the Regex.
+            var isValid = regex.test(String.fromCharCode(keyCode));
+            if (!isValid) {
+              alert("Only Alphabets and Numbers allowed.");
+            }
+            
+            return isValid;
+          });
+});
+</script>

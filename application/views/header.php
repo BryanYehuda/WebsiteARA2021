@@ -16,6 +16,8 @@
 
   <!-- Link Start -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="<?php echo base_url(); ?>assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="<?php echo base_url(); ?>assets/css/designed.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -32,21 +34,22 @@
   <!--Navbar Start-->
   <!-- <nav class="black" role="navigation"> -->
   <nav class="color-blue-designed" role="navigation">
-    <div class="nav-wrapper container-designed">
+    <div class="nav-wrapper container-designed-navbar">
       <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img"
         src="<?php echo base_url(); ?>assets/images/logo_black_ara_2.png" width="40" height="auto"
         style="padding-top: 7.5px;"><img class="responsive-img"
         src="<?php echo base_url(); ?>assets/images/logo_black_ara.png" width="80" height="auto" style="padding-top: 7.5px;">
       </a>
       <ul class="right hide-on-med-and-down">
-        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>">HOME</a></li>
-        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>pendaftaran">PENDAFTARAN</a></li>
+        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>"><strong>HOME</strong></a></li>
+        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>pendaftaran"><strong>PENDAFTARAN</strong></a></li>
+        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>/welcome/login"><strong>LOGIN</strong></a></li><!-- Login Method jangan lupa diisi -->
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>">HOME</a></li>
-        <li><a class="waves-effect font-color-header-designed"
-            href="<?php echo base_url(); ?>pendaftaran">PENDAFTARAN</a></li>
+        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>"><strong>HOME</strong></a></li>
+        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>pendaftaran"><strong>PENDAFTARAN</strong></a></li>
+        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>/welcome/login"><strong>LOGIN</strong></a></li><!-- Login Method jangan lupa diisi -->
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger left"><i class="material-icons"
           style="color: black;">menu</i></a>

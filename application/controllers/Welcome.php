@@ -37,6 +37,20 @@ class Welcome extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function login()
+	{
+		$this->load->view('header');
+		$this->load->view('login');
+		$this->load->view('footer');
+	}
+
+	public function dashboardiot()
+	{
+		$this->load->view('header');
+		$this->load->view('dashboardiot');
+		$this->load->view('footer');
+	}
+
 	public function pendaftaran()
 	{
 		$this->load->view('header');
@@ -71,7 +85,7 @@ class Welcome extends CI_Controller {
 
 		$this->upload->initialize($config);
 
-		if ( ! $this->upload->do_upload('bayar'))
+		if ( ! $this->upload->do_upload('share'))
 		{
 			$error = $this->upload->display_errors();
 
@@ -139,7 +153,7 @@ class Welcome extends CI_Controller {
 			'nama' => $tim,
 			'kategori' => 'iot',
 			'institusi' => $this->input->post('institusi'),
-			// 'bukti_bayar' => $this->upload_bayar('iot', $tim)
+			'bukti_share' => $this->upload_poster('iot', $tim)
 		);
 
 		$this->m_data->input_data($data2,'tim');
@@ -191,7 +205,8 @@ class Welcome extends CI_Controller {
 			'nama' => $tim,
 			'kategori' => 'olimpiade',
 			'institusi' => $this->input->post('institusi'),
-			'bukti_bayar' => $this->upload_bayar('olimpiade', $tim)
+			'bukti_bayar' => $this->upload_bayar('olimpiade', $tim),
+			'bukti_share' => $this->upload_poster('olimpiade', $tim)
 		);
 
 		$this->m_data->input_data($data2,'tim');
@@ -243,7 +258,8 @@ class Welcome extends CI_Controller {
 			'nama' => $tim,
 			'kategori' => 'ctf',
 			'institusi' => $this->input->post('institusi'),
-			'bukti_bayar' => $this->upload_bayar('ctf', $tim)
+			'bukti_bayar' => $this->upload_bayar('ctf', $tim),
+			'bukti_share' => $this->upload_poster('ctf', $tim)
 		);
 
 		$this->m_data->input_data($data2,'tim');
@@ -263,7 +279,7 @@ class Welcome extends CI_Controller {
 		}  
 		else  
 		{  
-			echo '<label style="color: white;">Nama Tim bisa digunakan</label>';  
+			echo '<label style="color: green;">Nama Tim bisa digunakan</label>';  
 		}  
 
 	}
@@ -338,6 +354,38 @@ class Welcome extends CI_Controller {
 		$this->upload->initialize($config);
 
 		if ( ! $this->upload->do_upload('bayar'))
+		{
+			$error = $this->upload->display_errors();
+
+			$img = NULL;
+		}
+		else
+		{
+
+			$img = $this->upload->data('file_name');
+
+			return $img;
+		}
+
+	}
+
+	function upload_poster($cat, $tim)
+	{
+	    $nama = str_replace(".","-",$tim);
+		$path = './uploads/'.$cat.'/'.$tim;
+		if (!is_dir($path)) {
+			mkdir($path, 0777, TRUE);
+		}
+		$config['file_name']			= 'bukti_poster-'.$nama;
+		$config['upload_path']          = $path;
+		$config['allowed_types']        = 'gif|jpg|png|pdf';
+		// $config['max_size']             = 10000;
+		// $config['max_width']            = 1024;
+		// $config['max_height']           = 768;
+
+		$this->upload->initialize($config);
+
+		if ( ! $this->upload->do_upload('share'))
 		{
 			$error = $this->upload->display_errors();
 

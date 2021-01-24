@@ -17,19 +17,22 @@
 
             <div class="content-designed">
                 <div class="row">
-                    <div class="col s12">
-                        <span class="form-title-designed center-align"><strong>Apa itu ARA 2021?</strong></span>
+                    <div class="col s12 center-align"><br>
+                        <span class="form-title-designed"><strong>Apa itu ARA 2021?</strong></span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12" style="text-align:justify">
-                        <p>ARA (A Renewal Agent) adalah sebuah kegiatan tahunan yang diselenggarakan oleh Himpunan Mahasiswa Teknologi Informasi ITS 
-                        yang mewadahi para generasi muda, khususnya para mahasiswa dan siswa SMA/Sederajat untuk menyalurkan minat bakat di bidang 
-                        Internet of Things dan Cyber Security. Sesuai dengan namanya, A Renewal Agent,  ARA mengusung tema “For the Golden Generation 
-                        of Indonesia” dimana ARA akan menjadi ajang untuk pencarian agen-agen pembaruan generasi milenial sebagai pilar di bidang 
-                        Teknologi dan Informasi untuk Indonesia 2045. Dengan tagar #SemangatMembARA2021 dan #ARenewalAgentforIndonesia2045 diharapkan 
-                        ARA dapat melahirkan agen-agen pembaruan yang memiliki semangat membara sehingga kedepannnya dapat mendukung perkembangan dan 
-                        kemajuan Indonesia khususnya di bidang Teknologi dan Informasi.</p>
+                        <p>Tak kenal maka tak sayang, maka dari itu buah mangga buah kedondong. Kenalan dong… Halo teman-teman dan adik-adik sobat 
+                        ITzen! Selamat datang di website official ARA 2021. Karena sudah capek-capek datang kemari, intip dikit boleh, la. Sedikit-
+                        sedikit lama-lama menjadi bukit. Daripada berlama-lama kaya bekicot, mending kita langsung cekidot.<br></p>
+                        <p>Sobat ITzen kira-kira tahu nggak sih kalau sebenarnya ARA itu diambil dari kata “A Renewal Agent”? A Renewal Agent memiliki 
+                        arti “Agen Pembaruan” yang dimana nantinya sobat ITzen diharapkan bisa menjadi agen-agen pembaruan sebagai pilar di bidang 
+                        Teknologi dan Informasi untuk Indonesia 2045. Teruntuk kamu adik-adik keren dari SMA/SMK/Sederajat dan teman-teman perjuangan 
+                        mahasiswa, sabi banget ikut kegiatan ARA ini! Dengan berbagai cabang kegiatan dan lomba di bidang Cyber Security dan Internet 
+                        of Things, sobat ITzen bisa memilih cabang lomba sesuai kriteria yang memenuhi, ya. Jangan lupa semarakkan tagar #SemangatMembARA2021 
+                        dan #ARenewalAgentforIndonesia2045 agar sobat ITzen memiliki semangat yang membara untuk perkembangan dan kemajuan Indonesia 
+                        khususnya di bidang Teknologi dan Informasi. Semangat sobat ITzen! Horas!</p>
                     </div>  
                 </div>
                 <div class="row">
@@ -74,40 +77,47 @@
 
             <div class="content-designed">
                 <div class="row">
-                    <div class="col s12">
-                        <span class="form-title-designed center-align"><strong>Event yang ada di ARA 2021</strong></span>
+                    <div class="col s12 center-align"><br>
+                        <span class="form-title-designed"><strong>Event yang ada di ARA 2021</strong></span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12 l6">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="<?php echo base_url(); ?>assets/images/webinar.png">
+                                <img class="activator" src="<?php echo base_url(); ?>assets/images/WEBINARicon.png">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Webinar<i class="material-icons right">arrow_downwardt</i></span>
+                                <span class="card-title activator grey-text text-darken-4">Webinar<i class="material-icons right">arrow_downward</i></span>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">Webinar<i class="material-icons right">close</i></span>
-                                <p>Webinar ARA adalah kegiatan seminar online yang diadakan pada platform Zoom sekaligus sebagai acara pembuka pada rangkaian 
-                                kegiatan ARA 2021. Webinar yang diselenggarakan oleh HMIT ITS ini akan menjadi webinar yang mengusung topik Internet of Things 
-                                dan Cyber Security dimana kedua topik tersebut merupakan dua bidang yang difokuskan pada ARA 2021.</p>
+                                <p style="text-align:justify">Sobat ITzen ingin menambah ilmu di bidang Internet of Things dan Cyber Security? Wah, kebetulan banget! ARA juga akan 
+                                mengadakan Webinar yang membahas kedua hal tersebut, lho. Mengikuti standar protokol kesehatan dari pemerintah, ARA mengadakan 
+                                Webinar ini secara aman, tentram, dan dijamin tidak ada keramaian karena sobat ITzen tinggal duduk manis di rumah aja sambil 
+                                nyemil dan buka platform Zoom. Sekedar informasi juga nih, Webinar ARA ini tidak dipungut biaya alias GRATIS-TIs-Tis-tis. 
+                                Kapan lagi sobat ITzen menemukan kesempatan se-emas 24 karat ini? Yuk daftar dan jangan sampai ketinggalan!</p>
+                                <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/webinar.png">
                             </div>
                         </div>
                     </div>
                     <div class="col s12 l6">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="<?php echo base_url(); ?>assets/images/iot.png">
+                                <img class="activator" src="<?php echo base_url(); ?>assets/images/IOTicon.png">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator grey-text text-darken-4">Ide Inovatif IoT<i class="material-icons right">arrow_downward</i></span>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">Ide Inovatif IoT<i class="material-icons right">close</i></span>
-                                <p>Kompetisi Ide Inovatif adalah sebuah cabang kegiatan ARA dimana dalam kegiatan ini menggunakan mekanisme pelaksanaan seperti 
-                                Karya Tulis Ilmiah. Dalam kegiatan ini, peserta lomba diharapkan dapat menuangkan idenya pada topik Internet of Things dalam 
-                                bentuk karya tulis ilmiah. Kompetisi ide inovatif ini ditujukan untuk mahasiswa aktif PTN/PTS se-Indonesia</p>
+                                <p style="text-align:justify">Punya ide banyak dan inovatif tapi cuman dicorat-coret di kertas aja? Hmm... coba deh sekali-kali kalau dapat ide langsung 
+                                dituangkan dalam bentuk karya tulis ilmiah. Selain meningkatkan brainstorming diri, sobat ITzen juga akan belajar untuk memecahkan 
+                                masalah dan membuat solusi secara langsung. Sobat ITzen bingung mau dipamerin kemana hasil karyanya? Tidak perlu gundah, tidak 
+                                perlu risau. ARA punya solusinya. Yuk, ikutan Kompetisi Ide Inovatif ARA! Sobat ITzen bisa banget nih menuangkan ide pada topik 
+                                Internet of Things yang lagi hype banget sekarang ini. Kompetisi ini sabi banget diikuti oleh teman-teman mahasiswa aktif dari 
+                                PTN/PTS di seluruh Indonesia. Mantul nggak, tuh? Jangan lewatkan kesempatan ini, ya! </p>
+                                <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/iot.png">
                             </div>
                         </div>
                     </div>
@@ -116,36 +126,39 @@
                     <div class="col s12 l6">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="<?php echo base_url(); ?>assets/images/ctf.png">
+                                <img class="activator" src="<?php echo base_url(); ?>assets/images/CTFicon.png">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator grey-text text-darken-4">Capture The Flag<i class="material-icons right">arrow_downward</i></span>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">Capture The Flag<i class="material-icons right">close</i></span>
-                                <p>Capture The Flag atau yang biasa disebut dengan CTF adalah sebuah percabangan lomba hacking mahasiswa tingkat nasional dari 
-                                kegiatan ARA 2021. Dengan keanggotaan 2-3 anggota dalam satu tim, para peserta diminta untuk menemukan sebuah file yang telah 
-                                disembunyikan sedemikian rupa yang selanjutnya akan disebut dengan “Flag”. Tujuan dari kompetisi ini adalah untuk mengumpulkan 
-                                flag sebanyak mungkin dari soal yang telah diberikan.</p>
+                                <p style="text-align:justify">Panggilan untuk para mahasiswa/i aktif PTN/PTS di seluruh Indonesia, kalian adalah para sobat ITzen yang ditunggu oleh kami 
+                                untuk mengikuti kompetisi Capture The Flag tingkat nasional dari ARA ini! Jangan lupa ajak teman kalian juga untuk mengikuti CTF 
+                                ini karena nantinya dalam satu tim harus terdiri dari 2-3 orang. Seperti menemukan udang di balik bakwan, kalian harus menemukan 
+                                sebuah file tersembunyi yang dinamakan “Flag” dan berlomba-lomba untuk mengumpulkan Flag sebanyak-banyaknya. Gimana sobat ITzen, 
+                                kalian merasa tertantang ‘kan? Yuk segera daftarkan tim kalian!</p>
+                                <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/ctf.png">
                             </div>
                         </div>
                     </div>
                     <div class="col s12 l6">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="<?php echo base_url(); ?>assets/images/olimpiade.png">
+                                <img class="activator" src="<?php echo base_url(); ?>assets/images/OLIMicon.png">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator grey-text text-darken-4">Olimpiade<i class="material-icons right">arrow_downward</i></span>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">Olimpiade<i class="material-icons right">close</i></span>
-                                <p>Olimpiade Cyber Security dan Internet of Things adalah salah satu cabang kegiatan ARA yang ditujukan untuk seluruh siswa 
-                                SMA/Sederajat di seluruh Indonesia. Berbekal dengan 1-3 anggota akan dihadapkan dengan dua babak seleksi yaitu babak penyisihan 
-                                dan babak final, olimpiade akan diadakan dalam dua hari. Pada babak penyisihan, para peserta akan diberikan modul pengenalan 
-                                mengenai Cyber Security dan Internet of Things kemudian peserta akan diminta untuk menjawab soal yang didasarkan dari modul 
-                                tersebut. Saat peserta dinyatakan lolos dan maju pada babak final,  peserta akan diberikan sebuah studi kasus dan diminta untuk 
-                                membuat solusi terbaik dalam bentuk essay.</p>
+                                <p style="text-align:justify">Bagi sobat ITzen yang berjiwa kompetitif dan juga merupakan adik-adik kece dari SMA/SMK/Sederajat, sabi banget nih buat 
+                                ikutan Olimpiade Cyber Security dan Internet of Things dari ARA. Kalau adik-adik punya teman yang sefrekuensi dan bisa diajak 
+                                kerjasama, boleh banget diajak untuk mengikuti olimpiade ini, karena satu tim bisa terdiri dari 1-3 orang lhoo. Mekanisme 
+                                kerja olimpiade ini akan dibagi menjadi dua babak seleksi yaitu babak penyisihan dan babak final. Sama seperti olimpiade pada 
+                                umumnya, ketajaman kalian dalam menganalisis dan membuat solusi terhadap masalah diuji dengan ketat. Bersainglah secara sehat, 
+                                jadilah pemenang dari Olimpiade Cyber Security dan Internet of Things pertama di Indonesia!</p>
+                                <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/olim.png">
                             </div>
                         </div>
                     </div>
@@ -170,130 +183,20 @@
 
             <div class="content-designed">
                 <div class="row">
-                    <div class="col s12">
-                        <span class="form-title-designed center-align"><strong>Timeline ARA 2021</strong></span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 l6">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="<?php echo base_url(); ?>assets/images/webinar.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Webinar<i class="material-icons right">arrow_downwardt</i></span>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Webinar<i class="material-icons right">close</i></span>
-                                <p>Adalah sebuah kegiatan seminar online yang diadakan pada platform Zoom dengan topik Cyber Security dan Internet of Things.</p>
-                                <ul class="collection">
-                                    <li class="collection-item">6 Maret 2021 = Webinar Cyber Security</li>
-                                    <li class="collection-item">7 Maret 2021 = Webinar Internet of Things</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 l6">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="<?php echo base_url(); ?>assets/images/iot.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Ide Inovatif IoT<i class="material-icons right">arrow_downward</i></span>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Ide Inovatif IoT<i class="material-icons right">close</i></span>
-                                <p>Adalah sebuah kegiatan lomba untuk menuangkan ide yang inovatif terhadap topik Internet of Things dalam bentuk Karya Tulis Ilmiah.<p>
-                                <ul class="collection">
-                                    <li class="collection-item">25 Januari 2021 - 7 Februari 2021 = Registrasi dan pengumpulan abstrak Kompetisi Ide Inovatif</li>
-                                    <li class="collection-item">15 Desember 2020 - 30 Januari 2021 = Seleksi Babak I Kompetisi Ide Inovatif</li>
-                                    <li class="collection-item">31 Januari 2021 = Pengumuman Lolos Babak II Kompetisi Ide Inovatif</li>
-                                    <li class="collection-item">15 Februari 2021 - 14 Maret 2021 = Pelaksanaan Babak II (Pengumpulan KTI) Kompetisi Ide Inovatif</li>
-                                    <li class="collection-item">1 Maret 2021 - 6 Maret 2021 = Seleksi Babak II Kompetisi Ide Inovatif</li>
-                                    <li class="collection-item">7 Maret 2021 = Pengumuman Lolos Babak Final Kompetisi Ide Inovatif</li>
-                                    <li class="collection-item">20 Maret 2021 = Babak Final (Presentasi Karya) Kompetisi Ide Inovatif</li>
-                                    <li class="collection-item">Masih belum ditentukan = Pengumuman Juara</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 l6">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="<?php echo base_url(); ?>assets/images/ctf.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Capture The Flag<i class="material-icons right">arrow_downward</i></span>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Capture The Flag<i class="material-icons right">close</i></span>
-                                <p>Adalah sebuah kompetisi hacking dimana para peserta diminta untuk menemukan file yang telah disimpan. File tersebut disebut juga dengan 
-                                    sebutan “Flag”. Para peserta diminta untuk menemukan Flag sebanyak-banyaknya selama kompetisi.</p>
-                                <ul class="collection">
-                                    <li class="collection-item">6 Maret 2021 = Pemanasan Capture The Flag</li>
-                                    <li class="collection-item">7 Maret 2021 = Babak Penyisihan Capture The Flag</li>
-                                    <li class="collection-item">27 Maret 2021 = Babak Final Capture The Flag</li>
-                                    <li class="collection-item">Masih belum ditentukan = Pengumuman Juara</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 l6">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="<?php echo base_url(); ?>assets/images/olimpiade.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Olimpiade<i class="material-icons right">arrow_downward</i></span>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Olimpiade<i class="material-icons right">close</i></span>
-                                <p>adalah sebuah kegiatan lomba yang mengasah kemampuan peserta dalam bidang pengetahuan dan studi kasus pada topik Internet 
-                                    of Things dan Cyber Security.</p>
-                                <ul class="collection">
-                                    <li class="collection-item">20 Maret 2021 = Penyisihan Olimpiade Cyber Security dan IoT</li>
-                                    <li class="collection-item">27 Maret 2021 = Babak Final Olimpiade Cyber Security dan IoT</li>
-                                    <li class="collection-item">Masih belum ditentukan = Pengumuman Juara</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br><br>
-
-        </div>
-
-        <div data-aos="zoom-in">
-
-            <div class="header-designed">
-                <ul style="margin: 0;">
-                    <li class="button-circle-designed" style="background-color: #AC8FBC;">
-                    </li>
-                    <li class="button-circle-designed" style="background-color: #AAD8B6;">
-                    </li>
-                    <li class="button-circle-designed" style="background-color: #E7A996;">
-                    </li>
-                </ul>
-            </div>
-
-            <div class="content-designed">
-                <div class="row">
-                    <div class="col s12">
-                        <span class="form-title-designed center-align"><strong>Tentang HMIT</strong></span>
+                    <div class="col s12 center-align"><br>
+                        <span class="form-title-designed "><strong>Tentang HMIT</strong></span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12" style="text-align:justify">
-                        <p>Himpunan Mahasiswa Teknologi Informasi atau HMIT adalah salah satu Organisasi Mahasiswa tingkat departemen yang berada di 
-                        Institut Teknologi Sepuluh Nopember. Tujuan didirikannya HMIT adalah untuk mewujudkan mahasiswa Departemen Teknologi Informasi 
-                        FTEIC ITS sebagai insan terdidik yang unggul dan profesional khususnya dalam pengembangan dan penerapan teknologi informasi, 
-                        serta memiliki tanggung jawab sosial. Setelah didirikan dan disahkan oleh KM ITS pada akhir tahun 2019, saat ini HMIT memiliki 
-                        sebuah kabinet bernama Kabinet Cipta Karya. Nama Cipta Karya sendiri diambil dari kata: “Cipta” yang berarti sebuah kemampuan 
-                        untuk menciptakan sesuatu yang baru, angan-angan yang kreatif; dan “Karya” yang memiliki arti sebuah pekerjaan, hasil perbuatan, 
-                        dan ciptaan. Hingga saat ini, HMIT memiliki big event bernama ARA dan juga ExploIT yang diadakan secara rutin setiap tahunnya.</p>
+                        <p>Sobat ITzen udah kenalan dengan acara ARA ‘kan? Nah, sekarang kenalan sama himpunan yang menyelenggarakan, yuk!<br></p> 
+                        <p>Himpunan Mahasiswa Teknologi Informasi atau biasa disebut dengan HMIT adalah sebuah organisasi mahasiswa tingkat 
+                        departemen yang ada di Institut Teknologi Sepuluh Nopember. Ibarat Shiva yang masih kecil namun berani dalam menindas 
+                        kejahatan untuk kemakmuran masyarakat sekitarnya, HMIT ITS juga seperti Shiva, lho! Walaupun baru didirikan hingga 
+                        akhirnya disahkan oleh KM ITS pada akhir tahun 2019 kemarin, HMIT memiliki tujuan yang mulia. Tujuannya yaitu untuk 
+                        mewujudkan mahasiswa Departemen Teknologi Informasi ITS sebagai insan terdidik yang unggul dan profesional khususnya 
+                        dalam pengembangan dan penerapan teknologi informasi, serta memiliki tanggung jawab sosial. Hingga saat ini, HMIT memiliki 
+                        event yang bernama ARA dan juga ExploIT yang secara rutin diadakan tiap tahunnya.</p>
                     </div>  
                 </div>
                 <div class="row">
