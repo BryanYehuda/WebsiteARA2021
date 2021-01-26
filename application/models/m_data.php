@@ -49,6 +49,11 @@ class M_data extends CI_Model{
         $query  =   $this->db->get($table);
         return $query->result();
     }
+
+    function get_where($table,$where){
+        $this->db->where($where);
+        return $this->db->get($table);
+    }
 }
 
 ?>

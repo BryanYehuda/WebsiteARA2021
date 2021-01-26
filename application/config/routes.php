@@ -66,3 +66,8 @@ $route['daftar/webinar']			=	'welcome/submit_webinar';
 $route['daftar/iot']				=	'welcome/submit_iot';
 $route['daftar/olimpiade']			=	'welcome/submit_olimpiade';
 $route['daftar/ctf']				=	'welcome/submit_ctf';
+
+$route['login']						=	'iot';
+$route['logout']					=	'welcome/logout';
+
+$route['berhasilsubmit']			=	'iot/sukses_submit';

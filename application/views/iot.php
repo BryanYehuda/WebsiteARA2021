@@ -81,7 +81,7 @@
                                 </div>
                                 <div class="row">
                                   <div class="col s12 l6">
-                                    <span class="form-input-title-designed">Nama Lengkap Anggota 1: <span class="required-star-designed">*</span></span>
+                                    <span class="form-input-title-designed">Nama Lengkap Anggota 1:</span>
                                   </div>
                                   <div class="col s12 l6">
                                     <input class="form-input-designed" id="nama_anggota_pertama" name="nama2" class="validate">
@@ -89,7 +89,7 @@
                                 </div>
                                 <div class="row">
                                   <div class="col s12 l6">
-                                    <span class="form-input-title-designed">Nama Lengkap Anggota 2: <span class="required-star-designed">*</span></span>
+                                    <span class="form-input-title-designed">Nama Lengkap Anggota 2:</span>
                                   </div>
                                   <div class="col s12 l6">
                                     <input class="form-input-designed" id="nama_anggota_kedua" name="nama3" class="validate">
@@ -112,7 +112,7 @@
                                 </div>
                                 <div class="row">
                                   <div class="col s12 l6">
-                                    <span class="form-input-title-designed">NIM Anggota 1: <span class="required-star-designed">*</span></span>
+                                    <span class="form-input-title-designed">NIM Anggota 1:</span>
                                   </div>
                                   <div class="col s12 l6">
                                     <input class="form-input-designed" id="studentid_satu" name="id2" class="validate">
@@ -120,7 +120,7 @@
                                 </div>
                                 <div class="row">
                                   <div class="col s12 l6">
-                                    <span class="form-input-title-designed">NIM Anggota 2: <span class="required-star-designed">*</span></span>
+                                    <span class="form-input-title-designed">NIM Anggota 2:</span>
                                   </div>
                                   <div class="col s12 l6">
                                     <input class="form-input-designed" id="studentid_kedua" name="id3" class="validate">
@@ -133,12 +133,10 @@
                                             class="required-star-designed">*</span></span>
                                 </div>
                                 <div class="col s4 l4">
-                                    <span class="form-input-title-designed">Jurusan Anggota 1: <span
-                                            class="required-star-designed">*</span></span>
+                                    <span class="form-input-title-designed">Jurusan Anggota 1:</span>
                                 </div>
                                 <div class="col s4 l4">
-                                    <span class="form-input-title-designed">Jurusan Anggota 2: <span
-                                            class="required-star-designed">*</span></span>
+                                    <span class="form-input-title-designed">Jurusan Anggota 2:</span>
                                 </div>
                                 <div class="col s4 l4">
                                     <input class="form-input-designed" id="jurusan_ketua" name="jurusan1" class="validate"
@@ -173,7 +171,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">Jenis Kelamin Anggota 1: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">Jenis Kelamin Anggota 1:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <select name="gender2">
@@ -185,7 +183,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">Jenis Kelamin Anggota 2: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">Jenis Kelamin Anggota 2:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <select name="gender3">
@@ -212,7 +210,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">Email Anggota 1: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">Email Anggota 1:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <input class="form-input-designed" id="email_satu" name="email2" type="email" class="validate">
@@ -220,7 +218,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">Email Anggota 2: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">Email Anggota 2:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <input class="form-input-designed" id="email_kedua" name="email3" type="email" class="validate">
@@ -291,7 +289,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">KTM Anggota 1: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">KTM Anggota 1:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <div class="file-field input-field">
@@ -314,7 +312,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">KTM Anggota 2: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">KTM Anggota 2:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <div class="file-field input-field">
@@ -367,7 +365,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">SKM Anggota 1: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">SKM Anggota 1:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <div class="file-field input-field">
@@ -390,7 +388,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">SKM Anggota 2: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">SKM Anggota 2:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <div class="file-field input-field">

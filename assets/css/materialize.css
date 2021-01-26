@@ -2174,7 +2174,7 @@ html {
 
 body {
     margin: 0;
-    background-image: url('/WebsiteARA2020/assets/images/Background.png');
+    background-image: url('/ara/assets/images/Background.png');
     background-attachment: fixed;
     background-size: cover;
 }

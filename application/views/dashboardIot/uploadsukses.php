@@ -21,7 +21,7 @@
                     <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/uploadberhasil.png">
                   </div>
               </div>
-              <form action="<?php echo base_url();?>">
+              <form action="<?php echo base_url().'iot';?>" method='post'>
                   <div class="row">
                       <div class="center-align">
                           <button class="btn waves-effect waves-light center-align submit-button-form-designed"

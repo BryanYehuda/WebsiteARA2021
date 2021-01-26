@@ -33,25 +33,37 @@
 <body>
   <!--Navbar Start-->
   <!-- <nav class="black" role="navigation"> -->
-  <nav class="color-blue-designed" role="navigation">
-    <div class="nav-wrapper container-designed-navbar">
-      <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img"
-        src="<?php echo base_url(); ?>assets/images/logo_black_ara_2.png" width="40" height="auto"
-        style="padding-top: 7.5px;"><img class="responsive-img"
-        src="<?php echo base_url(); ?>assets/images/logo_black_ara.png" width="80" height="auto" style="padding-top: 7.5px;">
-      </a>
-      <ul class="right hide-on-med-and-down">
-        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>"><strong>HOME</strong></a></li>
-        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>pendaftaran"><strong>PENDAFTARAN</strong></a></li>
-        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>/welcome/login"><strong>LOGIN</strong></a></li><!-- Login Method jangan lupa diisi -->
-      </ul>
+    <nav class="color-blue-designed" role="navigation">
+      <div class="nav-wrapper container-designed-navbar">
+        <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img"
+          src="<?php echo base_url(); ?>assets/images/logo_black_ara_2.png" width="40" height="auto"
+          style="padding-top: 7.5px;"><img class="responsive-img"
+          src="<?php echo base_url(); ?>assets/images/logo_black_ara.png" width="80" height="auto" style="padding-top: 7.5px;">
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>"><strong>HOME</strong></a></li>
+          <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>pendaftaran"><strong>PENDAFTARAN</strong></a></li>
+          <li>
+            <?php if ($this->session->userdata('status') == 'login') { ?>
+              <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>iot"><strong>Dashboard IoT</strong></a>
+              <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>logout"><strong>LOGOUT</strong></a>
+            <?php } else { ?>
+              <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>login"><strong>LOGIN</strong></a>
+            <?php } ?>
+          </li><!-- Login Method jangan lupa diisi -->
+        </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>"><strong>HOME</strong></a></li>
-        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>pendaftaran"><strong>PENDAFTARAN</strong></a></li>
-        <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>/welcome/login"><strong>LOGIN</strong></a></li><!-- Login Method jangan lupa diisi -->
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger left"><i class="material-icons"
+        <ul id="nav-mobile" class="sidenav">
+          <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>"><strong>HOME</strong></a></li>
+          <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>pendaftaran"><strong>PENDAFTARAN</strong></a></li>
+          <li><?php if ($this->session->userdata('status') == 'login') { ?>
+              <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>iot"><strong>Dashboard IoT</strong></a>
+              <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>logout"><strong>LOGOUT</strong></a>
+            <?php } else { ?>
+              <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>login"><strong>LOGIN</strong></a>
+            <?php } ?></li><!-- Login Method jangan lupa diisi -->
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger left"><i class="material-icons"
           style="color: black;">menu</i></a>
 
       <!-- <ul id="nav-mobile" class="collapsible" data-collapsible="accordion">

@@ -21,23 +21,27 @@
                         </div>
                         <div class="row">
                           <div class="col s12" style="text-align:justify">
-                            <p>Periode Pendaftaran : 25 Desember 2020 hingga 1 Maret 2021, pukul 23.59 WIB.<br></p>
-                            <p>Berkas Pendaftaran :<br>
-                            Foto/scan Kartu Tanda Mahasiswa setiap anggota.<br>
-                            Foto/scan Surat Keterangan Mahasiswa/wi<br>
-                            Bukti pembayaran registrasi sebesar Rp 75.000,- ke rekening BNI 0254251568 A/n Muhammad Hilmi Ramadhan<br>
-                            Membaca Guide book yang bisa di dapat melalui <a href="https://drive.google.com/file/d/15SjW7K3nGr3x-JOLLYC6KhA0e4ETpe2Q/view?usp=sharing">link ini</a></p>
-                            <p>Catatan : Tim yang telah terverifikasi akan mendapatkan email yang berisi username dan password untuk memasuki situs lomba. 
-                            Bagi tim yang sudah mendaftar tetapi tidak mendapatkan email sampai tanggal 5 Maret 2021, dapat menghubungi panitia melalui 
-                            Contact Person yang tersedia.</p>
+                            Periode Pendaftaran : 25 Desember 2020 hingga 1 Maret 2021, pukul 23.59 WIB.<br>
+                            Berkas Pendaftaran :<br>
+                            1. Foto/scan Kartu Tanda Mahasiswa setiap anggota.<br>
+                            2. Foto/scan Surat Keterangan Mahasiswa/wi<br>
+                            3. Bukti pembayaran registrasi sebesar Rp 75.000,- (Batch 2) ke rekening BNI 0254251568 A/n Muhammad Hilmi Ramadhan<br>
+                            4. Membaca Guide book yang bisa di dapat melalui link ini<br>
+                            Catatan : <br>
+                            1. Tim yang telah terverifikasi akan mendapatkan email yang berisi username dan password untuk memasuki situs lomba. Bagi tim yang sudah mendaftar tetapi tidak mendapatkan email sampai tanggal 5 Maret 2021, dapat menghubungi panitia melalui Contact Person yang tersedia.<br>
+                            2. [DISKON TIKET] Peserta dapat membayar sesuai harga pada Batch 1 (Rp 60.000,-) meskipun melakukan pembayaran diluar jangka waktu pada Batch 1.<br>
+                            Dengan persyaratan :<br>
+                            1. Setiap anggota tim Mengunggah poster CTF ARA 2021 dan caption yang ada di link <a href="https://intip.in/BayarHargaBatch1">https://intip.in/BayarHargaBatch1</a> pada story sosial media.<br>
+                            2. Setiap anggota memfollow instagram @ara_its dan @hmit_its<br>
+                            3. Semua bukti persyaratan disimpan dalam zip dan diupload pada website ara ketika melakukan pendaftaran
                             <p>Contact Person CTF<br>
-                            1. Rizki : tririzkiyy (line) /085156628350<br>
+                              1. Rizki : tririzkiyy (line) /085156628350<br>
                             2. Rafii : yaskur_rafii (line) /089628091527</p>
                           </div>  
                         </div>
                       </div>
                       <br><br>
-                
+
 
                       <div class="header-designed">
                         <ul style="margin: 0;">
@@ -85,7 +89,7 @@
                                 </div>
                                 <div class="row">
                                   <div class="col s12 l6">
-                                    <span class="form-input-title-designed">Nama Lengkap Anggota 1: <span class="required-star-designed">*</span></span>
+                                    <span class="form-input-title-designed">Nama Lengkap Anggota 1:</span>
                                   </div>
                                   <div class="col s12 l6">
                                     <input class="form-input-designed" id="nama_anggota_pertama" name="nama2" class="validate">
@@ -93,7 +97,7 @@
                                 </div>
                                 <div class="row">
                                   <div class="col s12 l6">
-                                    <span class="form-input-title-designed">Nama Lengkap Anggota 2: <span class="required-star-designed">*</span></span>
+                                    <span class="form-input-title-designed">Nama Lengkap Anggota 2:</span>
                                   </div>
                                   <div class="col s12 l6">
                                     <input class="form-input-designed" id="nama_anggota_kedua" name="nama3" class="validate">
@@ -116,7 +120,7 @@
                                 </div>
                                 <div class="row">
                                   <div class="col s12 l6">
-                                    <span class="form-input-title-designed">NIM Anggota 1: <span class="required-star-designed">*</span></span>
+                                    <span class="form-input-title-designed">NIM Anggota 1:</span>
                                   </div>
                                   <div class="col s12 l6">
                                     <input class="form-input-designed" id="studentid_satu" name="id2" class="validate">
@@ -124,7 +128,7 @@
                                 </div>
                                 <div class="row">
                                   <div class="col s12 l6">
-                                    <span class="form-input-title-designed">NIM Anggota 2: <span class="required-star-designed">*</span></span>
+                                    <span class="form-input-title-designed">NIM Anggota 2:</span>
                                   </div>
                                   <div class="col s12 l6">
                                     <input class="form-input-designed" id="studentid_kedua" name="id3" class="validate">
@@ -137,12 +141,10 @@
                                             class="required-star-designed">*</span></span>
                                 </div>
                                 <div class="col s4 l4">
-                                    <span class="form-input-title-designed">Jurusan Anggota 1: <span
-                                            class="required-star-designed">*</span></span>
+                                    <span class="form-input-title-designed">Jurusan Anggota 1:</span>
                                 </div>
                                 <div class="col s4 l4">
-                                    <span class="form-input-title-designed">Jurusan Anggota 2: <span
-                                            class="required-star-designed">*</span></span>
+                                    <span class="form-input-title-designed">Jurusan Anggota 2:</span>
                                 </div>
                                 <div class="col s4 l4">
                                     <input class="form-input-designed" id="jurusan_ketua" name="jurusan1" class="validate"
@@ -177,7 +179,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">Jenis Kelamin Anggota 1: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">Jenis Kelamin Anggota 1:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <select name="gender2">
@@ -189,7 +191,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">Jenis Kelamin Anggota 2: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">Jenis Kelamin Anggota 2:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <select name="gender3">
@@ -216,7 +218,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">Email Anggota 1: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">Email Anggota 1:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <input class="form-input-designed" id="email_satu" name="email2" type="email" class="validate">
@@ -224,7 +226,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">Email Anggota 2: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">Email Anggota 2:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <input class="form-input-designed" id="email_kedua" name="email3" type="email" class="validate">
@@ -246,7 +248,7 @@
                                         </div>
                                       </div>
                                       <div class="row">
-                                        
+
                                         <div class="col s12 l6">
                                           <span class="form-input-title-designed">ID Line: <span class="required-star-designed">*</span></span>
                                         </div>
@@ -295,7 +297,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">KTM Anggota 1: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">KTM Anggota 1:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <div class="file-field input-field">
@@ -318,7 +320,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">KTM Anggota 2: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">KTM Anggota 2:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <div class="file-field input-field">
@@ -371,7 +373,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">SKM Anggota 1: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">SKM Anggota 1:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <div class="file-field input-field">
@@ -394,7 +396,7 @@
                                       </div>
                                       <div class="row">
                                         <div class="col s12 l6">
-                                          <span class="form-input-title-designed">SKM Anggota 2: <span class="required-star-designed">*</span></span>
+                                          <span class="form-input-title-designed">SKM Anggota 2:</span>
                                         </div>
                                         <div class="col s12 l6">
                                           <div class="file-field input-field">
@@ -456,51 +458,75 @@
                                             <a href="https://drive.google.com/file/d/1alrOWudahB95vWGnUNXFp4-ql6FXTzgo/view?usp=sharing">sini</a></span>
                                           </div>
                                         </div>
-                                        <div class="row">
-                                          <div class="col s12 l6">
-                                            <span class="form-input-title-designed">Bukti Share Poster CTF ARA 2021:
-                                              <span class="required-star-designed">*</span></span>
-                                            </div>
+                                        <!--<div class="row">-->
+                                        <!--  <div class="col s12 l6">-->
+                                        <!--    <span class="form-input-title-designed">Bukti Share Poster CTF ARA 2021:-->
+                                        <!--      <span class="required-star-designed">*</span></span>-->
+                                        <!--    </div>-->
+                                        <!--    <div class="col s12 l6">-->
+                                        <!--      <div class="file-field input-field">-->
+                                        <!--        <div class="btn upload-button-designed">-->
+                                        <!--          <input type="file" id="share" name="share"-->
+                                        <!--          onchange="return fileValidation('share')" required>-->
+                                        <!--          <label for="share">-->
+                                        <!--            <img class="upload-button-image-designed"-->
+                                        <!--            src="<?php echo base_url('assets/images/upload_black.png') ?>"-->
+                                        <!--            style="max-height: 90%;">-->
+                                        <!--            <span class="upload-button-label-designed">Upload</span>-->
+                                        <!--          </label>-->
+                                        <!--        </div>-->
+                                        <!--        <div class="file-path-wrapper">-->
+                                        <!--          <input class="file-path validate" type="text">-->
+                                        <!--          <span id="share-size"></span>-->
+                                        <!--        </div>-->
+                                        <!--      </div>-->
+                                        <!--    </div>-->
+                                        <!--  </div>-->
+                                          <div class="row">
                                             <div class="col s12 l6">
-                                              <div class="file-field input-field">
-                                                <div class="btn upload-button-designed">
-                                                  <input type="file" id="share" name="share"
-                                                  onchange="return fileValidation('share')" required>
-                                                  <label for="share">
-                                                    <img class="upload-button-image-designed"
-                                                    src="<?php echo base_url('assets/images/upload_black.png') ?>"
-                                                    style="max-height: 90%;">
-                                                    <span class="upload-button-label-designed">Upload</span>
-                                                  </label>
-                                                </div>
-                                                <div class="file-path-wrapper">
-                                                  <input class="file-path validate" type="text">
-                                                  <span id="share-size"></span>
+                                              <span class="form-input-title-designed">Bukti Persyaratan Diskon Tiket:
+                                                <span class="required-star-designed">*</span></span>
+                                              </div>
+                                              <div class="col s12 l6">
+                                                <div class="file-field input-field">
+                                                  <div class="btn upload-button-designed">
+                                                    <input type="file" id="share2" name="share2"
+                                                    onchange="return fileValidation('share2')">
+                                                    <label for="share2">
+                                                      <img class="upload-button-image-designed"
+                                                      src="<?php echo base_url('assets/images/upload_black.png') ?>"
+                                                      style="max-height: 90%;">
+                                                      <span class="upload-button-label-designed">Upload</span>
+                                                    </label>
+                                                  </div>
+                                                  <div class="file-path-wrapper">
+                                                    <input class="file-path validate" type="text">
+                                                    <span id="share2-size"></span>
+                                                  </div>
                                                 </div>
                                               </div>
                                             </div>
-                                          </div>
-                                          <br>
-                                          <!-- Poster End -->
-                                          <div class="row animate__animated animate__bounce animate__infinite animate__slower animate__delay-1s">
-                                            <div class="col s12 l12">
-                                              <br><br>
-                                              <b><span class="form-input-title-designed"><span class="required-star-designed">*</span>Wajib Diisi</span></b>
+                                            <br>
+                                            <!-- Poster End -->
+                                            <div class="row animate__animated animate__bounce animate__infinite animate__slower animate__delay-1s">
+                                              <div class="col s12 l12">
+                                                <br><br>
+                                                <b><span class="form-input-title-designed"><span class="required-star-designed">*</span>Wajib Diisi</span></b>
+                                              </div>
+                                            </div>
+                                            <br><br>
+                                            <!-- Upload End -->
+                                            <div class="row">
+                                              <div class="center-align">
+                                                <button class="btn waves-effect waves-light center-align submit-button-form-designed"
+                                                type="submit" name="action" style="background-color: #64a0cc;">Daftar
+                                              </button>
                                             </div>
                                           </div>
-                                          <br><br>
-                                          <!-- Upload End -->
-                                          <div class="row">
-                                            <div class="center-align">
-                                              <button class="btn waves-effect waves-light center-align submit-button-form-designed"
-                                              type="submit" name="action" style="background-color: #64a0cc;">Daftar
-                                            </button>
-                                          </div>
-                                        </div>
-                                      </form>
+                                        </form>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                          </div>

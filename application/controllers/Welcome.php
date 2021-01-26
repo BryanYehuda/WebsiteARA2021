@@ -265,7 +265,8 @@ class Welcome extends CI_Controller {
 			'kategori' => 'ctf',
 			'institusi' => $this->input->post('institusi'),
 			'bukti_bayar' => $this->upload_bayar('ctf', $tim),
-			'bukti_share' => $this->upload_poster('ctf', $tim)
+// 			'bukti_share' => $this->upload_poster('ctf', $tim),
+			'bukti_zip' => $this->upload_zip('ctf', $tim)
 		);
 
 		$this->m_data->input_data($data2,'tim');
@@ -405,6 +406,47 @@ class Welcome extends CI_Controller {
 			return $img;
 		}
 
+	}
+
+	function upload_zip($cat, $tim)
+	{
+	    $nama = str_replace(".","-",$tim);
+		$path = './uploads/'.$cat.'/'.$tim;
+		if (!is_dir($path)) {
+			mkdir($path, 0777, TRUE);
+		}
+		$config['file_name']			= 'bukti_zip-'.$nama;
+		$config['upload_path']          = $path;
+		$config['allowed_types']        = 'zip';
+		// $config['max_size']             = 10000;
+		// $config['max_width']            = 1024;
+		// $config['max_height']           = 768;
+
+		$this->upload->initialize($config);
+		if (empty($_FILES['share2']['name'])) {
+			return $img = 'kosong';
+		} else {
+			if ( ! $this->upload->do_upload('share2'))
+			{
+				$error = $this->upload->display_errors();
+
+				$img = NULL;
+			}
+			else
+			{
+
+				$img = $this->upload->data('file_name');
+
+				return $img;
+			}
+		}
+
+
+	}
+
+	function logout(){
+		$this->session->sess_destroy();
+		redirect(base_url());
 	}
 
 

@@ -1,7 +1,8 @@
-(function($){
-  $(function(){
+(function($) {
+    $(function() {
 
-    $('.sidenav').sidenav();
+        $('.sidenav').sidenav();
+        $('.modal').modal();
 
-  }); 
+    });
 })(jQuery);

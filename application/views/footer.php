@@ -94,7 +94,7 @@
       var allowedExtensions = /(\.jpg|\.png)$/i;
       var msg = 'Hanya bisa upload file berekestensi *.jpg dan *.png.';
     } else {
-      var allowedExtensions = /(\.pdf|\.jpg|\.png)$/i;
+      var allowedExtensions = /(\.pdf|\.jpg|\.png|\.zip)$/i;
       var msg = 'Hanya bisa upload file berekestensi *.pdf, *.jpg dan *.png.';
     }
 
@@ -109,11 +109,11 @@
       for (const i = 0; i <= fileInput.files.length - 1; i++) {
 
         const fsize = fileInput.files.item(i).size;
-        const file = Math.round((fsize / 1024));
+        const file = Math.round((fsize / 2048));
         // The size of the file. 
-        if (file >= 1024) {
+        if (file >= 2048) {
           alert(
-            "Ukuran file terlalu besar, ukuran maksimal adalah 1mb");
+            "Ukuran file terlalu besar, ukuran maksimal adalah 2mb");
         } else {
           document.getElementById(element + '-size').innerHTML = '<b>'
             + file + '</b> KB';
@@ -129,6 +129,24 @@
 
             //Regex for Valid Characters i.e. Alphabets and Numbers.
             var regex = /^[A-Za-z0-9 @._* \n\r]+$/;
+            
+            //Validate TextBox value against the Regex.
+            var isValid = regex.test(String.fromCharCode(keyCode));
+            if (!isValid) {
+              alert("Only Alphabets and Numbers allowed.");
+            }
+            
+            return isValid;
+          });
+});
+</script>
+<script>
+  $(function () {
+  $("#abstrakIOT").keypress(function (e) {
+    var keyCode = e.keyCode || e.which;
+
+            //Regex for Valid Characters i.e. Alphabets and Numbers.
+            var regex = /^[A-Za-z0-9 ~`!@#$%^&*()_+=?'";:.,\\\{\}\[\]\|\/\-\n\r]+$/;
             
             //Validate TextBox value against the Regex.
             var isValid = regex.test(String.fromCharCode(keyCode));
