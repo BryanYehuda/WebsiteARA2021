@@ -37,24 +37,24 @@
                 </div>
                 <div class="row">
                     <div class="col s12 l4">
-                        <img class="responsive-img animate__animated animate__bounce" src="<?php echo base_url(); ?>assets/images/home.png">
+                        <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/home.png">
                     </div>
                     <div class="col s12 l4">
-                        <img class="responsive-img animate__animated animate__bounce" src="<?php echo base_url(); ?>assets/images/home(2).png">
+                        <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/home(2).png">
                     </div>
                     <div class="col s12 l4">
-                        <img class="responsive-img animate__animated animate__bounce" src="<?php echo base_url(); ?>assets/images/home(8).png">
+                        <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/home(8).png">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12 l4">
-                        <img class="responsive-img animate__animated animate__bounce" src="<?php echo base_url(); ?>assets/images/home(6).png">
+                        <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/home(6).png">
                     </div>
                     <div class="col s12 l4">
-                        <img class="responsive-img animate__animated animate__bounce" src="<?php echo base_url(); ?>assets/images/home(4).png">
+                        <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/home(4).png">
                     </div>
                     <div class="col s12 l4">
-                        <img class="responsive-img animate__animated animate__bounce" src="<?php echo base_url(); ?>assets/images/home(7).png">
+                        <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/home(7).png">
                     </div>
                 </div>
             </div>
@@ -201,13 +201,13 @@
                 </div>
                 <div class="row">
                     <div class="col s12 l4">
-                        <img class="responsive-img animate__animated animate__bounce" src="<?php echo base_url(); ?>assets/images/home(1).png">
+                        <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/home(1).png">
                     </div>
                     <div class="col s12 l4">
-                        <img class="responsive-img animate__animated animate__bounce" src="<?php echo base_url(); ?>assets/images/home(3).png">
+                        <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/home(3).png">
                     </div>
                     <div class="col s12 l4">
-                        <img class="responsive-img animate__animated animate__bounce" src="<?php echo base_url(); ?>assets/images/home(5).png">
+                        <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/home(5).png">
                     </div>
                 </div>
             </div>

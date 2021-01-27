@@ -34,13 +34,13 @@
               </div>
               <div class="row">
                     <div class="col s12 l4">
-                        <img class="responsive-img animate__animated animate__bounce" src="<?php echo base_url(); ?>assets/images/home(11).png">
+                        <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/home(11).png">
                     </div>
                     <div class="col s12 l4">
-                        <img class="responsive-img animate__animated animate__bounce" src="<?php echo base_url(); ?>assets/images/home(10).png">
+                        <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/home(10).png">
                     </div>
                     <div class="col s12 l4">
-                        <img class="responsive-img animate__animated animate__bounce" src="<?php echo base_url(); ?>assets/images/home(9).png">
+                        <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/home(9).png">
                     </div>
                 </div>
           </div>

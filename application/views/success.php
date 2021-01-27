@@ -1,6 +1,6 @@
 <div class="container-designed">
 
-    <div class="apple-window-designed"><br><br><br><br><br>
+    <div class="apple-window-designed">
        
        <div data-aos="zoom-in">
 
@@ -31,7 +31,7 @@
                   </div>
               </form><br>
           </div>  
-          <br><br><br><br><br><br><br><br><br><br><br>  
+          <br>
     </div>
 </div>
         

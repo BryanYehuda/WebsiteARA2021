@@ -2,16 +2,14 @@
     "name": "ARA 2020 HMIT ITS",
     "short_name": "ARA2020",
     "description": "ARA 2020 - For A Better Future!",
-    "start_url": "/pages/index.html",
+    "start_url": "https://arek.its.ac.id/ara/",
     "display": "standalone",
-    "background_color": "#2bdcfb",
-    "theme_color": "#2bdcfb",
-     "icons": [
-    {
-      "src": "/images/logo.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ]
+    "background_color": "#70b2e2",
+    "theme_color": "#70b2e2",
+    "icons": [{
+        "src": "assets/images/logo.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+    }]
 }

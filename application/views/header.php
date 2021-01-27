@@ -36,9 +36,9 @@
     <nav class="color-blue-designed" role="navigation">
       <div class="nav-wrapper container-designed-navbar">
         <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img"
-          src="<?php echo base_url(); ?>assets/images/logo_black_ara_2.png" width="40" height="auto"
+          src="<?php echo base_url(); ?>assets/images/logo_black_ara_2.png" width="30" height="auto"
           style="padding-top: 7.5px;"><img class="responsive-img"
-          src="<?php echo base_url(); ?>assets/images/logo_black_ara.png" width="80" height="auto" style="padding-top: 7.5px;">
+          src="<?php echo base_url(); ?>assets/images/logo_black_ara.png" width="60" height="auto" style="padding-top: 7.5px;">
         </a>
         <ul class="right hide-on-med-and-down">
           <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>"><strong>HOME</strong></a></li>
