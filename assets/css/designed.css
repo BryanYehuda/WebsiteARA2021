@@ -327,3 +327,7 @@ div .apple-window-designed .content-designed .row .col {
     /* background-color: white; */
     color: white;
 }
+
+.table-hover tbody tr:hover {
+    background-color: rgb(30, 30, 30);
+}
