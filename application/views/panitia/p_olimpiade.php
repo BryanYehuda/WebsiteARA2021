@@ -11,6 +11,7 @@
                 <!-- <th>Alamat</th> -->
                 <th>Nama Anggota 1</th>
                 <th>Nama Anggota 2</th>
+                <th>Tgl. Daftar</th>
             </tr>
         </thead>
         <tbody>
@@ -45,6 +46,9 @@
                     <a data-toggle="modal" data-target="#modal_<?php echo $data->id_ctf; ?>_3" draggable="false">
                         <?= $data->nama3; ?>
                     </a>
+                </td>
+                <td draggable="false">
+                    <?= $data->olim_timestamp; ?>
                 </td>
             </tr>
             <?php } ?>

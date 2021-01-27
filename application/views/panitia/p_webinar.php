@@ -7,6 +7,7 @@
                 <th>Email</th>
                 <th>No. WhatsApp</th>
                 <th>Bukti</th>
+                <th>Tgl. Daftar</th>
             </tr>
         </thead>
         <tbody>
@@ -31,6 +32,9 @@
                         draggable="false">
                         <?= $data->bukti; ?>
                     </a>
+                </td>
+                <td draggable="false">
+                    <?= $data->webinar_timestamp; ?>
                 </td>
             </tr>
             <?php } ?>
