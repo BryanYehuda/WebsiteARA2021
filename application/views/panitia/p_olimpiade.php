@@ -3,6 +3,7 @@
     <table class="table table-hover table-responsive">
         <thead>
             <tr style="color: whitesmoke;">
+                <th>ID</th>
                 <th>Nama Tim</th>
                 <th>Nama Ketua</th>
                 <th>Email Ketua</th>
@@ -15,10 +16,22 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach($datas as $data) {?>
+        <?php foreach($datas as $data) { ?>
             <tr draggable="false">
                 <td draggable="false">
-                    <?= $data->nama_tim; ?>
+                    i-<?= $data->id ?>
+                <td>
+                <td draggable="false">
+                    <?php if($data->bukti_bayar == '') {
+                        ?>
+                        <?=$data->nama_tim; ?>
+                    <?php 
+                    } else { ?>
+                    <a href="<?php echo base_url('uploads/olimpiade/') . $data->nama_tim . '/' . $data->bukti_bayar; ?>"
+                        draggable="false" target="_blank">
+                        <?=$data->nama_tim; ?>
+                    </a>
+                    <?php } ?>
                 </td>
                 <td draggable="false">
                     <a data-toggle="modal" data-target="#modal_<?php echo $data->id_ctf; ?>_1" draggable="false">
@@ -87,7 +100,7 @@
                             Jenis Kelamin
                         </b>
                         <br>
-                        <?php if($data->gender1 == "1") {
+                        <?php if($data->gender1 == "0") {
                             echo 'Laki-Laki';
                         } else {
                             echo 'Perempuan';
@@ -157,7 +170,7 @@
                             Jenis Kelamin
                         </b>
                         <br>
-                        <?php if($data->gender2 == "1") {
+                        <?php if($data->gender2 == "0") {
                             echo 'Laki-Laki';
                         } else {
                             echo 'Perempuan';
@@ -227,7 +240,7 @@
                             Jenis Kelamin
                         </b>
                         <br>
-                        <?php if($data->gender3 == "1") {
+                        <?php if($data->gender3 == "0") {
                             echo 'Laki-Laki';
                         } else {
                             echo 'Perempuan';

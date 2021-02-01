@@ -19,7 +19,6 @@
           </div>
           <div class="col s12 center-align">
             <div class="row">
-              <form id="form" name="form" class=" col s12" action="" method="post" enctype="multipart/form-data">
               <!-- Action jangan lupa diisi -->
               <br><br>    
                 <div class="row">
@@ -29,7 +28,7 @@
                 </div>
                 <div class="row">
                   <div class="col s12 input-field">
-                    <textarea id="textarea1" value="<?php echo $judul; ?>" class="form-input-designed-textarea materialize-textarea" id="disabled" name="" class="" required></textarea>
+                    <textarea id="textarea1" style="text-align: justify; padding: 14px;" class="form-input-designed-textarea materialize-textarea" id="disabled" disabled><?php echo $judul ?></textarea>
                     <!-- Id, name, class jangan lupa diisi -->
                   </div>
                 </div><br><br>
@@ -40,11 +39,10 @@
                 </div>
                 <div class="row">
                   <div class="col s12 input-field">
-                    <textarea id="textarea1" value="<?php echo $abstrak; ?>" class="form-input-designed-textarea materialize-textarea" id="disabled" name="" class="" required></textarea>
+                    <textarea id="textarea1" style="text-align: justify; padding: 14px;" class="form-input-designed-textarea materialize-textarea" id="disabled" disabled><?php echo $abstrak ?></textarea>
                     <!-- Id, name, class jangan lupa diisi -->
                   </div>
                 </div><br><br>
-              </form>
             </div>
           </div>
         </div>

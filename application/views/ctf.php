@@ -28,7 +28,7 @@
                               1. Foto/scan Kartu Tanda Mahasiswa setiap anggota.<br>
                               2. Foto/scan Surat Keterangan Mahasiswa/wi<br>
                               3. Bukti pembayaran registrasi sebesar Rp 75.000,- (Batch 2) ke rekening BNI 0254251568 A/n Muhammad Hilmi Ramadhan<br>
-                              4. Membaca Guide book yang bisa di dapat melalui link ini<br>
+                              4. Membaca Guide book yang bisa di dapat melalui <a href="https://drive.google.com/file/d/1cQ8GClZcNXErFdUjY142GzSoVd2xPMBd/view?usp=sharing">link ini</a><br>
                               Catatan : <br>
                               1. Tim yang telah terverifikasi akan mendapatkan email yang berisi username dan password untuk memasuki situs lomba. Bagi tim yang sudah mendaftar tetapi tidak mendapatkan email sampai tanggal 5 Maret 2021, dapat menghubungi panitia melalui Contact Person yang tersedia.<br>
                               2. [DISKON TIKET] Peserta dapat membayar sesuai harga pada Batch 1 (Rp 60.000,-) meskipun melakukan pembayaran diluar jangka waktu pada Batch 1.<br>
@@ -329,9 +329,9 @@
                                           <div class="col s12 l6">
                                             <div class="file-field input-field">
                                               <div class="btn upload-button-designed">
-                                                <input type="file" id="ktm2" name="ktm2"
-                                                onchange="return fileValidation('ktm2')">
-                                                <label for="ktm2">
+                                                <input type="file" id="ktm3" name="ktm3"
+                                                onchange="return fileValidation('ktm3')">
+                                                <label for="ktm3">
                                                   <img class="upload-button-image-designed"
                                                   src="<?php echo base_url('assets/images/upload_black.png') ?>"
                                                   style="max-height: 90%;">
@@ -340,7 +340,7 @@
                                               </div>
                                               <div class="file-path-wrapper">
                                                 <input class="file-path validate" type="text">
-                                                <span id="ktm2-size"></span>
+                                                <span id="ktm3-size"></span>
                                               </div>
                                             </div>
                                           </div>

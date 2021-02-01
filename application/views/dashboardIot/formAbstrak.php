@@ -29,7 +29,7 @@
                 </div>
                 <div class="row">
                   <div class="col s12 input-field">
-                    <textarea id="textarea1" class="form-input-designed-textarea materialize-textarea" id="judul" name="judul" required></textarea>
+                    <textarea id="textarea1" style="text-align: justify; padding: 14px;" class="form-input-designed-textarea materialize-textarea" id="judul" name="judul" required></textarea>
                     <!-- Id, name, class jangan lupa diisi -->
                   </div>
                 </div><br><br> 
@@ -40,7 +40,7 @@
                 </div>
                 <div class="row">
                   <div class="col s12 input-field">
-                    <textarea id="textarea1" class="form-input-designed-textarea materialize-textarea" id="abstrak" name="abstrak" required></textarea>
+                    <textarea id="textarea1" style="text-align: justify; padding: 14px;" class="form-input-designed-textarea materialize-textarea" id="abstrak" name="abstrak" required></textarea>
                     <!-- Id, name, class jangan lupa diisi -->
                   </div>
                 </div><br><br>

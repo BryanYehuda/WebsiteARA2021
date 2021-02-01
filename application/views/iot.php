@@ -23,11 +23,11 @@
                           </div>
                           <div class="row">
                             <div class="col s12" style="text-align:justify">
-                              <p>Periode Pendaftaran : 25 Desember 2020 - 24 Januari 2021 pukul 23:59 WIB<br></p>
+                              <p>Periode Pendaftaran : 25 Desember 2020 - 12 Februari 2021 pukul 23:59 WIB<br></p>
                               <p>Berkas Pendaftaran :<br>
                               Foto/scan Kartu Pelajar / Kartu Tanda Mahasiswa setiap anggota.<br>
                               Foto/scan Surat Keterangan Mahasiswa/wi<br>
-                              Membaca Guide book yang bisa di dapat melalui <a href="https://drive.google.com/file/d/1EJe62KrbKk1aofdDZP6sFuuXlFKY7jr8/view?usp=sharing"> link ini</a></p>
+                              Membaca Guide book yang bisa di dapat melalui <a href="https://drive.google.com/file/d/1ly8oS8aqaUn2Aqn-FNF6wy2xWLt7tqAt/view?usp=sharing"> link ini</a></p>
                               <p>Catatan : Pendaftaran tidak dipungut biaya.</p>
                               <p>Contact Person Internet of Things<br>
                               1. Dian : danza1365 (line) / 085233182116<br>
@@ -323,9 +323,9 @@
                                           <div class="col s12 l6">
                                             <div class="file-field input-field">
                                               <div class="btn upload-button-designed">
-                                                <input type="file" id="ktm2" name="ktm2"
-                                                onchange="return fileValidation('ktm2')">
-                                                <label for="ktm2">
+                                                <input type="file" id="ktm3" name="ktm3"
+                                                onchange="return fileValidation('ktm3')">
+                                                <label for="ktm3">
                                                   <img class="upload-button-image-designed"
                                                   src="<?php echo base_url('assets/images/upload_black.png') ?>"
                                                   style="max-height: 90%;">
@@ -334,7 +334,7 @@
                                               </div>
                                               <div class="file-path-wrapper">
                                                 <input class="file-path validate" type="text">
-                                                <span id="ktm2-size"></span>
+                                                <span id="ktm3-size"></span>
                                               </div>
                                             </div>
                                           </div>

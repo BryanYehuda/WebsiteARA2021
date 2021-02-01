@@ -29,6 +29,10 @@
                               Foto/scan kartu pelajar setiap anggota.<br>
                               Bukti pembayaran registrasi sebesar Rp 40.000,- ke rekening BNI 0254251568 A/n Muhammad Hilmi Ramadhan<br>
                               Membaca Guide book yang bisa di dapat melalui <a href="https://drive.google.com/file/d/1LqEygw6i1M1n7nK_yxn6nZB8sWcFt2Gb/view?usp=drivesdk">link ini</a></p>
+                              <!--<p>-->
+                              <!--    <strong>Catatan:</strong><br>-->
+                              <!--    Jika mendaftar bersama 3 tim maka hanya dikenakan biaya pendaftaran sebesar 25 rb per tim, dan wajib mengkonfirmasi pada CP yang tertera-->
+                              <!--</p>-->
                               <p>Contact Person Olimpiade<br>
                               1. Haffif : haffifrasya18 (line) / 081322779949<br>
                               2. Tera : terajan (line) / 081217267874</p>
@@ -322,9 +326,9 @@
                                           <div class="col s12 l6">
                                             <div class="file-field input-field">
                                               <div class="btn upload-button-designed">
-                                                <input type="file" id="ktm2" name="ktm2"
-                                                onchange="return fileValidation('ktm2')">
-                                                <label for="ktm2">
+                                                <input type="file" id="ktm3" name="ktm3"
+                                                onchange="return fileValidation('ktm3')">
+                                                <label for="ktm3">
                                                   <img class="upload-button-image-designed"
                                                   src="<?php echo base_url('assets/images/upload_black.png') ?>"
                                                   style="max-height: 90%;">
@@ -333,7 +337,7 @@
                                               </div>
                                               <div class="file-path-wrapper">
                                                 <input class="file-path validate" type="text">
-                                                <span id="ktm2-size"></span>
+                                                <span id="ktm3-size"></span>
                                               </div>
                                             </div>
                                           </div>
