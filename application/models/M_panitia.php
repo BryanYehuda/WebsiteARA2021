@@ -1,9 +1,22 @@
 <?php 
 
-class M_panitia extends CI_Model {
+defined('BASEPATH') OR exit('No direct script access allowed');
+class M_Panitia extends CI_Model {
 
     function get_data($table) {
-        return $this->db->get($table)->result();
+        if($table == 'webinar')
+            return $this->db->get($table)->result();
+
+        $tabletime = $table;
+        
+        if($table == 'olimpiade')
+            $tabletime = 'olim';
+
+        return $this->db->select('team.nama, team.id, team.tim_status, team.bukti_bayar, cur.*')->from('tim team')->join($table . ' cur', 'team.nama = cur.nama_tim', 'LEFT')->order_by('cur.' . $tabletime . '_timestamp', 'DESC')->where("cur.nama_tim is not null and team.nama is not null and team.tim_status > 0")->get()->result();
+    }
+
+    function get_data_all_tim() {
+        return $this->db->get('tim');
     }
 
     function search($table, $keyword) {
