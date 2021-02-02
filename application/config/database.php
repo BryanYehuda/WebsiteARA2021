@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '202.46.129.204',
-	'username' => 'ara',
-	'password' => 'Pk9XQSIucd#*',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
 	'database' => 'ara_website',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
