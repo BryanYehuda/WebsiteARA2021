@@ -71,3 +71,4 @@ $route['login']						=	'iot';
 $route['logout']					=	'welcome/logout';
 
 $route['berhasilsubmit']			=	'iot/sukses_submit';
+$route['otp/activate']              =   'otp/activate';
