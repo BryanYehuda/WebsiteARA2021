@@ -41,7 +41,7 @@ class Iot extends CI_Controller {
 		$password = $this->input->post('password');
 		$where = array(
 			'nama' => $username,
-			'pass' => md5($password),
+			'pass' => md5('taburin_garem_ah...' . $password . 'biar_sedep_gitu_kan_ya...'),
 			'kategori' => 'iot'
 		);
 		$cek = $this->m_data->get_where("tim",$where);

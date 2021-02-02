@@ -8,6 +8,7 @@ class Panitiaaraonly extends CI_Controller {
         $this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
         $this->load->model('m_panitia');
+        $this->load->model('m_otp');
         
         //Check if panitia is already login
         if(!$this->session->has_userdata("panitia_logged_in") && $this->session->userdata("panitia_logged_in") != '0') {
@@ -93,6 +94,19 @@ class Panitiaaraonly extends CI_Controller {
             $onpage['onpage'] = $cur;
             $this->load->view('panitia/p_header', $onpage);
             $this->load->view('panitia/p_olimpiade', $panitia);
+            // $this->load->view('panitia/p_result');
+            $this->load->view('panitia/p_footer', $onpage);
+        }
+    }
+
+    function tim() {
+        if($this->session->has_userdata("panitia_logged_in") && $this->session->userdata("panitia_logged_in") != '0') {
+            $cur = 'tim';
+            $query = $this->m_panitia->get_data_all_tim();
+            $panitia['datas'] = $query->result();
+            $onpage['onpage'] = $cur;
+            $this->load->view('panitia/p_header', $onpage);
+            $this->load->view('panitia/p_tim', $panitia);
             // $this->load->view('panitia/p_result');
             $this->load->view('panitia/p_footer', $onpage);
         }
