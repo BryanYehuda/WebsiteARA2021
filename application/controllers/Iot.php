@@ -40,8 +40,8 @@ class Iot extends CI_Controller {
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
 		$where = array(
-			'nama' => $username,
-			'pass' => md5($password),
+			'usernamelogin_tim' => $username,
+			'pass' => md5('taburin_garem_ah...' . $password . 'biar_sedep_gitu_kan_ya...'),
 			'kategori' => 'iot'
 		);
 		$cek = $this->m_data->get_where("tim",$where);
@@ -115,19 +115,19 @@ class Iot extends CI_Controller {
 		$this->load->view('footer');
 	}
 	
-// 	public function cek_pass(){
-// 		$data = array('kategori' => 'iot', );
-// 		$print = $this->m_data->get_where('tim', $data)->result();
+	public function cek_pass(){
+		$data = array('kategori' => 'iot', 'pass' => '');
+		$print = $this->m_data->get_where('tim', $data)->result();
 
-// 		foreach ($print as $key) {
-// 		    echo $key->nama." = ".(strtolower(str_replace(' ', '', $key->nama))."ara123 <br>");
-// 			$query = "
-// 			UPDATE tim
-// 			SET pass = md5('".strtolower(str_replace(' ', '', $key->nama))."ara123')
-// 			WHERE kategori = 'iot' AND id = ".$key->id.";";
+		foreach ($print as $key) {
+		    echo $key->nama." = ".(strtolower(str_replace(' ', '', $key->nama))."ara123 <br>");
+			$query = "
+			UPDATE tim
+			SET pass = md5('".strtolower(str_replace(' ', '', $key->nama))."ara123')
+			WHERE kategori = 'iot' AND id = ".$key->id.";";
 // 			echo $query."<br>";
-// 			$this->db->query($query);
-// 		}
-// 	}
+			$this->db->query($query);
+		}
+	}
 
 }

@@ -21,7 +21,9 @@ class Welcome extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->model('m_data');
+		$this->load->model('m_otp');
 		$this->load->library('upload');
+		$this->load->helper(array('form', 'url'));
 	}
 
 	public function index()
@@ -173,7 +175,12 @@ class Welcome extends CI_Controller {
 		$this->m_data->input_data($data2,'tim');
 		$this->m_data->input_data($data1,'iot');
 
-		redirect('pendaftaran/sukses');
+		$this->load->library('email');
+		if($this->m_otp->request_otp($data1['email1'], $tim, $data2['kategori'])) {
+			redirect('pendaftaran/sukses');
+		} else {
+			$this->showmessage('Request OTP - Gagal', 'Mohon maaf, telah terjadi masalah saat melakukan pendaftaran. Mohon hubungi panitia ARA2021.\nKontak Panitia ARA2021: <a href="https://linktr.ee/ARA2021">linktr.ee/ARA2021</a>');
+		}
 	}
 
 	public function olimpiade()
@@ -226,7 +233,12 @@ class Welcome extends CI_Controller {
 		$this->m_data->input_data($data2,'tim');
 		$this->m_data->input_data($data1,'olimpiade');
 
-		redirect('pendaftaran/sukses');
+		$this->load->library('email');
+		if($this->m_otp->request_otp($data1['email1'], $tim, $data2['kategori'])) {
+			redirect('pendaftaran/sukses');
+		} else {
+			$this->showmessage('Request OTP - Gagal', 'Mohon maaf, telah terjadi masalah saat melakukan pendaftaran. Mohon hubungi panitia ARA2021.\nKontak Panitia ARA2021: <a href="https://linktr.ee/ARA2021">linktr.ee/ARA2021</a>');
+		}
 		
 	}
 
@@ -280,7 +292,12 @@ class Welcome extends CI_Controller {
 		$this->m_data->input_data($data2,'tim');
 		$this->m_data->input_data($data1,'ctf');
 
-		redirect('pendaftaran/sukses');
+		$this->load->library('email');
+		if($this->m_otp->request_otp($data1['email1'], $tim, $data2['kategori'])) {
+			redirect('pendaftaran/sukses');
+		} else {
+			$this->showmessage('Request OTP - Gagal', 'Mohon maaf, telah terjadi masalah saat melakukan pendaftaran. Mohon hubungi panitia ARA2021.\nKontak Panitia ARA2021: <a href="https://linktr.ee/ARA2021">linktr.ee/ARA2021</a>');
+		}
 		
 	}
 
@@ -565,5 +582,19 @@ class Welcome extends CI_Controller {
 		redirect(base_url());
 	}
 
+	function showmessage($title = '~-404-~', $msg='') {
+
+		if($title == '~-404-~') {
+			$mesg['thetitle'] = '404';
+			$mesg['themessage'] = 'Maaf, kami tidak dapat menemukan halaman yang anda cari';
+		} else {
+			$mesg['thetitle'] = $title;
+			$mesg['themessage'] = $msg;
+		}
+
+		$this->load->view('header');
+		$this->load->view('v_message', $mesg);
+		$this->load->view('footer');
+    }
 
 }
