@@ -39,6 +39,12 @@ class Welcome extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function sukseswebinar(){
+		$this->load->view('header');
+		$this->load->view('successwebinar');
+		$this->load->view('footer');
+	}
+
 	public function uploadsukses(){
 		$this->load->view('header');
 		$this->load->view('uploadsukses');
@@ -123,7 +129,7 @@ class Welcome extends CI_Controller {
 
 			$this->m_data->input_data($data,'webinar');
 			
-			redirect('pendaftaran/sukses');
+			redirect('pendaftaran/sukseswebinar');
 		}
 	}
 
