@@ -23,12 +23,31 @@
         </div>
         <div class="row">
           <div class="col s12" style="text-align:justify">
-            <p>Periode Pendaftaran: 6 Februari 2021 - 3 Maret 2021<br></p>
-            <p>Catatan : Pendaftaran tidak dipungut biaya.</p>
-            <p>Contact Person Webinar<br>
-              1. Clae : clarissafatimah (line) / 081515544997<br>
-            2. Nisa : revinaerha (line) / 081371806484</p>
-          </div>  
+            <p>
+              Periode Pendaftaran:
+              6 Februari 2021 - 3 Maret 2021 <br></p>
+            <p>
+              <strong>Biaya Pendaftaran :
+                FREE<br></strong>
+            </p>
+            <p>
+              Kegiatan: <br>
+              . Cyber Security (6 Maret 2021) & IoT (7 Maret 2021) <br>
+              . 08.00 - 12.00 WIB <br>
+              . Zoom dan Youtube <br>
+            </p>
+            <p>
+              Syarat:<br>
+              . Follow Instagram Telkom Indonesia (@telkomindonesia dan @livingintelkom)<br>
+              . Share Poster ke Instagram (Feeds atau Story) atau media lainnya<br>
+              . Upload Twibbon ke Instagram (optional)
+            </p>
+            <p>
+              CP:
+              Axel: 082133453710<br>
+              Mita: 081233776027
+            </p>
+          </div>
         </div>
       </div>
       <br><br>
@@ -56,7 +75,7 @@
               <br>
             </div>
             <div class="row">
-              <form id="form" name="form" class=" col s12" action="<?php echo base_url().'daftar/webinar' ?>" method="post" enctype="multipart/form-data">
+              <form id="form" name="form" class=" col s12" action="<?php echo base_url() . 'daftar/webinar' ?>" method="post" enctype="multipart/form-data">
                 <br><br>
                 <div class="row">
                   <div class="col s12 l6">
@@ -113,188 +132,177 @@
                 </div>
                 <div class="row">
                   <div class="col s12 l12">
-                    <span class="form-title-designed">Share Poster IoT ARA 2021 di Instastory</span>
+                    <span class="form-title-designed">Share Poster Webinar ARA 2021 di Instastory</span>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col s12 l12">
-                    <span class="form-input-title-designed">Poster didownload di 
-                      <a href="https://drive.google.com/file/d/1hW0SzI6lzE0cfnFkTViFMMQ6Y_DJvs2Z/view?usp=sharing">sini</a></span>
-                    </div>
+                    <span class="form-input-title-designed">Poster didownload di
+                      <a href="https://drive.google.com/file/d/1_3-Je_FUYT_o8rVULTdYN0ma4eU9bPbG/view?usp=sharing" target="_blank">sini</a></span>
                   </div>
-                  <div class="row">
-                    <div class="col s12 l6">
-                      <span class="form-input-title-designed">Bukti Share Poster Webinar ARA 2021:
-                        <span class="required-star-designed">*</span></span>
-                      </div>
-                      <div class="col s12 l6">
-                        <div class="file-field input-field">
-                          <div class="btn upload-button-designed">
-                            <input type="file" id="share2" name="share2"
-                            onchange="return fileValidation('share2')" required>
-                            <label for="share2">
-                              <img class="upload-button-image-designed"
-                              src="<?php echo base_url('assets/images/upload_black.png') ?>"
-                              style="max-height: 90%;">
-                              <span class="upload-button-label-designed">Upload</span>
-                            </label>
-                          </div>
-                          <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text">
-                            <span id="share2-size"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                  <div class="col s12 l12">
-                    <span class="form-input-title-designed">Poster didownload di 
-                      <a href="https://drive.google.com/file/d/1hW0SzI6lzE0cfnFkTViFMMQ6Y_DJvs2Z/view?usp=sharing">sini</a></span>
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l6">
+                    <span class="form-input-title-designed">Bukti Share Poster Webinar Cyber Security ARA 2021:
+                      <span class="required-star-designed">*</span></span>
                   </div>
-                  <div class="row">
-                    <div class="col s12 l6">
-                      <span class="form-input-title-designed">Bukti Share Poster Webinar ARA 2021:
-                        <span class="required-star-designed">*</span></span>
+                  <div class="col s12 l6">
+                    <div class="file-field input-field">
+                      <div class="btn upload-button-designed">
+                        <input type="file" id="share2" name="share2" onchange="return fileValidation('share2')" required>
+                        <label for="share2">
+                          <img class="upload-button-image-designed" src="<?php echo base_url('assets/images/upload_black.png') ?>" style="max-height: 90%;">
+                          <span class="upload-button-label-designed">Upload</span>
+                        </label>
                       </div>
-                      <div class="col s12 l6">
-                        <div class="file-field input-field">
-                          <div class="btn upload-button-designed">
-                            <input type="file" id="share" name="share"
-                            onchange="return fileValidation('share')" required>
-                            <label for="share">
-                              <img class="upload-button-image-designed"
-                              src="<?php echo base_url('assets/images/upload_black.png') ?>"
-                              style="max-height: 90%;">
-                              <span class="upload-button-label-designed">Upload</span>
-                            </label>
-                          </div>
-                          <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text">
-                            <span id="share-size"></span>
-                          </div>
-                        </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                        <span id="share2-size"></span>
                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="col s12 l12">
-                        <span class="form-input-title-designed">Link Instagram 
-                          <a href="https://www.instagram.com/telkomindonesia/">@telkomindonesia</a></span>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col s12 l6">
-                          <span class="form-input-title-designed">Bukti Follow @telkomindonesia:
-                            <span class="required-star-designed">*</span></span>
-                          </div>
-                          <div class="col s12 l6">
-                            <div class="file-field input-field">
-                              <div class="btn upload-button-designed">
-                                <input type="file" id="telkom1" name="telkom1"
-                                onchange="return fileValidation('telkom1')" required>
-                                <label for="telkom1">
-                                  <img class="upload-button-image-designed"
-                                  src="<?php echo base_url('assets/images/upload_black.png') ?>"
-                                  style="max-height: 90%;">
-                                  <span class="upload-button-label-designed">Upload</span>
-                                </label>
-                              </div>
-                              <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text">
-                                <span id="telkom1-size"></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                      <div class="col s12 l12">
-                        <span class="form-input-title-designed">Link Instagram 
-                          <a href="https://www.instagram.com/livingintelkom/">@livingintelkom</a></span>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col s12 l6">
-                          <span class="form-input-title-designed">Bukti Follow @livingintelkom:
-                            <span class="required-star-designed">*</span></span>
-                          </div>
-                          <div class="col s12 l6">
-                            <div class="file-field input-field">
-                              <div class="btn upload-button-designed">
-                                <input type="file" id="telkom2" name="telkom2"
-                                onchange="return fileValidation('telkom2')" required>
-                                <label for="telkom2">
-                                  <img class="upload-button-image-designed"
-                                  src="<?php echo base_url('assets/images/upload_black.png') ?>"
-                                  style="max-height: 90%;">
-                                  <span class="upload-button-label-designed">Upload</span>
-                                </label>
-                              </div>
-                              <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text">
-                                <span id="telkom2-size"></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                          <div class="row">
-                            <div class="col s12 l6">
-                              <span class="form-input-title-designed">Bukti Upload Twibbon:</span>
-                            </div>
-                            <div class="col s12 l6">
-                              <div class="file-field input-field">
-                                <div class="btn upload-button-designed">
-                                  <input type="file" id="twibbon" name="twibbon"
-                                  onchange="return fileValidation('twibbon')">
-                                  <label for="twibbon">
-                                    <img class="upload-button-image-designed"
-                                    src="<?php echo base_url('assets/images/upload_black.png') ?>"
-                                    style="max-height: 90%;">
-                                    <span class="upload-button-label-designed">Upload</span>
-                                  </label>
-                                </div>
-                                <div class="file-path-wrapper">
-                                  <input class="file-path validate" type="text">
-                                  <span id="twibbon-size"></span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <br>
-                          <div class="row animate__animated animate__bounce animate__infinite animate__slower animate__delay-1s">
-                            <div class="col s12 l12">
-                              <br><br><br>
-                              <b><span class="form-input-title-designed"><span class="required-star-designed">*</span>Wajib Diisi</span></b>
-                            </div>
-                          </div>
-                          <br><br>
-                          <div class="row">
-                            <div class="center-align">
-                              <button id="submitBtn" class="btn waves-effect waves-light center-align submit-button-form-designed"
-                              type="submit" name="action" style="background-color: #64a0cc;">Daftar
-                            </button>
-                          </div>
-                        </div>
-                      </form>
                     </div>
                   </div>
                 </div>
-              </div>
-
+                <div class="row">
+                  <div class="col s12 l12">
+                    <span class="form-input-title-designed">Poster didownload di
+                      <a href="https://drive.google.com/file/d/1Fmyt5KB7YULKGfvS6f3DMjft9PZgfXRp/view?usp=sharing" target="_blank">sini</a></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l6">
+                    <span class="form-input-title-designed">Bukti Share Poster Webinar IoT ARA 2021:
+                      <span class="required-star-designed">*</span></span>
+                  </div>
+                  <div class="col s12 l6">
+                    <div class="file-field input-field">
+                      <div class="btn upload-button-designed">
+                        <input type="file" id="share" name="share" onchange="return fileValidation('share')" required>
+                        <label for="share">
+                          <img class="upload-button-image-designed" src="<?php echo base_url('assets/images/upload_black.png') ?>" style="max-height: 90%;">
+                          <span class="upload-button-label-designed">Upload</span>
+                        </label>
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                        <span id="share-size"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l12">
+                    <span class="form-input-title-designed">Link Instagram
+                      <a href="https://www.instagram.com/telkomindonesia/" target="_blank">@telkomindonesia</a></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l6">
+                    <span class="form-input-title-designed">Bukti Follow @telkomindonesia:
+                      <span class="required-star-designed">*</span></span>
+                  </div>
+                  <div class="col s12 l6">
+                    <div class="file-field input-field">
+                      <div class="btn upload-button-designed">
+                        <input type="file" id="telkom1" name="telkom1" onchange="return fileValidation('telkom1')" required>
+                        <label for="telkom1">
+                          <img class="upload-button-image-designed" src="<?php echo base_url('assets/images/upload_black.png') ?>" style="max-height: 90%;">
+                          <span class="upload-button-label-designed">Upload</span>
+                        </label>
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                        <span id="telkom1-size"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l12">
+                    <span class="form-input-title-designed">Link Instagram
+                      <a href="https://www.instagram.com/livingintelkom/" target="_blank">@livingintelkom</a></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l6">
+                    <span class="form-input-title-designed">Bukti Follow @livingintelkom:
+                      <span class="required-star-designed">*</span></span>
+                  </div>
+                  <div class="col s12 l6">
+                    <div class="file-field input-field">
+                      <div class="btn upload-button-designed">
+                        <input type="file" id="telkom2" name="telkom2" onchange="return fileValidation('telkom2')" required>
+                        <label for="telkom2">
+                          <img class="upload-button-image-designed" src="<?php echo base_url('assets/images/upload_black.png') ?>" style="max-height: 90%;">
+                          <span class="upload-button-label-designed">Upload</span>
+                        </label>
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                        <span id="telkom2-size"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l12">
+                    <span class="form-input-title-designed">Twibbon dapat di Download disini
+                      <a href="https://drive.google.com/file/d/1EZqY8M4scuEROobwuF56MDrdhO02nMOP/view?usp=sharing" target="_blank">sini</a></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l6">
+                    <span class="form-input-title-designed">Bukti Upload Twibbon:</span>
+                  </div>
+                  <div class="col s12 l6">
+                    <div class="file-field input-field">
+                      <div class="btn upload-button-designed">
+                        <input type="file" id="twibbon" name="twibbon" onchange="return fileValidation('twibbon')">
+                        <label for="twibbon">
+                          <img class="upload-button-image-designed" src="<?php echo base_url('assets/images/upload_black.png') ?>" style="max-height: 90%;">
+                          <span class="upload-button-label-designed">Upload</span>
+                        </label>
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                        <span id="twibbon-size"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row animate__animated animate__bounce animate__infinite animate__slower animate__delay-1s">
+                  <div class="col s12 l12">
+                    <br><br><br>
+                    <b><span class="form-input-title-designed"><span class="required-star-designed">*</span>Wajib Diisi</span></b>
+                  </div>
+                </div>
+                <br><br>
+                <div class="row">
+                  <div class="center-align">
+                    <button id="submitBtn" class="btn waves-effect waves-light center-align submit-button-form-designed" type="submit" name="action" style="background-color: #64a0cc;">Daftar
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
-
           </div>
         </div>
-        <script type="text/javascript">
-          $(document).ready(function () {
-            $('#submitBtn').click(function() {
-              checked = $("input[type=checkbox]:checked").length;
+      </div>
 
-              if(!checked) {
-                alert("Anda belum memilih webinar yang ingin di ikuti");
-                return false;
-              }
+    </div>
 
-            });
-          });
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#submitBtn').click(function() {
+      checked = $("input[type=checkbox]:checked").length;
 
-        </script>
+      if (!checked) {
+        alert("Anda belum memilih webinar yang ingin di ikuti");
+        return false;
+      }
+
+    });
+  });
+</script>
