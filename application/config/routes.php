@@ -56,6 +56,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['pendaftaran']				=	'welcome/pendaftaran';
 $route['pendaftaran/sukses']		=	'welcome/sukses';
+$route['pendaftaran/sukseswebinar']		=	'welcome/sukseswebinar';
 
 $route['pendaftaran/webinar']		=	'welcome/webinar';
 $route['pendaftaran/iot']			=	'welcome/iot';
