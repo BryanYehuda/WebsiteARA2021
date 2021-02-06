@@ -84,7 +84,15 @@
                                 Cuma modal HP/laptop terus duduk manis sambil nyeruput es teh manis di rumah, kamu bakal dapet ilmu yang 
                                 bermanfaat di bidang Cyber Security dan juga Internet of Things secara gratis, hyung! Hayuk lah gaskan! 
                                 Jangan lupa catat tanggalnya nih hyung.<br>
-                                <img class="responsive-img" src="<?php echo base_url(); ?>assets/images/webinar.png">
+                                <form action="<?php echo base_url();?>pendaftaran/webinar">
+                                    <div class="row">
+                                        <div class="center-align">
+                                            <button class="btn waves-effect waves-light center-align submit-button-form-designed"
+                                                type="submit" style="background-color: #64a0cc;">Daftar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -103,7 +111,7 @@
                                 masih ragu, sok atuh cek sendiri dengan langsung klik “Daftar”. Kalau beneran gratis, ikutan dong pastinya! Y x G ikutan KTI IoT dari 
                                 ARA? Kamu bisa berkontribusi langsung dalam membangun inovasi-inovasi di bidang Internet of Things lho! Gasin skuy!<p>
                                 <br>
-                                <form action="<?php echo base_url();?>welcome/iot">
+                                <form action="<?php echo base_url();?>pendaftaran/iot">
                                     <div class="row">
                                         <div class="center-align">
                                             <button class="btn waves-effect waves-light center-align submit-button-form-designed"
@@ -133,7 +141,7 @@
                                 Jelas lah, Capture The Flag dari ARA 2021! Y x G mau berpartisipasi di lomba CTF pertama kalinya di ITS? Gak seru ah kalau 
                                 ketinggalan, ntar sobat ITzen bukan jadi “Pirst Lope”nya CTF ARA. Sedih kan....</p>
                                 <br>
-                                <form action="<?php echo base_url();?>welcome/ctf">
+                                <form action="<?php echo base_url();?>pendaftaran/ctf">
                                     <div class="row">
                                         <div class="center-align">
                                             <button class="btn waves-effect waves-light center-align submit-button-form-designed"
@@ -160,7 +168,7 @@
                                 punya kesempatan jadi pemenang pertama dalam Olimpiade Cyber Security dan Internet of Things di Indonesia, lho. Kalau sobat 
                                 ITzen ambil kesempatan ini, ada peluang 50% untuk menang! Skuy ikutan!</p>
                                 <br>
-                                <form action="<?php echo base_url();?>welcome/olimpiade">
+                                <form action="<?php echo base_url();?>pendaftaran/olimpiade">
                                     <div class="row">
                                         <div class="center-align">
                                             <button class="btn waves-effect waves-light center-align submit-button-form-designed"

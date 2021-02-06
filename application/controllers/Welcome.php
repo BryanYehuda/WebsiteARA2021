@@ -77,6 +77,10 @@ class Welcome extends CI_Controller {
 		$institusi	= htmlspecialchars($this->input->post('institusi'));
 		$email		= htmlspecialchars($this->input->post('email'));
 		$no_wa		= htmlspecialchars($this->input->post('wa'));
+		$sesi 		= substr(implode(', ', $this->input->post('webinar')), 0);
+		$tel1 		= $this->upload_telkom1('webinar', $nama);
+		$tel2 		= $this->upload_telkom2('webinar', $nama);
+		$twbn 		= $this->upload_twibbon('webinar', $nama);
 
 		$path = './uploads/webinar/';
 		if (!is_dir($path)) {
@@ -107,7 +111,11 @@ class Welcome extends CI_Controller {
 				'institusi'	=>	$institusi,
 				'email'		=>	$email,
 				'no_wa'		=>	$no_wa,
-				'bukti'		=>	$img
+				'bukti'		=>	$img,
+				'sesi'		=>	$sesi,
+				'bukti_telkom1'	=>	$tel1,
+				'bukti_telkom2'	=>	$tel2,
+				'twibbon'	=>	$twbn,
 			);
 
 			$this->m_data->input_data($data,'webinar');
@@ -427,6 +435,114 @@ class Welcome extends CI_Controller {
 			return $img = 'kosong';
 		} else {
 			if ( ! $this->upload->do_upload('share2'))
+			{
+				$error = $this->upload->display_errors();
+
+				$img = NULL;
+			}
+			else
+			{
+
+				$img = $this->upload->data('file_name');
+
+				return $img;
+			}
+		}
+
+
+	}
+
+	function upload_telkom1($cat, $tim)
+	{
+	    $nama = str_replace(".","-",$tim);
+		$path = './uploads/'.$cat.'/'.$tim;
+		if (!is_dir($path)) {
+			mkdir($path, 0777, TRUE);
+		}
+		$config['file_name']			= 'bukti_telkom1-'.$nama;
+		$config['upload_path']          = $path;
+		$config['allowed_types']        = 'gif|jpg|png|pdf';
+		// $config['max_size']             = 10000;
+		// $config['max_width']            = 1024;
+		// $config['max_height']           = 768;
+
+		$this->upload->initialize($config);
+		if (empty($_FILES['telkom1']['name'])) {
+			return $img = 'kosong';
+		} else {
+			if ( ! $this->upload->do_upload('telkom1'))
+			{
+				$error = $this->upload->display_errors();
+
+				$img = NULL;
+			}
+			else
+			{
+
+				$img = $this->upload->data('file_name');
+
+				return $img;
+			}
+		}
+
+
+	}
+
+	function upload_telkom2($cat, $tim)
+	{
+	    $nama = str_replace(".","-",$tim);
+		$path = './uploads/'.$cat.'/'.$tim;
+		if (!is_dir($path)) {
+			mkdir($path, 0777, TRUE);
+		}
+		$config['file_name']			= 'bukti_telkom2-'.$nama;
+		$config['upload_path']          = $path;
+		$config['allowed_types']        = 'gif|jpg|png|pdf';
+		// $config['max_size']             = 10000;
+		// $config['max_width']            = 1024;
+		// $config['max_height']           = 768;
+
+		$this->upload->initialize($config);
+		if (empty($_FILES['telkom2']['name'])) {
+			return $img = 'kosong';
+		} else {
+			if ( ! $this->upload->do_upload('telkom2'))
+			{
+				$error = $this->upload->display_errors();
+
+				$img = NULL;
+			}
+			else
+			{
+
+				$img = $this->upload->data('file_name');
+
+				return $img;
+			}
+		}
+
+
+	}
+
+	function upload_twibbon($cat, $tim)
+	{
+	    $nama = str_replace(".","-",$tim);
+		$path = './uploads/'.$cat.'/'.$tim;
+		if (!is_dir($path)) {
+			mkdir($path, 0777, TRUE);
+		}
+		$config['file_name']			= 'twibbon-'.$nama;
+		$config['upload_path']          = $path;
+		$config['allowed_types']        = 'gif|jpg|png|pdf';
+		// $config['max_size']             = 10000;
+		// $config['max_width']            = 1024;
+		// $config['max_height']           = 768;
+
+		$this->upload->initialize($config);
+		if (empty($_FILES['twibbon']['name'])) {
+			return $img = 'kosong';
+		} else {
+			if ( ! $this->upload->do_upload('twibbon'))
 			{
 				$error = $this->upload->display_errors();
 
