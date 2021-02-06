@@ -84,11 +84,11 @@ class Welcome extends CI_Controller {
 		$tel2 		= $this->upload_telkom2('webinar', $nama);
 		$twbn 		= $this->upload_twibbon('webinar', $nama);
 
-		$path = './uploads/webinar/';
+		$path = './uploads/webinar/'.$nama.'/';
 		if (!is_dir($path)) {
 			mkdir($path, 0777, TRUE);
 		}
-		$config['file_name']			= $no_wa;
+		$config['file_name']			= 'bukti_poster2-'.$nama;
 		$config['upload_path']          = $path;
 		$config['allowed_types']        = 'gif|jpg|png|pdf';
 		// $config['max_size']             = 10000;
@@ -97,7 +97,7 @@ class Welcome extends CI_Controller {
 
 		$this->upload->initialize($config);
 
-		if ( ! $this->upload->do_upload('share'))
+		if ( ! $this->upload->do_upload('share2'))
 		{
 			$error = $this->upload->display_errors();
 
@@ -118,6 +118,7 @@ class Welcome extends CI_Controller {
 				'bukti_telkom1'	=>	$tel1,
 				'bukti_telkom2'	=>	$tel2,
 				'twibbon'	=>	$twbn,
+				'bukti2'	=>	$this->upload_poster('webinar', $nama)
 			);
 
 			$this->m_data->input_data($data,'webinar');

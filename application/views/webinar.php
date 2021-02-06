@@ -130,6 +130,36 @@
                       <div class="col s12 l6">
                         <div class="file-field input-field">
                           <div class="btn upload-button-designed">
+                            <input type="file" id="share2" name="share2"
+                            onchange="return fileValidation('share2')" required>
+                            <label for="share2">
+                              <img class="upload-button-image-designed"
+                              src="<?php echo base_url('assets/images/upload_black.png') ?>"
+                              style="max-height: 90%;">
+                              <span class="upload-button-label-designed">Upload</span>
+                            </label>
+                          </div>
+                          <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                            <span id="share2-size"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                  <div class="col s12 l12">
+                    <span class="form-input-title-designed">Poster didownload di 
+                      <a href="https://drive.google.com/file/d/1hW0SzI6lzE0cfnFkTViFMMQ6Y_DJvs2Z/view?usp=sharing">sini</a></span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s12 l6">
+                      <span class="form-input-title-designed">Bukti Share Poster Webinar ARA 2021:
+                        <span class="required-star-designed">*</span></span>
+                      </div>
+                      <div class="col s12 l6">
+                        <div class="file-field input-field">
+                          <div class="btn upload-button-designed">
                             <input type="file" id="share" name="share"
                             onchange="return fileValidation('share')" required>
                             <label for="share">

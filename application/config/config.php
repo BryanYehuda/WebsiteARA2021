@@ -24,6 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://arek.its.ac.id/ara/';
+// $config['base_url'] = 'http://localhost/WebsiteARA2020/';
 
 /*
 |--------------------------------------------------------------------------
