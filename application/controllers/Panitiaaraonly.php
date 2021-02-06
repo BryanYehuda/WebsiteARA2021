@@ -98,19 +98,18 @@ class Panitiaaraonly extends CI_Controller {
             $this->load->view('panitia/p_footer', $onpage);
         }
     }
+    
+    //DANGER!
+    // function sendnewemailtoallplease025thegreatestdota2playerintableiot() {
+    //     $alldataiot = $this->m_panitia->get_data('iot');
 
-    function tim() {
-        if($this->session->has_userdata("panitia_logged_in") && $this->session->userdata("panitia_logged_in") != '0') {
-            $cur = 'tim';
-            $query = $this->m_panitia->get_data_all_tim();
-            $panitia['datas'] = $query->result();
-            $onpage['onpage'] = $cur;
-            $this->load->view('panitia/p_header', $onpage);
-            $this->load->view('panitia/p_tim', $panitia);
-            // $this->load->view('panitia/p_result');
-            $this->load->view('panitia/p_footer', $onpage);
-        }
-    }
+    //     foreach($alldataiot as $dataiot) {
+    //         echo $dataiot->nama_tim .' | ' . $dataiot->email1 . ' | iot<br>';
+    //         //if($dataiot->email1 == 'rafael.nixon.c@gmail.com')
+    //             $this->m_otp->request_otp($dataiot->email1, $dataiot->nama_tim, 'iot');
+    //     }
+
+    // }
     
     // function search($table) {
     //     if($this->session->has_userdata("panitia_logged_in") && $this->session->userdata("panitia_logged_in") != '0') {

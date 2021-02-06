@@ -23,6 +23,7 @@ class Welcome extends CI_Controller {
 		$this->load->model('m_data');
 		$this->load->model('m_otp');
 		$this->load->library('upload');
+		$this->load->helper(array('form', 'url'));
 	}
 
 	public function index()
@@ -41,13 +42,6 @@ class Welcome extends CI_Controller {
 	public function uploadsukses(){
 		$this->load->view('header');
 		$this->load->view('uploadsukses');
-		$this->load->view('footer');
-	}
-
-	public function testview()
-	{
-		$this->load->view('header');
-		$this->load->view('webinarctf');
 		$this->load->view('footer');
 	}
 

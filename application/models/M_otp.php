@@ -39,6 +39,18 @@ class M_otp extends CI_Model {
         return '';
     }
 
+    function send_phpmailer($to, $subject, $message) {
+        $this->load->library('phpmailer_lib');
+
+        $sended = $this->phpmailer_lib->send($to, $subject, $message);
+
+        if($sended) {
+            return true;
+        }
+
+        return false;
+    }
+
     function send_email($from1, $to, $subject, $message, $from2 = '', $ishtml = 0) {
 
         $config = Array(
@@ -46,7 +58,7 @@ class M_otp extends CI_Model {
             'smtp_host' => 'ssl://smtp.googlemail.com',
             'smtp_port' => '465',
             'smtp_user' => 'ara.its.ac.id@gmail.com',
-            'smtp_pass' => '25araits2021',
+            'smtp_pass' => 'secret',
             'newline'   => '\n',
             'validate'  => 'true',
             'dsn'       => 'true',
@@ -82,25 +94,24 @@ class M_otp extends CI_Model {
 
             $thenewotp = mt_rand(0,9) . mt_rand(0,9) . mt_rand(0,9) . mt_rand(0,9) . mt_rand(0,9) . mt_rand(0,9);
             
-            $sended = $this->send_email('ara.its.ac.id@gmail.com', $email, 'ARA 2021 | ACCOUNT',
-            'JANGAN MEMBAGIKAN KODE OTP ATAUPUN USERNAME ATAU PASSWORD AKUN ARA2021 ANDA!
-            Kode OTP tidak memiliki batas waktu kadaluarsa
-
-            Kode OTP untuk
-            Nama Tim    : ' . $name .'
-            Kategori    : ' . strtoupper($category) . '
-            adalah ' . $thenewotp . '
-
+            $sended = $this->send_phpmailer($email, 'ARA 2021 | ACCOUNT',
+            'JANGAN MEMBAGIKAN KODE OTP ATAUPUN USERNAME ATAU PASSWORD AKUN ARA2021 ANDA!<br>
+            Kode OTP tidak memiliki batas waktu kadaluarsa<br>
+            <br>
+            Kode OTP untuk<br>
+            Nama Tim    : ' . $name .'<br>
+            Kategori    : ' . strtoupper($category) . '<br>
+            adalah ' . $thenewotp . '<br>
+            <br>
             Aktifkan akun ARA2021 tim kamu dengan mengunjungi '. 
-            base_url() . 'otp/activate
-
-
-            Informasi login untuk akun tim kamu
-            Username    : ' . $gusername . '
-            Password    : ' . $gpassword . '
-            
+            base_url() . 'otp/activate<br>
+            <br>
+            Informasi login untuk akun tim kamu<br>
+            Username    : ' . $gusername . '<br>
+            Password    : ' . $gpassword . '<br>
+            <br>
             Masuk ke dashboard ARA2021 dengan mengunjungi
-            ' . base_url() . 'login', 'ARA 2021', 1);
+            ' . base_url() . 'login');
 
             $kategori = '';
             switch($category) {
@@ -120,10 +131,10 @@ class M_otp extends CI_Model {
                 $this->db->insert('otp', ['email' => $email, 'id_tim_otp' => $query->row_array()['id'], 'nama_otp' => $name, 'kategori_lomba' => $kategori, 'code_otp' => $thenewotp]);
 
                 $this->db->where(['id' => $id]);
-                $this->db->update('tim', ['usernamelogin_tim' => $username]);
+                $this->db->update('tim', ['usernamelogin_tim' => $gusername]);
 
                 $this->db->where(['id' => $id]);
-                $this->db->update('tim', ['pass' => md5('taburin_garem_ah...' . $password . 'biar_sedep_gitu_kan_ya...')]);
+                $this->db->update('tim', ['pass' => md5('taburin_garem_ah...' . $gpassword . 'biar_sedep_gitu_kan_ya...')]);
                 
                 return true;
             }
