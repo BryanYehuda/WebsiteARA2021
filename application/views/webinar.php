@@ -25,28 +25,38 @@
           <div class="col s12" style="text-align:justify">
             <p>
               Periode Pendaftaran:
-              6 Februari 2021 - 3 Maret 2021 <br></p>
+              6 Februari 2021 - 3 Maret 2021 <br>
+            </p>
             <p>
-              <strong>Biaya Pendaftaran :
-                FREE<br></strong>
+              <strong>Biaya Pendaftaran : FREE<br></strong>
             </p>
             <p>
               Kegiatan: <br>
-              . Cyber Security (6 Maret 2021) & IoT (7 Maret 2021) <br>
-              . 08.00 - 12.00 WIB <br>
-              . Zoom dan Youtube <br>
-            </p>
+            <ul>
+              <li>. Cyber Security (6 Maret 2021) & IoT (7 Maret 2021) </li>
+              <li>. 08.00 - 12.00 WIB </li>
+              <li>. Zoom dan Youtube </li>
+              </p>
+            </ul>
             <p>
               Syarat:<br>
               . Follow Instagram Telkom Indonesia (@telkomindonesia dan @livingintelkom)<br>
-              . Share Poster ke Instagram (Feeds atau Story) atau media lainnya<br>
-              . Upload Twibbon ke Instagram (optional)
+              . Share Poster ke Instagram (Feeds atau Story) atau media lainnya dan tag insagram @ara_its<br>
+              . Upload Twibbon ke Instagram (optional), Untuk memenangkan doorprize bernilai ratusan ribu rupiah !!!
             </p>
             <p>
               CP:
               Axel: 082133453710<br>
               Mita: 081233776027
             </p>
+            <p>
+              <b>Dapatkan 2 Sertifikat dengan mendaftar di kedua webinar!!!</b>
+            </p>
+            <p>
+              Download Poster Webinar, Caption, dan Twibbon
+              <a href="https://drive.google.com/drive/folders/1183pMS5JqrGSavmmrGo_ldjbBXjmP7kV?usp=sharing" target="_blank">disini</a>
+            </p>
+
           </div>
         </div>
       </div>
@@ -85,15 +95,17 @@
                     <p>
                       <label>
                         <input type="checkbox" class="filled-in" name="webinar[]" value="Webinar-CTF" />
-                        <span>Webinar CTF</span>
+                        <span>Webinar Cyber Security</span>
                       </label>
                     </p>
                     <p>
                       <label>
                         <input type="checkbox" class="filled-in" name="webinar[]" value="Webinar-IoT" />
-                        <span>Webinar IoT</span>
+                        <span>Webinar Internet of Things</span>
                       </label>
+
                     </p>
+                    <p><small>Bisa langsung dicentang dua-duanya ya!</small></p>
                   </div>
                 </div>
                 <div class="row">
@@ -137,10 +149,10 @@
                 </div>
                 <div class="row">
                   <div class="col s12 l12">
-                    <span class="form-input-title-designed">Poster didownload di
-                      <a href="https://drive.google.com/file/d/1_3-Je_FUYT_o8rVULTdYN0ma4eU9bPbG/view?usp=sharing" target="_blank">sini</a></span>
+                    <span class="form-input-title-designed">Download Poster Webinar, Caption, dan Twibbon
+                      <a href="https://drive.google.com/drive/folders/1183pMS5JqrGSavmmrGo_ldjbBXjmP7kV?usp=sharing" target="_blank">disini</a></span>
                   </div>
-                </div>
+                </div><br>
                 <div class="row">
                   <div class="col s12 l6">
                     <span class="form-input-title-designed">Bukti Share Poster Webinar Cyber Security ARA 2021:
@@ -162,12 +174,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col s12 l12">
-                    <span class="form-input-title-designed">Poster didownload di
-                      <a href="https://drive.google.com/file/d/1Fmyt5KB7YULKGfvS6f3DMjft9PZgfXRp/view?usp=sharing" target="_blank">sini</a></span>
-                  </div>
-                </div>
+                <!--<div class="row">-->
+                <!--<div class="col s12 l12">-->
+                <!--  <span class="form-input-title-designed">Poster didownload di -->
+                <!--    <a href="https://drive.google.com/drive/folders/1183pMS5JqrGSavmmrGo_ldjbBXjmP7kV?usp=sharing" target="_blank">sini</a></span>-->
+                <!--  </div>-->
+                <!--</div>-->
                 <div class="row">
                   <div class="col s12 l6">
                     <span class="form-input-title-designed">Bukti Share Poster Webinar IoT ARA 2021:
@@ -244,45 +256,45 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col s12 l12">
-                    <span class="form-input-title-designed">Twibbon dapat di Download disini
-                      <a href="https://drive.google.com/file/d/1EZqY8M4scuEROobwuF56MDrdhO02nMOP/view?usp=sharing" target="_blank">sini</a></span>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col s12 l6">
-                    <span class="form-input-title-designed">Bukti Upload Twibbon:</span>
-                  </div>
-                  <div class="col s12 l6">
-                    <div class="file-field input-field">
-                      <div class="btn upload-button-designed">
-                        <input type="file" id="twibbon" name="twibbon" onchange="return fileValidation('twibbon')">
-                        <label for="twibbon">
-                          <img class="upload-button-image-designed" src="<?php echo base_url('assets/images/upload_black.png') ?>" style="max-height: 90%;">
-                          <span class="upload-button-label-designed">Upload</span>
-                        </label>
-                      </div>
-                      <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text">
-                        <span id="twibbon-size"></span>
+                  <!--<div class="col s12 l12">-->
+                  <!--  <span class="form-input-title-designed">Twibbon dapat di Download disini -->
+                  <!--    <a href="https://drive.google.com/drive/folders/1183pMS5JqrGSavmmrGo_ldjbBXjmP7kV?usp=sharing" target="_blank">sini</a></span>-->
+                  <!--  </div>-->
+                  <!--</div>-->
+                  <div class="row">
+                    <div class="col s12 l6">
+                      <span class="form-input-title-designed">Bukti Upload Twibbon:</span>
+                    </div>
+                    <div class="col s12 l6">
+                      <div class="file-field input-field">
+                        <div class="btn upload-button-designed">
+                          <input type="file" id="twibbon" name="twibbon" onchange="return fileValidation('twibbon')">
+                          <label for="twibbon">
+                            <img class="upload-button-image-designed" src="<?php echo base_url('assets/images/upload_black.png') ?>" style="max-height: 90%;">
+                            <span class="upload-button-label-designed">Upload</span>
+                          </label>
+                        </div>
+                        <div class="file-path-wrapper">
+                          <input class="file-path validate" type="text">
+                          <span id="twibbon-size"></span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <br>
-                <div class="row animate__animated animate__bounce animate__infinite animate__slower animate__delay-1s">
-                  <div class="col s12 l12">
-                    <br><br><br>
-                    <b><span class="form-input-title-designed"><span class="required-star-designed">*</span>Wajib Diisi</span></b>
+                  <br>
+                  <div class="row animate__animated animate__bounce animate__infinite animate__slower animate__delay-1s">
+                    <div class="col s12 l12">
+                      <br><br><br>
+                      <b><span class="form-input-title-designed"><span class="required-star-designed">*</span>Wajib Diisi</span></b>
+                    </div>
                   </div>
-                </div>
-                <br><br>
-                <div class="row">
-                  <div class="center-align">
-                    <button id="submitBtn" class="btn waves-effect waves-light center-align submit-button-form-designed" type="submit" name="action" style="background-color: #64a0cc;">Daftar
-                    </button>
+                  <br><br>
+                  <div class="row">
+                    <div class="center-align">
+                      <button id="submitBtn" class="btn waves-effect waves-light center-align submit-button-form-designed" type="submit" name="action" style="background-color: #64a0cc;">Daftar
+                      </button>
+                    </div>
                   </div>
-                </div>
               </form>
             </div>
           </div>
