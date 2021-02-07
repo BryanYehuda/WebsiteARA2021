@@ -255,46 +255,46 @@
                     </div>
                   </div>
                 </div>
+                <!-- <div class="row"> -->
+                <!--<div class="col s12 l12">-->
+                <!--  <span class="form-input-title-designed">Twibbon dapat di Download disini -->
+                <!--    <a href="https://drive.google.com/drive/folders/1183pMS5JqrGSavmmrGo_ldjbBXjmP7kV?usp=sharing" target="_blank">sini</a></span>-->
+                <!--  </div>-->
+                <!--</div>-->
                 <div class="row">
-                  <!--<div class="col s12 l12">-->
-                  <!--  <span class="form-input-title-designed">Twibbon dapat di Download disini -->
-                  <!--    <a href="https://drive.google.com/drive/folders/1183pMS5JqrGSavmmrGo_ldjbBXjmP7kV?usp=sharing" target="_blank">sini</a></span>-->
-                  <!--  </div>-->
-                  <!--</div>-->
-                  <div class="row">
-                    <div class="col s12 l6">
-                      <span class="form-input-title-designed">Bukti Upload Twibbon:</span>
-                    </div>
-                    <div class="col s12 l6">
-                      <div class="file-field input-field">
-                        <div class="btn upload-button-designed">
-                          <input type="file" id="twibbon" name="twibbon" onchange="return fileValidation('twibbon')">
-                          <label for="twibbon">
-                            <img class="upload-button-image-designed" src="<?php echo base_url('assets/images/upload_black.png') ?>" style="max-height: 90%;">
-                            <span class="upload-button-label-designed">Upload</span>
-                          </label>
-                        </div>
-                        <div class="file-path-wrapper">
-                          <input class="file-path validate" type="text">
-                          <span id="twibbon-size"></span>
-                        </div>
+                  <div class="col s12 l6">
+                    <span class="form-input-title-designed">Bukti Upload Twibbon:</span>
+                  </div>
+                  <div class="col s12 l6">
+                    <div class="file-field input-field">
+                      <div class="btn upload-button-designed">
+                        <input type="file" id="twibbon" name="twibbon" onchange="return fileValidation('twibbon')">
+                        <label for="twibbon">
+                          <img class="upload-button-image-designed" src="<?php echo base_url('assets/images/upload_black.png') ?>" style="max-height: 90%;">
+                          <span class="upload-button-label-designed">Upload</span>
+                        </label>
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                        <span id="twibbon-size"></span>
                       </div>
                     </div>
                   </div>
-                  <br>
-                  <div class="row animate__animated animate__bounce animate__infinite animate__slower animate__delay-1s">
-                    <div class="col s12 l12">
-                      <br><br><br>
-                      <b><span class="form-input-title-designed"><span class="required-star-designed">*</span>Wajib Diisi</span></b>
-                    </div>
+                </div>
+                <br>
+                <div class="row animate__animated animate__bounce animate__infinite animate__slower animate__delay-1s">
+                  <div class="col s12 l12">
+                    <br><br><br>
+                    <b><span class="form-input-title-designed"><span class="required-star-designed">*</span>Wajib Diisi</span></b>
                   </div>
-                  <br><br>
-                  <div class="row">
-                    <div class="center-align">
-                      <button id="submitBtn" class="btn waves-effect waves-light center-align submit-button-form-designed" type="submit" name="action" style="background-color: #64a0cc;">Daftar
-                      </button>
-                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                  <div class="center-align">
+                    <button id="submitBtn" class="btn waves-effect waves-light center-align submit-button-form-designed" type="submit" name="action" style="background-color: #64a0cc;">Daftar
+                    </button>
                   </div>
+                </div>
               </form>
             </div>
           </div>
