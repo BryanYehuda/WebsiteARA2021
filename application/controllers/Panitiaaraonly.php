@@ -111,6 +111,26 @@ class Panitiaaraonly extends CI_Controller {
 
     // }
     
+    function sendemailmanuallytotim($tim_id, $table) {
+        if(strlen($tim_id) > 0) {
+            
+            $q = $this->m_panitia->get_data_of_tim_by_id($tim_id, $table);
+            
+            if($q->num_rows() > 0) {
+                $sended = $this->m_otp->request_otp_by_tim_id($tim_id, $q->row_array()['email1']);
+            
+                if($sended) {
+                    echo '<h1 style="color:green;">Email Sent!</h1>';
+                    return;
+                }
+            }
+            
+        }
+        
+        echo '<h1 style="color:red;">Email Error!</h1>';
+        return;
+    }
+    
     // function search($table) {
     //     if($this->session->has_userdata("panitia_logged_in") && $this->session->userdata("panitia_logged_in") != '0') {
     //         $this->form_validation->set_rules('keyword', 'Keyword', 'trim');

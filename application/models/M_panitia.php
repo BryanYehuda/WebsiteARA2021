@@ -13,6 +13,16 @@ class M_Panitia extends CI_Model {
 
         return $this->db->select('team.nama, team.id, team.tim_status, team.bukti_bayar, cur.*')->from('tim team')->join($table . ' cur', 'team.nama = cur.nama_tim', 'LEFT')->order_by('cur.' . $tabletime . '_timestamp', 'DESC')->where("cur.nama_tim is not null and team.nama is not null and team.tim_status > 0")->get()->result();
     }
+    
+    function get_data_of_tim_by_id($id, $table) {
+        
+        $tabletime = $table;
+        
+        if($table == 'olimpiade')
+            $tabletime = 'olim';
+        
+        return $this->db->select('team.nama, team.id, team.tim_status, team.bukti_bayar, cur.*')->from('tim team')->join($table . ' cur', 'team.nama = cur.nama_tim', 'LEFT')->order_by('cur.' . $tabletime . '_timestamp', 'DESC')->where("cur.nama_tim is not null and team.nama is not null and team.id = " . $id)->get();
+    }
 
     function search($table, $keyword) {
         switch($table) {
