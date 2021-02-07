@@ -145,6 +145,76 @@ class M_otp extends CI_Model {
             return false;  
         }  
     }
+    
+    function request_otp_by_tim_id($tim_id, $email)  
+    {
+
+        $this->db->from('tim')->where(['id' => $tim_id]);
+        $query = $this->db->get();
+        if($query->num_rows() > 0)
+        {
+            $id = $query->row_array()['id'];
+            $gusername = $this->generate_username($id);
+            $gpassword = $this->generate_password($id);
+
+            $thenewotp = mt_rand(0,9) . mt_rand(0,9) . mt_rand(0,9) . mt_rand(0,9) . mt_rand(0,9) . mt_rand(0,9);
+            
+            $sended = $this->send_phpmailer($email, 'ARA 2021 | ACCOUNT',
+            'JANGAN MEMBAGIKAN KODE OTP ATAUPUN USERNAME ATAU PASSWORD AKUN ARA2021 ANDA!<br>
+            Kode OTP tidak memiliki batas waktu kadaluarsa<br>
+            <br>
+            Kode OTP untuk<br>
+            Nama Tim    : ' . $query->row_array()['nama'] .'<br>
+            Kategori    : ' . strtoupper($query->row_array()['kategori']) . '<br>
+            adalah ' . $thenewotp . '<br>
+            <br>
+            Aktifkan akun ARA2021 tim kamu dengan mengunjungi '. 
+            base_url() . 'otp/activate<br>
+            <br>
+            Informasi login untuk akun tim kamu<br>
+            Username    : ' . $gusername . '<br>
+            Password    : ' . $gpassword . '<br>
+            <br>
+            Masuk ke dashboard ARA2021 dengan mengunjungi
+            ' . base_url() . 'login');
+
+            $kategori = '';
+            switch($query->row_array()['kategori']) {
+                default:
+                    $kategori = 1;
+                    break;
+                case 'iot':
+                    $kategori = 2;
+                    break;
+                case 'olimpiade':
+                    $kategori = 3;
+                    break;
+            }
+            
+            if($sended) {
+                
+                $this->db->insert('otp', ['email' => $email, 'id_tim_otp' => $query->row_array()['id'], 'nama_otp' => $query->row_array()['nama'], 'kategori_lomba' => $kategori, 'code_otp' => $thenewotp]);
+
+                $this->db->where(['id' => $id]);
+                $this->db->update('tim', ['usernamelogin_tim' => $gusername]);
+
+                $this->db->where(['id' => $id]);
+                $this->db->update('tim', ['pass' => md5('taburin_garem_ah...' . $gpassword . 'biar_sedep_gitu_kan_ya...')]);
+                
+                $this->db->where(['id' => $id]);
+                $this->db->update('tim', ['tim_status' => '2']);
+                
+                return true;
+            }
+				
+        }  
+        else  
+        {  
+            return false;  
+        }  
+
+        return false;
+    }
 
     function submit_otp($username, $otp)
     {

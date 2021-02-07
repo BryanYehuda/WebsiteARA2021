@@ -9,7 +9,6 @@
                 <th>Email Ketua</th>
                 <th>No. WhatsApp</th>
                 <th>ID Line</th>
-                <!-- <th>Alamat</th> -->
                 <th>Nama Anggota 1</th>
                 <th>Nama Anggota 2</th>
                 <th>Tgl. Daftar</th>
@@ -20,7 +19,7 @@
             <tr draggable="false">
                 <td draggable="false">
                     i-<?= $data->id ?>
-                <td>
+                </td>
                 <td draggable="false">
                     <?php if($data->bukti_bayar == '') {
                         ?>
@@ -39,7 +38,9 @@
                     </a>
                 </td>
                 <td draggable="false">
-                    <?= $data->email1; ?>
+                    <a data-toggle="modal" data-target="#modal_<?php echo $data->id_ctf; ?>_email" draggable="false">
+                        <?= $data->email1; ?>
+                    </a>
                 </td>
                 <td draggable="false">
                     <?= $data->no_wa; ?>
@@ -47,9 +48,6 @@
                 <td draggable="false">
                     <?= $data->line; ?>
                 </td>
-                <!-- <td draggable="false">
-                    <?= $data->alamat; ?>
-                </td> -->
                 <td draggable="false">
                     <a data-toggle="modal" data-target="#modal_<?php echo $data->id_ctf; ?>_2" draggable="false">
                         <?= $data->nama2; ?>
@@ -70,6 +68,41 @@
 
     <?php foreach($datas as $data) { ?>
 
+
+    <div id="modal_<?php echo $data->id_ctf; ?>_email" class="modal">
+        <div class="modal-dialog">
+
+            <div class="modal-content" style="background-color: rgb(56, 56, 56);">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">
+                        <?= $data->nama_tim; ?> : Email
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <h1 style="color:red;">
+                            PERHATIAN !
+                        </h1>
+                        <br>
+                        <br>
+                        <h3 style="color:red;">
+                            JANGAN ASAL MENCET!
+                            <br>
+                            <br>
+                            KLIK LINK <a href="<?php echo base_url() . 'panitiaaraonly/sendemailmanuallytotim/' . $data->id . '/iot'; ?> ">!INI!</a> UNTUK MENGIRIM EMAIL PEMBARUAN AKUN/REQUEST OTP BARU!
+                            <br>
+                            <br>
+                            JANGAN ASAL-ASALAN!
+                        </h3>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="modal_<?php echo $data->id_ctf; ?>_1" class="modal">
         <div class="modal-dialog">
 

@@ -20,7 +20,7 @@
             <tr draggable="false">
                 <td draggable="false">
                     i-<?= $data->id ?>
-                <td>
+                </td>
                 <td draggable="false">
                     <?php if($data->bukti_bayar == '') {
                         ?>
