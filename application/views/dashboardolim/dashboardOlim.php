@@ -142,14 +142,8 @@
             <div class="col s12 center-align">
               <div class="row">
                 <div class="col s12 center-align">
-                  <span class="form-input-title-designed">Silahkan klik button di bawah untuk masuk ke platform lomba Olimpiade</span>
+                  <span class="form-input-title-designed">Belum ada pengumuman terbaru dan selamat berlomba!!!</span>
                 </div><br><br>
-                <div class="col s12 center-align">
-                  <span class="form-title-designed ">
-                    <a class="waves-effect waves-light btn submit-button-form-designed" style="background-color: #64a0cc;" href="#">MASUK</a>
-                  </span>
-                  <br>
-                </div>
               </div>
             </div>
           </div>

@@ -453,7 +453,7 @@
                                         <!-- Poster Start -->
                                         <div class="row">
                                           <div class="col s12 l12">
-                                            <span class="form-title-designed">Share Poster CTF ARA 2021 di Instastory</span>
+                                            <span class="form-title-designed">Share Poster CTF ARA 2021 di Instastory (maksimum file size 2MB)</span>
                                           </div>
                                         </div>
                                         <div class="row">

@@ -23,40 +23,35 @@
         </div>
         <div class="row">
           <div class="col s12" style="text-align:justify">
+          
             <p>
               Periode Pendaftaran:
               6 Februari 2021 - 3 Maret 2021 <br>
-            </p>
-            <p>
               <strong>Biaya Pendaftaran : FREE<br></strong>
             </p>
             <p>
               Kegiatan: <br>
-            <ul>
-              <li>. Cyber Security (6 Maret 2021) & IoT (7 Maret 2021) </li>
-              <li>. 08.00 - 12.00 WIB </li>
-              <li>. Zoom dan Youtube </li>
+              . Cyber Security (6 Maret 2021) & IoT (7 Maret 2021)<br>
+              . 08.00 - 12.00 WIB<br>
+              . Zoom dan Youtube<br>
               </p>
-            </ul>
+           
             <p>
               Syarat:<br>
               . Follow Instagram Telkom Indonesia (@telkomindonesia dan @livingintelkom)<br>
-              . Share Poster ke Instagram (Feeds atau Story) atau media lainnya dan tag insagram @ara_its<br>
+              . Share Poster Webinar (CTF dan IoT) ke Instagram (Feeds atau Story) dan tag instagram @ara_its atau share ke media lain (Screenshot buktinya).<br>
               . Upload Twibbon ke Instagram (optional), Untuk memenangkan doorprize bernilai ratusan ribu rupiah !!!
+            </p>
+            <p>
+              Download Poster Webinar, Caption, dan Twibbon disini
+              <a href="https://drive.google.com/drive/folders/1ZzX9PNEb_Y3ZKG9ziYBgOSYcOwA3NMzL" target="_blank">disini</a><br>
+              <b>Dapatkan 2 Sertifikat dengan mendaftar di kedua webinar!!!</b>
             </p>
             <p>
               CP:
               Axel: 082133453710<br>
               Mita: 081233776027
             </p>
-            <p>
-              <b>Dapatkan 2 Sertifikat dengan mendaftar di kedua webinar!!!</b>
-            </p>
-            <p>
-              Download Poster Webinar, Caption, dan Twibbon
-              <a href="https://drive.google.com/drive/folders/1183pMS5JqrGSavmmrGo_ldjbBXjmP7kV?usp=sharing" target="_blank">disini</a>
-            </p>
-
           </div>
         </div>
       </div>
@@ -144,13 +139,13 @@
                 </div>
                 <div class="row">
                   <div class="col s12 l12">
-                    <span class="form-title-designed">Share Poster Webinar ARA 2021 di Instastory</span>
+                    <span class="form-title-designed">Share Media Promosi ARA 2021 (maksimum file size 2MB)</span>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col s12 l12">
                     <span class="form-input-title-designed">Download Poster Webinar, Caption, dan Twibbon
-                      <a href="https://drive.google.com/drive/folders/1183pMS5JqrGSavmmrGo_ldjbBXjmP7kV?usp=sharing" target="_blank">disini</a></span>
+                      <a href="https://drive.google.com/drive/folders/1ZzX9PNEb_Y3ZKG9ziYBgOSYcOwA3NMzL" target="_blank">disini</a></span>
                   </div>
                 </div><br>
                 <div class="row">
