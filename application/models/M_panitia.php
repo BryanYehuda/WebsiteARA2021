@@ -11,6 +11,9 @@ class M_Panitia extends CI_Model {
         if($table == 'olimpiade')
             $tabletime = 'olim';
 
+        if($table == 'iot')
+            return $this->db->select('team.nama, team.id, team.tim_status, team.bukti_bayar, cur.*, abstrac.id_tim, abstrac.judul, abstrac.abstrak, abstrac.timestamp')->from('tim team, abstrak_iot abstrac')->join($table . ' cur', 'team.nama = cur.nama_tim AND abstrac.id_tim = team.id', 'LEFT')->order_by('cur.' . $tabletime . '_timestamp', 'DESC')->where("cur.nama_tim is not null and team.nama is not null and team.tim_status > 0")->get()->result();        
+        
         return $this->db->select('team.nama, team.id, team.tim_status, team.bukti_bayar, cur.*')->from('tim team')->join($table . ' cur', 'team.nama = cur.nama_tim', 'LEFT')->order_by('cur.' . $tabletime . '_timestamp', 'DESC')->where("cur.nama_tim is not null and team.nama is not null and team.tim_status > 0")->get()->result();
     }
     
