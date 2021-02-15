@@ -15,22 +15,16 @@
             </tr>
         </thead>
         <tbody>
-        <?php foreach($datas as $data) { ?>
+            <?php foreach($datas as $data) { ?>
             <tr draggable="false">
                 <td draggable="false">
-                    i-<?= $data->id ?>
+                    i-
+                    <?= $data->id ?>
                 </td>
                 <td draggable="false">
-                    <?php if($data->bukti_bayar == '') {
-                        ?>
-                        <?=$data->nama_tim; ?>
-                    <?php 
-                    } else { ?>
-                    <a href="<?php echo base_url('uploads/iot/') . $data->nama_tim . '/' . $data->bukti_bayar; ?>"
-                        draggable="false" target="_blank">
+                    <a data-toggle="modal" data-target="#modal_<?php echo $data->id_ctf; ?>_team" draggable="false">
                         <?=$data->nama_tim; ?>
                     </a>
-                    <?php } ?>
                 </td>
                 <td draggable="false">
                     <a data-toggle="modal" data-target="#modal_<?php echo $data->id_ctf; ?>_1" draggable="false">
@@ -68,7 +62,47 @@
 
     <?php foreach($datas as $data) { ?>
 
+    <div id="modal_<?php echo $data->id_ctf; ?>_team" class="modal">
+        <div class="modal-dialog">
 
+            <div class="modal-content" style="background-color: rgb(56, 56, 56);">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">
+                        <?= $data->nama_tim; ?> : Tim
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <b>
+                            Waktu Submit Abstrak
+                        </b>
+                        <br>
+                        <?= $data->timestamp; ?>
+                        <br>
+                        <br>
+                        <b>
+                            Judul Abstrak IOT
+                        </b>
+                        <br>
+                        <?= $data->judul; ?>
+                        <br>
+                        <br>
+                        <b>
+                            Abstrak IOT <span style="color:rgb(58, 136, 58);"> (TIP: 3x fast left click to select
+                                all)</span>
+                        </b>
+                        <br>
+                        <?= $data->abstrak; ?>
+                        <br>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="modal_<?php echo $data->id_ctf; ?>_email" class="modal">
         <div class="modal-dialog">
 
@@ -81,20 +115,22 @@
                 </div>
                 <div class="modal-body">
                     <p>
-                        <h1 style="color:red;">
-                            PERHATIAN !
-                        </h1>
+                    <h1 style="color:red;">
+                        PERHATIAN !
+                    </h1>
+                    <br>
+                    <br>
+                    <h3 style="color:red;">
+                        JANGAN ASAL MENCET!
                         <br>
                         <br>
-                        <h3 style="color:red;">
-                            JANGAN ASAL MENCET!
-                            <br>
-                            <br>
-                            KLIK LINK <a href="<?php echo base_url() . 'panitiaaraonly/sendemailmanuallytotim/' . $data->id . '/iot'; ?> ">!INI!</a> UNTUK MENGIRIM EMAIL PEMBARUAN AKUN/REQUEST OTP BARU!
-                            <br>
-                            <br>
-                            JANGAN ASAL-ASALAN!
-                        </h3>
+                        KLIK LINK <a
+                            href="<?php echo base_url() . 'panitiaaraonly/sendemailmanuallytotim/' . $data->id . '/iot'; ?> ">!INI!</a>
+                        UNTUK MENGIRIM EMAIL PEMBARUAN AKUN/REQUEST OTP BARU!
+                        <br>
+                        <br>
+                        JANGAN ASAL-ASALAN!
+                    </h3>
                     </p>
                 </div>
                 <div class="modal-footer">
