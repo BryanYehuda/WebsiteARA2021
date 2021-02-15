@@ -44,24 +44,33 @@
           <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>"><strong>HOME</strong></a></li>
           <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>pendaftaran"><strong>PENDAFTARAN</strong></a></li>
           <li>
-            <?php if ($this->session->userdata('status') == 'login') { ?>
+            <?php if ($this->session->userdata('kategori') == 'iot') { ?>
               <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>iot"><strong>Dashboard IoT</strong></a>
+              <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>logout"><strong>LOGOUT</strong></a>
+            <?php } else if ($this->session->userdata('kategori') == 'ctf') { ?>
+              <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>ctf"><strong>Dashboard CTF</strong></a>
+              <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>logout"><strong>LOGOUT</strong></a>
+            <?php } else if ($this->session->userdata('kategori') == 'olimpiade') { ?>
+              <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>olimpiade"><strong>Dashboard Olimpiade</strong></a>
               <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>logout"><strong>LOGOUT</strong></a>
             <?php } else { ?>
               <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>login"><strong>LOGIN</strong></a>
             <?php } ?>
-          </li><!-- Login Method jangan lupa diisi -->
+          </li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
           <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>"><strong>HOME</strong></a></li>
           <li><a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>pendaftaran"><strong>PENDAFTARAN</strong></a></li>
-          <li><?php if ($this->session->userdata('status') == 'login') { ?>
+          <li><?php if ($this->session->userdata('kategori') == 'iot') { ?>
               <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>iot"><strong>Dashboard IoT</strong></a>
+              <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>logout"><strong>LOGOUT</strong></a>
+            <?php } else if ($this->session->userdata('kategori') == 'ctf') { ?>
+              <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>ctf"><strong>Dashboard CTF</strong></a>
               <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>logout"><strong>LOGOUT</strong></a>
             <?php } else { ?>
               <a class="waves-effect font-color-header-designed" href="<?php echo base_url(); ?>login"><strong>LOGIN</strong></a>
-            <?php } ?></li><!-- Login Method jangan lupa diisi -->
+            <?php } ?></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger left"><i class="material-icons"
           style="color: black;">menu</i></a>

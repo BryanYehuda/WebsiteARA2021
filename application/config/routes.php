@@ -56,21 +56,24 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['pendaftaran']				=	'welcome/pendaftaran';
 $route['pendaftaran/sukses']		=	'welcome/sukses';
-$route['pendaftaran/sukseswebinar']		=	'welcome/sukseswebinar';
+$route['pendaftaran/sukseswebinar']	=	'welcome/sukseswebinar';
 
 $route['pendaftaran/webinar']		=	'welcome/webinar';
-$route['pendaftaran/iot']			=	'welcome/iot';
-$route['pendaftaran/olimpiade']		=	'welcome/olimpiade';
-$route['pendaftaran/ctf']			=	'welcome/ctf';
-
 $route['daftar/webinar']			=	'welcome/submit_webinar';
-$route['daftar/iot']				=	'welcome/submit_iot';
+
+$route['pendaftaran/iot']			=	'welcome/iot_tutup';
+$route['daftar/iot']				=	'welcome/iot_tutup';
+$route['berhasilsubmit']			=	'iot/sukses_submit';
+
+$route['pendaftaran/olimpiade']		=	'welcome/olimpiade';
 $route['daftar/olimpiade']			=	'welcome/submit_olimpiade';
+
+$route['pendaftaran/ctf']			=	'welcome/ctf';
 $route['daftar/ctf']				=	'welcome/submit_ctf';
 
-$route['login']						=	'iot';
+$route['login']						=	'login';
+$route['login/process']				=	'login/loginact';
 $route['logout']					=	'welcome/logout';
 
-$route['berhasilsubmit']			=	'iot/sukses_submit';
 
 $route['otp/activate']              =   'otp/activate';

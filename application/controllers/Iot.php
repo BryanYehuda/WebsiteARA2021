@@ -21,113 +21,95 @@ class Iot extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->model('m_data');
-	}
-
-	public function index()
-	{
-		if($this->session->userdata('status') == "login"){
-			redirect('iot/abstrak');
-		}
-		$this->load->view('header');
-		$this->load->view('dashboardIot/login');
-		$this->load->view('footer');
-	}
-
-	function loginact(){
-		if($this->session->userdata('status') == "login"){
-			redirect('iot/abstrak');
-		}
-		$username = $this->input->post('username');
-		$password = $this->input->post('password');
-		$where = array(
-			'usernamelogin_tim' => $username,
-			'pass' => md5('taburin_garem_ah...' . $password . 'biar_sedep_gitu_kan_ya...'),
-			'kategori' => 'iot'
-		);
-		$cek = $this->m_data->get_where("tim",$where);
-		$rows = $cek->num_rows();
-		if($rows > 0){
-			$cek = $cek->row_array();
-			$data_session = array(
-				'id'		=> $cek['id'],
-				'nama'		=> $cek['nama'],
-				'kategori'	=> $cek['kategori'],
-				'status'	=> "login"
-			);
-			$this->session->set_userdata($data_session);
-			redirect('iot/abstrak');
-
-		}else{
-			$msg = "<p><b style = 'color: red;'>Username/Password anda salah</b></p>";
-			$this->load->view('header');
-			$this->load->view('dashboardIot/login',array('msg' => $msg));
-			$this->load->view('footer');
+		$this->load->library('upload');
+		$this->load->helper(array('form', 'url'));
+		if($this->session->userdata('status') != "login"){
+			redirect('login');
 		}
 	}
 
-	public function abstrak(){
-		if($this->session->userdata('status') == NULL){
-			redirect('iot');
-		}
+	public function index(){
 		$id_tim = $this->session->userdata('id');
 
 		$where = array(
 			'id_tim' => $id_tim,
 		);
 		$cek = $this->m_data->get_where("abstrak_iot",$where);
+		$cek_kti = $this->m_data->get_where("kti_iot",$where);
+		$info_tim = $this->m_data->get_where("tim",array('id' => $id_tim))->row_array();
+		$detil_tim = $this->m_data->get_where("iot",array('nama_tim' => $info_tim['nama']))->row_array();
 		$rows = $cek->num_rows();
+		$rows_kti = $cek_kti->num_rows();
 		if($rows == 0){
-			$this->load->view('header');
-			$this->load->view('dashboardIot/formAbstrak');
-			$this->load->view('footer');
+			$data['abstrak'] = "Data Tidak Tersedia";
+			$data['judul'] = "Data Tidak Tersedia";
 		} else {
 			$cek = $cek->row_array();
 			$data['abstrak'] = $cek['abstrak'];
 			$data['judul'] = $cek['judul'];
-			$this->load->view('header');
-			$this->load->view('dashboardIot/doneAbstrak', $data);
-			$this->load->view('footer');
 		}
+		if($rows_kti != 0){
+			$cek = $cek_kti->row_array();
+			$data['file'] = $cek['kti'];
+		}
+		$data['nama_tim'] = $info_tim['nama'];
+		$data['institusi'] = $info_tim['institusi'];
+		$data['nama1'] = $detil_tim['nama1'];
+		$data['nama2'] = $detil_tim['nama2'];
+		$data['nama3'] = $detil_tim['nama3'];
+		$data['status'] = $detil_tim['sts'];
+		$this->load->view('header');
+		$this->load->view('dashboardIot/dashboardIot', $data);
+		$this->load->view('footer');
 	}
 
-	function submit_abstrak(){
+	function submit_kti(){
 		$id_tim = $this->session->userdata('id');
-		$judul = $this->input->post('judul');
-		$abstrak = $this->input->post('abstrak');
 
 		$data = array(
 			'id_tim' => $id_tim,
-			'judul' => $judul,
-			'abstrak' => $abstrak
+			'kti' => $this->upload($id_tim)
 		);
 
-		$this->m_data->input_data($data,'abstrak_iot');
-			
+		$this->m_data->input_data($data,'kti_iot');
+
 		redirect('berhasilsubmit');
 	}
 
 	public function sukses_submit(){
-		if($this->session->userdata('status') == NULL){
-			redirect('iot');
-		}
 		$this->load->view('header');
 		$this->load->view('dashboardIot/uploadsukses');
 		$this->load->view('footer');
 	}
-	
-	public function cek_pass(){
-		$data = array('kategori' => 'iot', 'pass' => '');
-		$print = $this->m_data->get_where('tim', $data)->result();
 
-		foreach ($print as $key) {
-		    echo $key->nama." = ".(strtolower(str_replace(' ', '', $key->nama))."ara123 <br>");
-			$query = "
-			UPDATE tim
-			SET pass = md5('".strtolower(str_replace(' ', '', $key->nama))."ara123')
-			WHERE kategori = 'iot' AND id = ".$key->id.";";
-// 			echo $query."<br>";
-			$this->db->query($query);
+	function upload($id)
+	{
+		$nama = str_replace(".","-",$this->session->userdata('nama'));
+		$path = './uploads/kti/'.$this->session->userdata('nama');
+		if (!is_dir($path)) {
+			mkdir($path, 0777, TRUE);
 		}
+		$config['file_name']			= $id.'-'.$nama;
+		$config['upload_path']          = $path;
+		$config['allowed_types']        = 'pdf';
+		$config['overwrite'] 			= TRUE;
+		$config['max_size']             = 8000;
+
+		$this->upload->initialize($config);
+
+		if ( ! $this->upload->do_upload('kti'))
+		{
+			$error = $this->upload->display_errors();
+
+			$img = NULL;
+		}
+		else
+		{
+
+			$img = $this->upload->data('file_name');
+
+		}
+		return $img;
 	}
 
 }

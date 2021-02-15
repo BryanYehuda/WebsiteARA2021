@@ -147,6 +147,13 @@ class Welcome extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function iot_tutup()
+	{
+		$this->load->view('header');
+		$this->load->view('tutup_iot');
+		$this->load->view('footer');
+	}
+
 	function submit_iot()
 	{
 		$tim 		= htmlspecialchars($this->input->post('nama_tim'));

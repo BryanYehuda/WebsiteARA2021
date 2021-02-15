@@ -21,7 +21,7 @@
             </div>
             <div class="col s12 center-align">
               <div class="row">
-                <form id="form" name="form" class=" col s12" method="post" enctype="multipart/form-data" action="<?php echo base_url().'iot/loginact' ?>">
+                <form id="form" name="form" class=" col s12" method="post" enctype="multipart/form-data" action="<?php echo base_url().'login/process' ?>">
                   <?php if (isset($msg)) {
                     echo $msg;
                   } ?>
