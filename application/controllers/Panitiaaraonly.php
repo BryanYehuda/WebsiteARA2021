@@ -22,9 +22,25 @@ class Panitiaaraonly extends CI_Controller {
 
 	public function index() {
         if($this->session->has_userdata("panitia_logged_in") && $this->session->userdata("panitia_logged_in") != '0') {
-            $this->load->view('panitia/p_header');
-            $this->load->view('panitia/p_sel');
-            $this->load->view('panitia/p_footer');
+
+            switch($this->session->userdata("role_panitia_logged_in")) {
+                case 1:
+                    redirect(base_url('panitiaaraonly/ctf'));
+                    break;
+                case 2:
+                    redirect(base_url('panitiaaraonly/iot'));
+                    break;
+                case 3:
+                    redirect(base_url('panitiaaraonly/olim'));
+                    break;
+                case 4:
+                    redirect(base_url('panitiaaraonly/webinar'));
+                    break;
+                default:
+                    redirect(base_url('panitiaaraonly/logout'));
+                    break;
+            }
+
             return;
         } 
     }
@@ -44,7 +60,7 @@ class Panitiaaraonly extends CI_Controller {
         if($accessor != "" && $ana && $ana['status_panitia'] > 0) {
             $this->m_panitia->writelog($ana['id_panitia'], $accessor);
             $this->session->sess_expiration = '43200';
-            $this->session->set_userdata('panitia_logged_in', $ana['status_panitia']);
+            $this->session->set_userdata(['panitia_logged_in' => $ana['status_panitia'], 'role_panitia_logged_in' => $ana['role_panitia']]);
             redirect(base_url('panitiaaraonly'));
         }
 
@@ -120,7 +136,10 @@ class Panitiaaraonly extends CI_Controller {
                 $sended = $this->m_otp->request_otp_by_tim_id($tim_id, $q->row_array()['email1']);
             
                 if($sended) {
-                    echo '<h1 style="color:green;">Email Sent!</h1>';
+                    echo '<h1 style="color:green;">Email Sent!</h1><br><br>';
+                    echo '<h3> Nama Tim    : ' . $q->row_array()['nama'] . '</h3><br>';
+                    echo '<h3> Kategori    : ' . $table . '</h3><br>';
+                    echo '<h3> Email       : ' . $q->row_array()['email1'] . '</h3><br>';
                     return;
                 }
             }

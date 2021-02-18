@@ -141,7 +141,7 @@ class M_Panitia extends CI_Model {
     }
 
     function checkin($user, $pass) {
-        return $this->db->get_where('panitia', ['username_panitia' => $user, 'password_panitia' => $pass]);
+        return $this->db->get_where('panitia', ['username_panitia' => $user, 'password_panitia' => $pass, 'status_panitia' => 1]);
     }
 
     function writelog($id, $name) {
