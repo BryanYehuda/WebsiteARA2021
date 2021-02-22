@@ -23,14 +23,26 @@
                 </div>
                 <div class="row">
                     <div class="col s12 center-align">
-                        <span class="form-input-title-designed">Silahkan Join Grup WhatsApp Webinar Cyber Security di
-                            <a href=" https://chat.whatsapp.com/Lsb7ZFLm6H48OgCNdzQik9" target="_blank">sini</a></span>
+                        <span class="form-input-title-designed">Silahkan Join Grup WhatsApp Webinar Cyber Security 2 di
+                            <a href="https://chat.whatsapp.com/EucciVsorp6Lg0DaCNVDiQ" target="_blank">sini</a></span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12 center-align">
-                        <span class="form-input-title-designed">Silahkan Join Grup WhatsApp Webinar Internet of Things di
-                            <a href="  https://chat.whatsapp.com/KBOpWzvPlbd5kfL2sIQ85h" target="_blank">sini</a></span>
+                        <span class="form-input-title-designed">Silahkan Join Grup WhatsApp Webinar Internet of Things 2 di
+                            <a href="https://chat.whatsapp.com/C909CVcFXAYHesXTQUsK95" target="_blank">sini</a></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <span class="form-input-title-designed">Silahkan Join Grup Telegram Webinar Cyber Security di
+                            <a href="https://t.me/joinchat/HeF-66MKy4RWdoQ-" target="_blank">sini</a></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <span class="form-input-title-designed">Silahkan Join Grup Telegram Webinar Internet of Things di
+                            <a href="https://t.me/joinchat/HvL97KWKW22Q5vZh" target="_blank">sini</a></span>
                     </div>
                 </div><br>
                 <form action="<?php echo base_url(); ?>">
