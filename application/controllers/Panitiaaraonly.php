@@ -126,6 +126,21 @@ class Panitiaaraonly extends CI_Controller {
     //     }
 
     // }
+
+       // DANGER!
+    function sendnewemailtoallplease025thegreatestdota2playerforwebinar() {
+        $alldataofwebinar = $this->m_panitia->get_custom_email_webinar();
+
+        foreach($alldataofwebinar as $data) {
+            if($data->email == 'rafael.nixon.c@gmail.com')
+                if($this->m_otp->send_webinar_email($data->email)) {
+                    echo $data->email .' | WEBINAR | <b style="color:green;">SUCCESS</b> <br>';
+                } else {
+                    echo $data->email .' | WEBINAR | <b style="color:red;">FAILED</b> <br>';
+                }
+        }
+
+    }
     
     function sendemailmanuallytotim($tim_id, $table) {
         if(strlen($tim_id) > 0) {

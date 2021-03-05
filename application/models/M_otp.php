@@ -260,6 +260,51 @@ class M_otp extends CI_Model {
 
         return false;
     }
+
+    function send_webinar_email($email)  
+    {
+            
+        $sended = $this->send_phpmailer($email, 'ARA 2021 | Informasi Webinar Ara Cyber Security',
+        "<pre>Halo ITzen!
+
+        Terima kasih telah mendaftar pada ARATALK yang diselenggarakan oleh HMIT ITS! 
+        
+        bertemakan :
+        1. Cyber Security (A Specialist's Sight: Monitoring Attacks and Cyber Threat Hunting)
+        
+        yang diadakan pada: 
+        Tanggal : 6 Maret 2021 (Cyber Security) 
+        Waktu : 07:45 - 12.00 WIB
+        Platform : Zoom dan Youtube
+        
+        Link Webinar:
+        intip.in/aratalk2021zoom1
+        
+        Para peserta webinar harap memperhatikan poin poin sebagai berikut :
+        1. Peserta sudah bisa masuk ke room Zoom Meeting pada jam 07.45
+        2. Disarankan menggunakan format nama: Nama_Instansi
+        3. Pada awal dan akhir acara akan diberikan link Presensi dan Feedback yang hanya dibuka selama 30 menit. KEDUA link tersebut merupakan salah satu syarat mendapatkan e-Sertifikat
+        4. Syarat kedua mendapat e-Sertifikat adalah telah memenuhi persyaratan pendaftaran webinar Aratalk ini (share poster dll yang wajib)
+        5. Akan ada sesi breaktime setelah dilakukan Penyampaian Materi 
+        6. Karena beberapa alasan, peserta tidak diberikan akses untuk melakukan on mic
+        7. Pada sesi Q&A, pertanyaan dapat diajukan melalui Platform Sli.do yang akan dibagikan linknya nanti
+        8. Peserta yang memiliki masalah dengan Zoom Meeting-nya, bisa mengakses Webinar melalui link Youtube yang telah disediakan
+        9. Apabila ada masalah teknis lain bisa menghubungi Panitia melalui chat Zoom Meeting ataupun Grup Peserta
+        
+        Ikuti juga social media kami untuk mendapatkan informasi terbaru:
+        @ara_its
+        @hmit_its
+        
+        Best Regards, 
+        ARA</pre>");
+        
+        if($sended) {
+            
+            return true;
+        }
+
+        return false;
+    }
 }
 
 ?>
