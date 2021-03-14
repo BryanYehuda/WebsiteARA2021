@@ -128,41 +128,120 @@ class Panitiaaraonly extends CI_Controller {
     // }
 
        // DANGER!
-    function sendnewemailtoallplease025thegreatestdota2playerforwebinar() {
-        $alldataofwebinar = $this->m_panitia->get_custom_email_webinar();
+    // function sendnewemailtoallplease025thegreatestdota2playerforwebinar() {
+    //     if($this->session->has_userdata("panitia_logged_in") && $this->session->userdata("panitia_logged_in") != '0') {
+    //         $alldataofwebinar = $this->m_panitia->get_custom_email_webinar();
 
-        foreach($alldataofwebinar as $data) {
-            //if($data->email == 'rafael.nixon.c@gmail.com')
-                if($this->m_otp->send_webinar_email($data->email)) {
-                    echo $data->email .' | WEBINAR | <b style="color:green;">SUCCESS</b> <br>';
-                } else {
-                    echo $data->email .' | WEBINAR | <b style="color:red;">FAILED</b> <br>';
-                }
-        }
+    //         foreach($alldataofwebinar as $data) {
+    //             //if($data->email == 'rafael.nixon.c@gmail.com')
+    //                 if($this->m_otp->send_webinar_email($data->email)) {
+    //                     echo $data->email .' | WEBINAR | <b style="color:green;">SUCCESS</b> <br>';
+    //                 } else {
+    //                     echo $data->email .' | WEBINAR | <b style="color:red;">FAILED</b> <br>';
+    //                 }
+    //         }
+    //     }
 
-    }
+    // }
+
+    // function sendemailtosomeforwebinarplease025thegreatestdota2player() {
+    //     if($this->session->has_userdata("panitia_logged_in") && $this->session->userdata("panitia_logged_in") != '0') {
+    //         $emails = 'linameliawati06@gmail.com
+    //         ngabloe.aji@gmail.com
+    //         Uciha2536@gmail.com
+    //         alfinnrk@gmail.com
+    //         darmiantipmds@gmail.com
+    //         muh.iksaan9@gmail.com
+    //         hajarsentanu2018@gmail.com
+    //         bagushidayat152@gmail.com
+    //         arrh56@gmail.com
+    //         sriindahjumiaty@gmail.com
+    //         nurulizzaputri15@gmail.com
+    //         melyndaputri999@gmail.com
+    //         nurrochimchimwebinar@gmail.com
+    //         apriliyaoktavianti18@gmail.com
+    //         henrikus20@gmail.com
+    //         Oglprayoga412@gmail.com
+    //         novsevot290@gmail.com
+    //         rbt99laipaka@gmail.com
+    //         ridwanfatriawan54@gmail.com
+    //         okeylalaa@gmail.com
+    //         pujiantoalif25@gmail.com
+    //         pandyo.pratama@gmail.com
+    //         fajrizulfa36@gmail.com
+    //         fardhanjayaputera@gmail.com';
+
+    //         $alldataofwebinar = explode('.com', $emails);
+
+    //         foreach($alldataofwebinar as $data) {
+    //             echo $data;
+    //             //if($data->email == 'rafael.nixon.c@gmail.com')
+    //                 //if($this->m_otp->send_webinar_email($data . '.com')) {
+    //                 //    echo $data .' | WEBINAR | <b style="color:green;">SUCCESS</b> <br>';
+    //                 //} else {
+    //                 //    echo $data .' | WEBINAR | <b style="color:red;">FAILED</b> <br>';
+    //                 //}
+    //         }
+    //     }
+    // }
     
     function sendemailmanuallytotim($tim_id, $table) {
-        if(strlen($tim_id) > 0) {
-            
-            $q = $this->m_panitia->get_data_of_tim_by_id($tim_id, $table);
-            
-            if($q->num_rows() > 0) {
-                $sended = $this->m_otp->request_otp_by_tim_id($tim_id, $q->row_array()['email1']);
-            
-                if($sended) {
-                    echo '<h1 style="color:green;">Email Sent!</h1><br><br>';
-                    echo '<h3> Nama Tim    : ' . $q->row_array()['nama'] . '</h3><br>';
-                    echo '<h3> Kategori    : ' . $table . '</h3><br>';
-                    echo '<h3> Email       : ' . $q->row_array()['email1'] . '</h3><br>';
-                    return;
+        if($this->session->has_userdata("panitia_logged_in") && $this->session->userdata("panitia_logged_in") != '0') {
+            if(strlen($tim_id) > 0) {
+                
+                $q = $this->m_panitia->get_data_of_tim_by_id($tim_id, $table);
+                
+                if($q->num_rows() > 0) {
+                    $sended = $this->m_otp->request_otp_by_tim_id($tim_id, $q->row_array()['email1']);
+                
+                    if($sended) {
+                        echo '<h1 style="color:green;">Email Sent!</h1><br><br>';
+                        echo '<h3> Nama Tim    : ' . $q->row_array()['nama'] . '</h3><br>';
+                        echo '<h3> Kategori    : ' . $table . '</h3><br>';
+                        echo '<h3> Email       : ' . $q->row_array()['email1'] . '</h3><br>';
+                        return;
+                    }
                 }
+                
             }
             
+            echo '<h1 style="color:red;">Email Error!</h1>';
+            return;
         }
-        
-        echo '<h1 style="color:red;">Email Error!</h1>';
-        return;
+    }
+
+    function gantistatus($table, $id_table = -1) {
+        if($this->session->has_userdata("panitia_logged_in") && $this->session->userdata("panitia_logged_in") != '0') {
+
+            if($id_table!=-1) {
+                $newvalue = $this->input->post("status");
+                if($newvalue == null) $newvalue = 1;
+
+                if(strpos($id_table, '-')) {
+
+                    $ids = explode('-', $id_table);
+
+                    $i = 0;
+
+                    foreach($ids as $id) {
+                        $i++;
+
+                        $this->m_panitia->changestatus($table, $id, $newvalue);
+                    }
+
+                    if($i == count($ids))
+                        redirect(base_url('panitiaaraonly'));
+
+                } else {
+                    
+                    $this->m_panitia->changestatus($table, $id_table, $newvalue);
+                    
+                    redirect(base_url('panitiaaraonly'));
+                }
+            } else {
+                redirect(base_url('panitiaaraonly'));
+            }
+        }
     }
     
     // function search($table) {

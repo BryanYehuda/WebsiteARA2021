@@ -12,7 +12,7 @@ class M_Panitia extends CI_Model {
             $tabletime = 'olim';
 
         if($table == 'iot')
-            return $this->db->select('team.nama, team.id, team.tim_status, team.bukti_bayar, cur.*, abstrac.id_tim, abstrac.judul, abstrac.abstrak, abstrac.timestamp')->from('tim team, abstrak_iot abstrac')->join($table . ' cur', 'team.nama = cur.nama_tim AND abstrac.id_tim = team.id', 'LEFT')->order_by('cur.' . $tabletime . '_timestamp', 'DESC')->where("cur.nama_tim is not null and team.nama is not null and team.tim_status > 0")->get()->result();        
+            return $this->db->select('team.nama, team.id, team.tim_status, team.bukti_bayar, cur.*, abstrac.id_tim, abstrac.judul, abstrac.abstrak, abstrac.timestamp, kti_iot.id_tim, kti_iot.kti, kti_iot.status')->from('tim team, abstrak_iot abstrac')->join($table . ' cur', 'team.nama = cur.nama_tim AND abstrac.id_tim = team.id', 'LEFT')->join('kti', 'team.id = kti_iot.id_tim', 'LEFT')->order_by('cur.' . $tabletime . '_timestamp', 'DESC')->where("cur.nama_tim is not null and team.nama is not null and team.tim_status > 0")->get()->result();        
         
         return $this->db->select('team.nama, team.id, team.tim_status, team.bukti_bayar, cur.*')->from('tim team')->join($table . ' cur', 'team.nama = cur.nama_tim', 'LEFT')->order_by('cur.' . $tabletime . '_timestamp', 'DESC')->where("cur.nama_tim is not null and team.nama is not null and team.tim_status > 0")->get()->result();
     }
@@ -29,6 +29,27 @@ class M_Panitia extends CI_Model {
 
     function get_custom_email_webinar() {
         return $this->db->get('email_webinar')->result();
+    }
+
+    function changestatus($table, $table_id, $newvalue) {
+        if($table == 'olim')
+        $table = 'olimpiade';
+        
+        $tablewew = $table;
+
+        if($table == 'olimpiade')
+        $tablewew = 'olim';
+
+
+
+        $this->db->where('id_' . $tablewew, $table_id)->update($table, ['sts' => $newvalue]);
+    }
+
+    function fetchteamstatus($table, $team) {
+        if($table == 'olim')
+            $table = 'olimpiade';
+
+        return $this->db->select($table . '.nama_tim, ' . $table . '.sts')->from($table)->where('nama_tim = ' . $team)->get()->result();
     }
 
     function search($table, $keyword) {

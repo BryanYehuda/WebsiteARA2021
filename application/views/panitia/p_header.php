@@ -37,7 +37,7 @@
   <!-- Custom End -->
 </head>
 
-<body class="container" style="background-color: #111;color: whitesmoke;">
+<body class="container-fluid" style="background-color: #111;color: whitesmoke;">
   <?php 
   if($this->session->has_userdata("panitia_logged_in")) { ?>
   <h2 style="padding-top: 10px;" class="text-center row">
