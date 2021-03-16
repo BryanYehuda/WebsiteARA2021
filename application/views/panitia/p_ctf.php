@@ -5,6 +5,10 @@
             <input type="button" onclick="sts_all_chg()" data-toggle="modal" data-target="#modal_change_status_selected"
                 draggable="false" style="color:red;" value="Click to Change Status of Selected Teams">
         </div>
+        <div class="col-xs-12 col-lg-12">
+            <input type="button" data-toggle="modal" data-target="#modal_info" draggable="false" style="color:green;"
+                value="INFO PENDAFTARAN">
+        </div>
         <div class="col-xs-12">
             <br>
         </div>
@@ -16,6 +20,7 @@
                 <th><input type="checkbox" id="check-all" value="selectAll"></th>
                 <th>ID</th>
                 <th>Nama Tim</th>
+                <th>Batch Daftar</th>
                 <th>Nama Ketua</th>
                 <th>Email Ketua</th>
                 <th>No. WhatsApp</th>
@@ -27,6 +32,17 @@
             </tr>
         </thead>
         <tbody>
+            <?php
+            $b1 = "2021-01-16";
+            $b2 = "2021-02-14";
+            $b3 = "2021-03-01";
+
+            $pb1 = 0;
+            $pb2 = 0;
+            $pb3 = 0;
+
+            $tot = 0;
+            ?>
             <?php foreach($datas as $data) { ?>
             <tr draggable="false">
                 <td draggable="false"><input type="checkbox" name="check" value="<?= $data->id_ctf; ?>"></td>
@@ -39,9 +55,27 @@
                         <?= $data->nama_tim; ?>
                     </a>
                     <!-- <a href="<?php echo base_url('uploads/ctf/') . $data->nama_tim . '/' . $data->bukti_bayar; ?>"
-                        draggable="false" target="_blank">
-                        <?=$data->nama_tim; ?>
-                    </a> -->
+                    draggable="false" target="_blank">
+                    <?=$data->nama_tim; ?>
+                </a> -->
+                </td>
+                <td draggable="false">
+                    <?php 
+                    $tot++;
+
+                    $dated = explode(" ", $data->ctf_timestamp);
+                    
+                    if($dated[0] <= $b1) {
+                        $pb1++;
+                        echo '1';
+                    } else if($dated[0] <= $b2) {
+                        $pb2++;
+                        echo '2';
+                    } else {
+                        $pb3++;
+                        echo '3';
+                    }
+                ?>
                 </td>
                 <td draggable="false">
                     <a data-toggle="modal" data-target="#modal_<?php echo $data->id_ctf; ?>_1" draggable="false">
@@ -58,8 +92,8 @@
                     <?= $data->line; ?>
                 </td>
                 <!-- <td draggable="false">
-                    <?= $data->alamat; ?>
-                </td> -->
+                <?= $data->alamat; ?>
+            </td> -->
                 <td draggable="false">
                     <a data-toggle="modal" data-target="#modal_<?php echo $data->id_ctf; ?>_2" draggable="false">
                         <?= $data->nama2; ?>
@@ -77,6 +111,7 @@
             <?php } ?>
         </tbody>
     </table>
+
     <div id="modal_change_status_selected" class="modal">
         <div class="modal-dialog">
 
@@ -93,40 +128,79 @@
                         action="<?php echo base_url('panitiaaraonly/gantistatus/ctf/'); ?>" method="POST">
                         <p>Ganti Status Ke</p>
                         <?php
-                            for($ix=1;$ix<=7;$ix++) { ?>
+                        for($ix=1;$ix<=7;$ix++) { ?>
                         <input type="radio" id="<?= $ix ?>" name="status" value="<?= $ix ?>" <?php if($ix==$data->sts) {
                         echo 'checked="checked"'; } ?>>
                         <label for="<?= $ix ?>">
                             <?php 
-                            switch($ix) {
-                            case 1:
-                                echo 'Terverifikasi';
-                            break;
-                            case 2:
-                                echo 'Lolos Penyisihan';
-                            break;
-                            case 3:
-                                echo 'Menang Juara 1';
-                            break;
-                            case 4:
-                                echo 'Menang Juara 2';
-                            break;
-                            case 5:
-                                echo 'Menang Juara 3';
-                            break;
-                            case 6:
-                                echo 'Tidak Lolos Penyisihan';
-                            break;
-                            case 7:
-                                echo 'Tidak Menang Final';
-                            break;
-                        } ?>
+                        switch($ix) {
+                        case 1:
+                            echo 'Terverifikasi';
+                        break;
+                        case 2:
+                            echo 'Lolos Penyisihan';
+                        break;
+                        case 3:
+                            echo 'Menang Juara 1';
+                        break;
+                        case 4:
+                            echo 'Menang Juara 2';
+                        break;
+                        case 5:
+                            echo 'Menang Juara 3';
+                        break;
+                        case 6:
+                            echo 'Tidak Lolos Penyisihan';
+                        break;
+                        case 7:
+                            echo 'Tidak Menang Final';
+                        break;
+                    } ?>
                         </label><br>
                         <?php }
-                        ?>
+                    ?>
                         <br>
                         <input type="submit" id="submsel" value="Ganti" style="color: red;font-weight: bold;">
                     </form>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal_info" class="modal">
+        <div class="modal-dialog">
+
+            <div class="modal-content" style="background-color: rgb(56, 56, 56);">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">
+                        Info
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+
+                        <b>Total :
+                            <?= ' ' . $tot; ?> tim
+                        </b>
+                        <br>
+                        <b>Jumlah Pendaftar di</b>
+
+                        <br>
+                        <b>Batch 1 : </b>
+                        <?= $pb1; ?> tim
+                        <br>
+
+                        <b>Batch 2 : </b>
+                        <?= $pb2; ?> tim
+                        <br>
+
+                        <b>Batch 3 : </b>
+                        <?= $pb3; ?> tim
+                        <br>
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -157,30 +231,30 @@
                     <p>
                         <b>Status Tim</b><br>
                         <?php 
-                                switch($data->sts) {
-                                        case 1:
-                                            echo '<b style="color:lightgreen">Terverifikasi</b>';
-                                        break;
-                                        case 2:
-                                            echo '<b style="color:lightgreen">Lolos Penyisihan</b>';
-                                        break;
-                                        case 3:
-                                            echo '<b style="color: lime;">Menang Juara 1</b>';
-                                        break;
-                                        case 4:
-                                            echo '<b style="color: limegreen;">Menang Juara 2</b>';
-                                        break;
-                                        case 5:
-                                            echo '<b style="color: greenyellow;">Menang Juara 3</b>';
-                                        break;
-                                        case 6:
-                                            echo '<b style="color: deeppink;">Tidak Lolos Penyisihan</b>';
-                                        break;
-                                        case 7:
-                                            echo '<b style="color: deeppink;">Tidak Menang Final</b>';
-                                        break;
-                                }
-                        ?>
+                            switch($data->sts) {
+                                    case 1:
+                                        echo '<b style="color:lightgreen">Terverifikasi</b>';
+                                    break;
+                                    case 2:
+                                        echo '<b style="color:lightgreen">Lolos Penyisihan</b>';
+                                    break;
+                                    case 3:
+                                        echo '<b style="color: lime;">Menang Juara 1</b>';
+                                    break;
+                                    case 4:
+                                        echo '<b style="color: limegreen;">Menang Juara 2</b>';
+                                    break;
+                                    case 5:
+                                        echo '<b style="color: greenyellow;">Menang Juara 3</b>';
+                                    break;
+                                    case 6:
+                                        echo '<b style="color: deeppink;">Tidak Lolos Penyisihan</b>';
+                                    break;
+                                    case 7:
+                                        echo '<b style="color: deeppink;">Tidak Menang Final</b>';
+                                    break;
+                            }
+                    ?>
                     </p>
                     <p>
                     <form class="form act-<?= $data->id; ?>"
@@ -188,37 +262,37 @@
                         method="POST">
                         <p>Ganti Status Ke</p>
                         <?php
-                            for($ix=1;$ix<=7;$ix++) { ?>
+                        for($ix=1;$ix<=7;$ix++) { ?>
                         <input type="radio" id="<?= $ix ?>" name="status" value="<?= $ix ?>" <?php if($ix==$data->sts) {
                         echo 'checked="checked"'; } ?>>
                         <label for="<?= $ix ?>">
                             <?php 
-                            switch($ix) {
-                            case 1:
-                                echo 'Terverifikasi';
-                            break;
-                            case 2:
-                                echo 'Lolos Penyisihan';
-                            break;
-                            case 3:
-                                echo 'Menang Juara 1';
-                            break;
-                            case 4:
-                                echo 'Menang Juara 2';
-                            break;
-                            case 5:
-                                echo 'Menang Juara 3';
-                            break;
-                            case 6:
-                                echo 'Tidak Lolos Penyisihan';
-                            break;
-                            case 7:
-                                echo 'Tidak Menang Final';
-                            break;
-                        } ?>
+                        switch($ix) {
+                        case 1:
+                            echo 'Terverifikasi';
+                        break;
+                        case 2:
+                            echo 'Lolos Penyisihan';
+                        break;
+                        case 3:
+                            echo 'Menang Juara 1';
+                        break;
+                        case 4:
+                            echo 'Menang Juara 2';
+                        break;
+                        case 5:
+                            echo 'Menang Juara 3';
+                        break;
+                        case 6:
+                            echo 'Tidak Lolos Penyisihan';
+                        break;
+                        case 7:
+                            echo 'Tidak Menang Final';
+                        break;
+                    } ?>
                         </label><br>
                         <?php }
-                        ?>
+                    ?>
                         <br>
 
                         <input type="submit" value="Ganti" style="color: red;font-weight: bold;">
@@ -231,6 +305,7 @@
             </div>
         </div>
     </div>
+
     <div id="modal_<?php echo $data->id_ctf; ?>_1" class="modal">
         <div class="modal-dialog">
 
@@ -262,10 +337,10 @@
                         </b>
                         <br>
                         <?php if($data->gender1 == "0") {
-                            echo 'Laki-Laki';
-                        } else {
-                            echo 'Perempuan';
-                        } ?>
+                        echo 'Laki-Laki';
+                    } else {
+                        echo 'Perempuan';
+                    } ?>
                         <br>
                         <br>
                         <b>
@@ -332,10 +407,10 @@
                         </b>
                         <br>
                         <?php if($data->gender2 == "0") {
-                            echo 'Laki-Laki';
-                        } else {
-                            echo 'Perempuan';
-                        } ?>
+                        echo 'Laki-Laki';
+                    } else {
+                        echo 'Perempuan';
+                    } ?>
                         <br>
                         <br>
                         <b>
@@ -402,10 +477,10 @@
                         </b>
                         <br>
                         <?php if($data->gender3 == "0") {
-                            echo 'Laki-Laki';
-                        } else {
-                            echo 'Perempuan';
-                        } ?>
+                        echo 'Laki-Laki';
+                    } else {
+                        echo 'Perempuan';
+                    } ?>
                         <br>
                         <br>
                         <b>
@@ -444,6 +519,7 @@
     <?php } ?>
 
 </div>
+
 <script>
     $('#check-all').click(function () {
         if (this.checked) {

@@ -1,9 +1,13 @@
 <div id="olimpiade" class="col s12">
-
-<div class="row">
+    
+        <div class="row">
         <div class="col-xs-12">
             <input type="button" onclick="sts_all_chg()" data-toggle="modal" data-target="#modal_change_status_selected"
                 draggable="false" style="color:red;" value="Click to Change Status of Selected Teams">
+        </div>
+                <div class="col-xs-12 col-lg-12">
+            <input type="button" data-toggle="modal" data-target="#modal_info" draggable="false" style="color:green;"
+                value="INFO PENDAFTARAN">
         </div>
         <div class="col-xs-12">
             <br>
@@ -13,9 +17,10 @@
     <table class="table table-hover table-responsive">
         <thead>
             <tr style="color: whitesmoke;">
-            <th><input type="checkbox" id="check-all" value="selectAll"></th>
+                                <th><input type="checkbox" id="check-all" value="selectAll"></th>
                 <th>ID</th>
                 <th>Nama Tim</th>
+                                <th>Batch Daftar</th>
                 <th>Nama Ketua</th>
                 <th>Email Ketua</th>
                 <th>No. WhatsApp</th>
@@ -27,15 +32,24 @@
             </tr>
         </thead>
         <tbody>
+                    <?php
+            $b1 = "2021-01-24";
+            $b2 = "2021-03-12";
+
+            $pb1 = 0;
+            $pb2 = 0;
+
+            $tot = 0;
+            ?>
         <?php foreach($datas as $data) { ?>
             <tr draggable="false">
-            <td draggable="false"><input type="checkbox" name="check" value="<?= $data->id_ctf; ?>"></td>
+<td draggable="false"><input type="checkbox" name="check" value="<?= $data->id_olim; ?>"></td>
                 <td draggable="false">
                     i-
                     <?= $data->id ?>
                 </td>
                 <td draggable="false">
-                    <a data-toggle="modal" data-target="#modal_<?php echo $data->id_ctf; ?>_0" draggable="false">
+                    <a data-toggle="modal" data-target="#modal_<?php echo $data->id_olim; ?>_0" draggable="false">
                         <?= $data->nama_tim; ?>
                     </a>
                     <!-- <a href="<?php echo base_url('uploads/ctf/') . $data->nama_tim . '/' . $data->bukti_bayar; ?>"
@@ -43,8 +57,23 @@
                         <?=$data->nama_tim; ?>
                     </a> -->
                 </td>
+                                <td draggable="false">
+                    <?php 
+                    $tot++;
+
+                    $dated = explode(" ", $data->olim_timestamp);
+                    
+                    if($dated[0] <= $b1) {
+                        $pb1++;
+                        echo '1';
+                    } else {
+                        $pb2++;
+                        echo '2';
+                    }
+                ?>
+                </td>
                 <td draggable="false">
-                    <a data-toggle="modal" data-target="#modal_<?php echo $data->id_ctf; ?>_1" draggable="false">
+                    <a data-toggle="modal" data-target="#modal_<?php echo $data->id_olim; ?>_1" draggable="false">
                         <?= $data->nama1; ?>
                     </a>
                 </td>
@@ -61,12 +90,12 @@
                     <?= $data->alamat; ?>
                 </td> -->
                 <td draggable="false">
-                    <a data-toggle="modal" data-target="#modal_<?php echo $data->id_ctf; ?>_2" draggable="false">
+                    <a data-toggle="modal" data-target="#modal_<?php echo $data->id_olim; ?>_2" draggable="false">
                         <?= $data->nama2; ?>
                     </a>
                 </td>
                 <td draggable="false">
-                    <a data-toggle="modal" data-target="#modal_<?php echo $data->id_ctf; ?>_3" draggable="false">
+                    <a data-toggle="modal" data-target="#modal_<?php echo $data->id_olim; ?>_3" draggable="false">
                         <?= $data->nama3; ?>
                     </a>
                 </td>
@@ -77,7 +106,8 @@
             <?php } ?>
         </tbody>
     </table>
-    <div id="modal_change_status_selected" class="modal">
+
+        <div id="modal_change_status_selected" class="modal">
         <div class="modal-dialog">
 
             <div class="modal-content" style="background-color: rgb(56, 56, 56);">
@@ -135,9 +165,45 @@
             </div>
         </div>
     </div>
+        <div id="modal_info" class="modal">
+        <div class="modal-dialog">
+
+            <div class="modal-content" style="background-color: rgb(56, 56, 56);">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">
+                        Info
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+
+                        <b>Total :
+                            <?= ' ' . $tot; ?> tim
+                        </b>
+                        <br>
+                        <b>Jumlah Pendaftar di</b>
+
+                        <br>
+                        <b>Batch 1 : </b>
+                        <?= $pb1; ?> tim
+                        <br>
+
+                        <b>Batch 2 : </b>
+                        <?= $pb2; ?> tim
+                        <br>
+
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <?php foreach($datas as $data) { ?>
 
-    <div id="modal_<?php echo $data->id_ctf; ?>_0" class="modal">
+    <div id="modal_<?php echo $data->id_olim; ?>_0" class="modal">
         <div class="modal-dialog">
 
             <div class="modal-content" style="background-color: rgb(56, 56, 56);">
@@ -149,7 +215,7 @@
                 </div>
                 <div class="modal-body">
                     <p>
-                        <a href="<?php echo base_url('uploads/ctf/') . $data->nama_tim . '/' . $data->bukti_bayar; ?>"
+                        <a href="<?php echo base_url('uploads/olimpiade/') . $data->nama_tim . '/' . $data->bukti_bayar; ?>"
                             draggable="false" target="_blank">
                             Bukti Bayar
                         </a>
@@ -184,7 +250,7 @@
                     </p>
                     <p>
                     <form class="form act-<?= $data->id; ?>"
-                        action="<?php echo base_url('panitiaaraonly/gantistatus/ctf/' . $data->id_ctf); ?>"
+                        action="<?php echo base_url('panitiaaraonly/gantistatus/ctf/' . $data->id_olim); ?>"
                         method="POST">
                         <p>Ganti Status Ke</p>
                         <?php
@@ -231,7 +297,8 @@
             </div>
         </div>
     </div>
-    <div id="modal_<?php echo $data->id_ctf; ?>_1" class="modal">
+
+    <div id="modal_<?php echo $data->id_olim; ?>_1" class="modal">
         <div class="modal-dialog">
 
             <div class="modal-content" style="background-color: rgb(56, 56, 56);">
@@ -301,7 +368,7 @@
             </div>
         </div>
     </div>
-    <div id="modal_<?php echo $data->id_ctf; ?>_2" class="modal">
+    <div id="modal_<?php echo $data->id_olim; ?>_2" class="modal">
         <div class="modal-dialog">
 
             <div class="modal-content" style="background-color: rgb(56, 56, 56);">
@@ -371,7 +438,7 @@
             </div>
         </div>
     </div>
-    <div id="modal_<?php echo $data->id_ctf; ?>_3" class="modal">
+    <div id="modal_<?php echo $data->id_olim; ?>_3" class="modal">
         <div class="modal-dialog">
 
             <div class="modal-content" style="background-color: rgb(56, 56, 56);">
@@ -444,6 +511,7 @@
     <?php } ?>
 
 </div>
+
 <script>
     $('#check-all').click(function () {
         if (this.checked) {

@@ -84,7 +84,7 @@
                 <div class="modal-body">
                     <p>
                     <form class="form act-<?= $data->id; ?>" id="the_all_link"
-                        action="<?php echo base_url('panitiaaraonly/gantistatus/ctf/'); ?>" method="POST">
+                        action="<?php echo base_url('panitiaaraonly/gantistatus/iot/'); ?>" method="POST">
                         <p>Ganti Status Ke</p>
                         <?php
                             for($ix=1;$ix<=7;$ix++) { ?>
@@ -97,21 +97,27 @@
                                 echo 'Terverifikasi';
                             break;
                             case 2:
-                                echo 'Lolos Penyisihan';
+                                echo 'Lolos Babak 1';
                             break;
                             case 3:
-                                echo 'Menang Juara 1';
+                                echo 'Lolos Babak 2';
                             break;
                             case 4:
-                                echo 'Menang Juara 2';
+                                echo 'Menang Juara 1';
                             break;
                             case 5:
-                                echo 'Menang Juara 3';
+                                echo 'Menang Juara 2';
                             break;
                             case 6:
-                                echo 'Tidak Lolos Penyisihan';
+                                echo 'Menang Juara 3';
                             break;
                             case 7:
+                                echo 'Tidak Lolos Babak 1';
+                            break;
+                            case 8:
+                                echo 'Tidak Lolos Babak 2';
+                            break;
+                            case 9:
                                 echo 'Tidak Menang Final';
                             break;
                         } ?>
@@ -185,33 +191,39 @@
                         <b>Status Tim</b><br>
                         <?php 
                                 switch($data->sts) {
-                                        case 1:
-                                            echo '<b style="color:lightgreen">Terverifikasi</b>';
-                                        break;
-                                        case 2:
-                                            echo '<b style="color:lightgreen">Lolos Penyisihan</b>';
-                                        break;
-                                        case 3:
-                                            echo '<b style="color: lime;">Menang Juara 1</b>';
-                                        break;
-                                        case 4:
-                                            echo '<b style="color: limegreen;">Menang Juara 2</b>';
-                                        break;
-                                        case 5:
-                                            echo '<b style="color: greenyellow;">Menang Juara 3</b>';
-                                        break;
-                                        case 6:
-                                            echo '<b style="color: deeppink;">Tidak Lolos Penyisihan</b>';
-                                        break;
-                                        case 7:
-                                            echo '<b style="color: deeppink;">Tidak Menang Final</b>';
-                                        break;
-                                }
+                                case 1:
+                                    echo '<b style="color:lightgreen">Terverifikasi</b>';
+                                break;
+                                case 2:
+                                    echo '<b style="color:lightgreen">Lolos Babak 1</b>';
+                                break;
+                                case 3:
+                                    echo '<b style="color:lightgreen">Lolos Babak 2</b>';
+                                break;
+                                case 4:
+                                    echo '<b style="color: lime;">Menang Juara 1</b>';
+                                break;
+                                case 5:
+                                    echo '<b style="color: limegreen;">Menang Juara 2</b>';
+                                break;
+                                case 6:
+                                    echo '<b style="color: greenyellow;">Menang Juara 3</b>';
+                                break;
+                                case 7:
+                                    echo '<b style="color: deeppink;">Tidak Lolos Babak 1</b>';
+                                break;
+                                case 8:
+                                    echo '<b style="color: deeppink;">Tidak Lolos Babak 2</b>';
+                                break;
+                                case 9:
+                                    echo '<b style="color: deeppink;">Tidak Menang Final</b>';
+                                break;
+                            }
                         ?>
                     </p>
                     <p>
                     <form class="form act-<?= $data->id; ?>"
-                        action="<?php echo base_url('panitiaaraonly/gantistatus/ctf/' . $data->id_ctf); ?>"
+                        action="<?php echo base_url('panitiaaraonly/gantistatus/iot/' . $data->id_ctf); ?>"
                         method="POST">
                         <p>Ganti Status Ke</p>
                         <?php
@@ -221,27 +233,33 @@
                         <label for="<?= $ix ?>">
                             <?php 
                             switch($ix) {
-                            case 1:
-                                echo 'Terverifikasi';
-                            break;
-                            case 2:
-                                echo 'Lolos Penyisihan';
-                            break;
-                            case 3:
-                                echo 'Menang Juara 1';
-                            break;
-                            case 4:
-                                echo 'Menang Juara 2';
-                            break;
-                            case 5:
-                                echo 'Menang Juara 3';
-                            break;
-                            case 6:
-                                echo 'Tidak Lolos Penyisihan';
-                            break;
-                            case 7:
-                                echo 'Tidak Menang Final';
-                            break;
+                                case 1:
+                                    echo 'Terverifikasi';
+                                break;
+                                case 2:
+                                    echo 'Lolos Babak 1';
+                                break;
+                                case 3:
+                                    echo 'Lolos Babak 2';
+                                break;
+                                case 4:
+                                    echo 'Menang Juara 1';
+                                break;
+                                case 5:
+                                    echo 'Menang Juara 2';
+                                break;
+                                case 6:
+                                    echo 'Menang Juara 3';
+                                break;
+                                case 7:
+                                    echo 'Tidak Lolos Babak 1';
+                                break;
+                                case 8:
+                                    echo 'Tidak Lolos Babak 2';
+                                break;
+                                case 9:
+                                    echo 'Tidak Menang Final';
+                                break;
                         } ?>
                         </label><br>
                         <?php }
@@ -529,7 +547,7 @@
                 sels = sels + checkboxes[idx].value + "-";
         }
 
-        document.getElementById("the_all_link").action = "<?php echo base_url('panitiaaraonly/gantistatus/ctf/'); ?>" + sels;
+        document.getElementById("the_all_link").action = "<?php echo base_url('panitiaaraonly/gantistatus/iot/'); ?>" + sels;
 
         if (sels == "" || sels == null) {
             document.getElementById("submsel").disabled = true;
