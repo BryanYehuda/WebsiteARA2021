@@ -512,6 +512,118 @@
                                               </div>
                                               <br>
                                               <!-- Poster End -->
+
+                                              <div class="row">
+                  <div class="col s12 l12">
+                    <span class="form-input-title-designed">Link Instagram
+                      <a href="https://www.instagram.com/telkomindonesia/" target="_blank">@telkomindonesia</a></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l6">
+                    <span class="form-input-title-designed">Bukti Follow @telkomindonesia:
+                      <span class="required-star-designed">*</span></span>
+                  </div>
+                  <div class="col s12 l6">
+                    <div class="file-field input-field">
+                      <div class="btn upload-button-designed">
+                        <input type="file" id="telkom1" name="telkom1" onchange="return fileValidation('telkom1')" required>
+                        <label for="telkom1">
+                          <img class="upload-button-image-designed" src="<?php echo base_url('assets/images/upload_black.png') ?>" style="max-height: 90%;">
+                          <span class="upload-button-label-designed">Upload</span>
+                        </label>
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                        <span id="telkom1-size"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l12">
+                    <span class="form-input-title-designed">Link Instagram
+                      <a href="https://www.instagram.com/livingintelkom/" target="_blank">@livingintelkom</a></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l6">
+                    <span class="form-input-title-designed">Bukti Follow @livingintelkom:
+                      <span class="required-star-designed">*</span></span>
+                  </div>
+                  <div class="col s12 l6">
+                    <div class="file-field input-field">
+                      <div class="btn upload-button-designed">
+                        <input type="file" id="telkom2" name="telkom2" onchange="return fileValidation('telkom2')" required>
+                        <label for="telkom2">
+                          <img class="upload-button-image-designed" src="<?php echo base_url('assets/images/upload_black.png') ?>" style="max-height: 90%;">
+                          <span class="upload-button-label-designed">Upload</span>
+                        </label>
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                        <span id="telkom2-size"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s12 l12">
+                    <span class="form-input-title-designed">Link Instagram
+                      <a href="https://www.instagram.com/livingintelkom/" target="_blank">@paragon.id</a></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l6">
+                    <span class="form-input-title-designed">Bukti Follow @paragon.id:
+                      <span class="required-star-designed">*</span></span>
+                  </div>
+                  <div class="col s12 l6">
+                    <div class="file-field input-field">
+                      <div class="btn upload-button-designed">
+                        <input type="file" id="telkom2" name="telkom2" onchange="return fileValidation('telkom2')" required>
+                        <label for="telkom2">
+                          <img class="upload-button-image-designed" src="<?php echo base_url('assets/images/upload_black.png') ?>" style="max-height: 90%;">
+                          <span class="upload-button-label-designed">Upload</span>
+                        </label>
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                        <span id="telkom2-size"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s12 l12">
+                    <span class="form-input-title-designed">Link Instagram
+                      <a href="https://www.instagram.com/livingintelkom/" target="_blank">@growatparagon</a></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l6">
+                    <span class="form-input-title-designed">Bukti Follow @growatparagon:
+                      <span class="required-star-designed">*</span></span>
+                  </div>
+                  <div class="col s12 l6">
+                    <div class="file-field input-field">
+                      <div class="btn upload-button-designed">
+                        <input type="file" id="telkom2" name="telkom2" onchange="return fileValidation('telkom2')" required>
+                        <label for="telkom2">
+                          <img class="upload-button-image-designed" src="<?php echo base_url('assets/images/upload_black.png') ?>" style="max-height: 90%;">
+                          <span class="upload-button-label-designed">Upload</span>
+                        </label>
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                        <span id="telkom2-size"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                                               <div class="row animate__animated animate__bounce animate__infinite animate__slower animate__delay-1s">
                                                 <div class="col s12 l12">
                                                   <br><br>
