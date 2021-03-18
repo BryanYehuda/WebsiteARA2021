@@ -58,15 +58,15 @@ $route['pendaftaran']				=	'welcome/pendaftaran';
 $route['pendaftaran/sukses']		=	'welcome/sukses';
 $route['pendaftaran/sukseswebinar']	=	'welcome/sukseswebinar';
 
-$route['pendaftaran/webinar']		=	'welcome/webinar';
-$route['daftar/webinar']			=	'welcome/submit_webinar';
+$route['pendaftaran/webinar']		=	'welcome/webinar_tutup';
+$route['daftar/webinar']			=	'welcome/webinar_tutup';
 
 $route['pendaftaran/iot']			=	'welcome/iot_tutup';
 $route['daftar/iot']				=	'welcome/iot_tutup';
 $route['berhasilsubmit']			=	'iot/sukses_submit';
 
-$route['pendaftaran/olimpiade']		=	'welcome/olimpiade';
-$route['daftar/olimpiade']			=	'welcome/submit_olimpiade';
+$route['pendaftaran/olimpiade']		=	'welcome/olimpiade_tutup';
+$route['daftar/olimpiade']			=	'welcome/olimpiade_tutup';
 
 $route['pendaftaran/ctf']			=	'welcome/ctf';
 $route['daftar/ctf']				=	'welcome/submit_ctf';

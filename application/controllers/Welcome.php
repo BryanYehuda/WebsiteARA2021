@@ -86,6 +86,13 @@ class Welcome extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function webinar_tutup()
+	{
+		$this->load->view('header');
+		$this->load->view('tutup_webinar');
+		$this->load->view('footer');
+	}
+
 	function submit_webinar()
 	{
 		$nama		= htmlspecialchars($this->input->post('nama'));
@@ -208,6 +215,13 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('header');
 		$this->load->view('olim');
+		$this->load->view('footer');
+	}
+
+	public function olimpiade_tutup()
+	{
+		$this->load->view('header');
+		$this->load->view('tutup_olim');
 		$this->load->view('footer');
 	}
 
