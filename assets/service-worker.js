@@ -31,6 +31,7 @@ var urlsToCache = [
     './application/controllers/Login.php',
     './application/controllers/OTP.php',
     './application/controllers/Olimpiade.php',
+    './application/config/routes.php',
     './application/models/M_data.php',
     './application/models/M_panitia.php',
     './application/models/M_otp.php',
