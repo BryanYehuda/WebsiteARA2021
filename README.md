@@ -177,8 +177,69 @@ Bendahara minta dibikinin total biaya pendaftaran peserta
 Buat dokumentasi untuk Website ARA 2021 (Update Readme)
 Pelatihan pembuatan Website 2020
 
+## <span style="color: lightblue"> Rapat Subdivisi Website (1 Maret 2021) </span>
+Progres sebelumnya <br>
+Backend Dashboard IoT, CTF, dan Olimpiade :white_check_mark: <br>
+Update Scrollbar :x: <br>
+Update Service worker :white_check_mark: <br>
+Update link ke Gdrive Pendownload Poster dan Twibbon :white_check_mark: <br>
+Tambahin tulisan max file size 2mb :white_check_mark: <br>
+Perbaiki caption webinar :white_check_mark: <br>
+View Dashboard IoT :white_check_mark: <br>
+Buat Admin page untuk Webinar dan IoT :white_check_mark: <br>
+Bikin desain banner sponsor :white_check_mark: <br>
+ Update Link Grup WA :white_check_mark: <br>
+Update Batch 3 Pendaftaran :white_check_mark:<br>
 
+Dida :
+Backend Dashboard IoT, CTF, dan Olimpiade (15 Februari, DONE)
 
+Bryan : <br>
+Update Scrollbar (11 Februari) <br>
+Update link ke Gdrive Pendownload Poster dan Twibbon (9 Februari, DONE) :white_check_mark: <br>
+Tambahin tulisan max file size 2mb (9 Februari, DONE):white_check_mark: <br>
+View Dashboard IoT (11 Februari, DONE):white_check_mark: <br>
 
+Riris : <br>
+Perbaiki caption webinar (9 Februari, DONE):white_check_mark: <br>
+
+Rafael : <br>
+Buat Admin page untuk Webinar dan IoT (15 Februari, DONE) :white_check_mark:<br>
+
+Ariel : <br>
+Dapat tugas dari Carlo - Admin Publikasi (Continuous):white_check_mark: <br>
+Update Service worker (17 Februari, DONE) :white_check_mark:<br>
+
+Rangga dan Fira :
+Bikin desain banner sponsor bentuk card ditaruh di atas footer, alternatif bikin yang bisa ditaruh di footer (15 Februari, DONE)
+
+Pembagian Jobdesk berikutnya :bookmark_tabs: <br>
+1. Update Scrollbar <br>
+2. Update Footer dengan Sponsor <br>
+3. Admin Page IOT nampilin KTI yang terupload (bisa didownload dan dilihat admin) <br>
+4. Update Status Peserta (Menang, Kalah, Lolos, Dsb) <br>
+5. Bendahara minta dibikinin total biaya pendaftaran peserta <br>
+6. Upload KTI <br>
+7. View setelah KTI Terupload <br>
+8. Update Service Worker <br>
+9. Dokumentasi Readme <br>
+
+Bryan :
+Update Scrollbar (4 Maret, DONE) :white_check_mark:
+Update Footer dengan Sponsor (4 Maret, DONE) :white_check_mark:
+
+Rafael : <br>
+Admin Page IOT nampilin KTI yang terupload (bisa didownload dan dilihat admin) (3 Maret, DONE) :white_check_mark: <br>
+Update Status Peserta (Menang, Kalah, Lolos, Dsb) (5 Maret, DONE) :white_check_mark: <br>
+Email Brute Force (4 Maret, DONE) :white_check_mark:
+
+Dida : <br>
+Upload KTI (memastikan sistem upload KTI nya sudah aman) (4 Maret, DONE) :white_check_mark: <br>
+View setelah KTI Terupload (Disable button untuk upload) (5 Maret, DONE) :white_check_mark:
+
+Ariel : <br>
+Update Service Worker (10 Maret. DONE) :white_check_mark: <br>
+Dokumentasi Readme (7 Maret, DONE) :white_check_mark: <br>
+Belajar Git (7 Maret, DONE) :white_check_mark: <br>
 
 
