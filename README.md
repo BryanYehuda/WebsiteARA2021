@@ -1,4 +1,9 @@
 # Dokumentasi Pembuatan Website ARA 2021 
+**Repository ini dibuat untuk menampung kode dan juga progress pembuatan dari Website untuk ARA A Renewal Agent ITS 2021**
+
+Tak kenal maka tak sayang, maka dari itu buah mangga buah kedondong. Kenalan dong… Halo teman-teman dan adik-adik sobat ITzen! Selamat datang di website official ARA 2021. Karena sudah capek-capek datang kemari, intip dikit boleh, la. Sedikit- sedikit lama-lama menjadi bukit. Daripada berlama-lama kaya bekicot, mending kita langsung cekidot.
+
+Sobat ITzen kira-kira tahu nggak sih kalau sebenarnya ARA itu diambil dari kata “A Renewal Agent”? A Renewal Agent memiliki arti “Agen Pembaruan” yang dimana nantinya sobat ITzen diharapkan bisa menjadi agen-agen pembaruan sebagai pilar di bidang Teknologi dan Informasi untuk Indonesia 2045. Teruntuk kamu adik-adik keren dari SMA/SMK/Sederajat dan teman-teman perjuangan mahasiswa, sabi banget ikut kegiatan ARA ini! Dengan berbagai cabang kegiatan dan lomba di bidang Cyber Security dan Internet of Things, sobat ITzen bisa memilih cabang lomba sesuai kriteria yang memenuhi, ya. Jangan lupa semarakkan tagar #SemangatMembARA2021 dan #ARenewalAgentforIndonesia2045 agar sobat ITzen memiliki semangat yang membara untuk perkembangan dan kemajuan Indonesia khususnya di bidang Teknologi dan Informasi. Semangat sobat ITzen! Horas!
 
 ## Rapat Subdivisi Website (2 Januari 2021)
 
